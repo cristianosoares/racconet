@@ -1,0 +1,8 @@
+<?php
+// Text
+$_['text_items']     = '%s';
+$_['text_empty']     = 'Seu carrinho está vazio!';
+$_['text_cart']      = 'Exibir carrinho';
+$_['text_checkout']  = 'Finalizar pedido';
+$_['text_recurring'] = 'Assinatura';
+$_['text_orcament'] = 'Minha lista de cotação';
