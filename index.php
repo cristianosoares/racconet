@@ -1,5 +1,6 @@
 <?php
 // Version
+//teste
 define('VERSION', '2.0.1.1');
 
 // Configuration
