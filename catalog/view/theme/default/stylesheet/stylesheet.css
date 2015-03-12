@@ -1018,9 +1018,20 @@ h2.price {
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
-
-
 /* END CONTATO & TRABALHE-CONOSCO*/
+
+/* INFORMACOES TECNICAS */
+#certificados h2{font-size:22px;}
+#certificados p{font-size:15px}
+#certificados hr{
+	background: black;
+	color: black;
+	height: 2px;
+}
+.certificados-container .certificados-single{ text-align:center;margin-bottom: 27px;}
+.certificados-container .certificados-single img{border:solid  #e6e6e6;}
+
+/* END INFORMACOES TECNICAS */
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
