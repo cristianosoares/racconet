@@ -276,11 +276,7 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 #cart .dropdown-menu {
 	min-width: 100%;
 }
-	@media (max-width: 478px) {
-		#cart .dropdown-menu {
-			width: 100%;
-		}
-	}
+
 #cart .dropdown-menu table {
 	margin-bottom: 10px;
 }
@@ -288,11 +284,6 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 	min-width: 427px;
 	padding: 0 10px;
 }
-	@media (max-width: 478px) {
-		#cart .dropdown-menu li > div {
-			min-width: 100%;
-		}
-	}
 #cart .dropdown-menu li p {
 	margin: 20px 0;
 }
@@ -394,41 +385,6 @@ nav.navbar-top {
 #menu .btn-navbar:hover, #menu .btn-navbar:focus, #menu .btn-navbar:active, #menu .btn-navbar.disabled, #menu .btn-navbar[disabled] {
 	color: #ffffff;
 	background-color: #229ac8;
-}
-@media (min-width: 768px) {
-	#menu .dropdown:hover .dropdown-menu {
-		display: block;
-	}
-}
-@media (max-width: 767px) {
-	#menu {
-		border-radius: 4px;
-	}
-	#menu div.dropdown-inner > ul.list-unstyled {
-		display: block;
-	}
-	#menu div.dropdown-menu {
-		margin-left: 0 !important;
-		padding-bottom: 10px;
-		background-color: rgba(0, 0, 0, 0.1);
-	}
-	#menu .dropdown-inner {
-		display: block;
-	}
-	#menu .dropdown-inner a {
-		width: 100%;
-		color: #fff;
-	}
-	#menu .dropdown-menu a:hover,
-	#menu .dropdown-menu ul li a:hover {
-		background: rgba(0, 0, 0, 0.1);
-	}
-	#menu .see-all {
-		margin-top: 0;
-		border: none;
-		border-radius: 0;
-		color: #fff;
-	}
 }
 /* content */
 #content {
@@ -888,12 +844,7 @@ footer h5 {
 .product-grid .product-thumb .image {
 	float: none;
 }
-@media (min-width: 767px) {
-.product-list .product-thumb .image {
-	float: left;
-	padding: 0 15px;
-}
-}
+
 .product-thumb h4 {
 	font-weight: bold;
 }
@@ -904,23 +855,6 @@ footer h5 {
 .product-list .product-thumb .caption {
 	margin-left: 230px;
 }
-@media (max-width: 1200px) {
-.product-grid .product-thumb .caption {
-	min-height: 210px;
-	padding: 0 10px;
-}
-}
-@media (max-width: 767px) {
-.product-list .product-thumb .caption {
-	min-height: 0;
-	margin-left: 0;
-	padding: 0 10px;
-}
-.product-grid .product-thumb .caption {
-	min-height: 0;
-}
-}
-
 .product-thumb .rating {
 	padding-bottom: 10px;
 }
@@ -966,11 +900,6 @@ h2.price {
 	border-left: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
-	.product-list .product-thumb .button-group {
-		border-left: none;
-	}
-}
 .product-thumb .button-group button {
 	width: 60%;
 	border: none;
@@ -993,20 +922,6 @@ h2.price {
 	text-decoration: none;
 	cursor: pointer;
 }
-@media (max-width: 1200px) {
-	.product-thumb .button-group button, .product-thumb .button-group button + button {
-		width: 33.33%;
-	}
-}
-@media (max-width: 767px) {
-	.product-thumb .button-group button, .product-thumb .button-group button + button {
-		width: 33.33%;
-	}
-}
-
-
-
-
 .thumbnails {
 	overflow: auto;
 	clear: both;
@@ -1036,6 +951,85 @@ h2.price {
 	float: left;
 	margin-left: 20px;
 }
+/* CONTATO & TRABALHE-CONOSCO */
+.contato input, .contato textarea,.fileUpload{
+	width:100%;
+	border:solid thin #f0f0f0;
+	margin:1px;
+	color: #a1a1a1;
+	font-size: 14px;
+}
+.contato input,.fileUpload{
+	padding: 16px 8px 10px 8px;
+	height: 40px;
+}
+.contato input::-webkit-input-placeholder,.contato textarea::-webkit-input-placeholder {
+    color: #a1a1a1 !important;
+}
+.contato input:-moz-placeholder,.contato textarea::-webkit-input-placeholder {
+    color: #a1a1a1 !important;
+}
+.contato input::-moz-placeholder,.contato textarea::-webkit-input-placeholder {
+    color: #a1a1a1 !important;
+}
+.contato input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
+    color: #a1a1a1 !important;
+}
+.contato textarea{
+	max-height: 113px;
+	height: 113px;
+	max-width: 100%;
+	padding: 18px 4px;
+}
+.contato input[type="submit"]{
+	border: none;
+	background: #f57b20;
+	color: white;
+	height: 46px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'FuturaBT-Book';
+	padding:0;
+	margin-top:0
+}
+.contato h1{
+	font-size:24px;
+	 color:#f57b20;
+	 border-bottom:solid thin #f0f0f0;
+}
+.contato p{font-size:14px}
+.contato span{font-size:25px;}
+
+.fileUpload {
+	position:relative;
+	padding: 10px 8px 10px 8px !important;
+	cursor: pointer;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.fileUpload span{ font-size:19px; float:right; opacity:0.8}
+.fileUpload .upload{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 0px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+
+/* END CONTATO & TRABALHE-CONOSCO*/
+@media (max-width: 1200px) {
+	.product-grid .product-thumb .caption {
+		min-height: 210px;
+		padding: 0 10px;
+	}
+	.product-thumb .button-group button, .product-thumb .button-group button + button {
+		width: 33.33%;
+	}
+}
 
 /* fixed colum left + content + right*/
 @media (min-width: 768px) {
@@ -1051,6 +1045,9 @@ h2.price {
     #content + #column-right .product-layout .col-md-3{
        width: 100%;
     }
+	#menu .dropdown:hover .dropdown-menu {
+		display: block;
+	}
 }
 @media screen and (max-width: 768px) {
     .col-sm-3 {
@@ -1059,7 +1056,66 @@ h2.price {
     .cotacao {
         font-size: 0.9em;
     }
+	.product-list .product-thumb .button-group {
+		border-left: none;
+	}
 }   
+@media (max-width: 767px) {
+	#menu {
+		border-radius: 4px;
+	}
+	#menu div.dropdown-inner > ul.list-unstyled {
+		display: block;
+	}
+	#menu div.dropdown-menu {
+		margin-left: 0 !important;
+		padding-bottom: 10px;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	#menu .dropdown-inner {
+		display: block;
+	}
+	#menu .dropdown-inner a {
+		width: 100%;
+		color: #fff;
+	}
+	#menu .dropdown-menu a:hover,
+	#menu .dropdown-menu ul li a:hover {
+		background: rgba(0, 0, 0, 0.1);
+	}
+	#menu .see-all {
+		margin-top: 0;
+		border: none;
+		border-radius: 0;
+		color: #fff;
+	}
+	.product-thumb .button-group button, .product-thumb .button-group button + button {
+		width: 33.33%;
+	}
+	.product-list .product-thumb .caption {
+	min-height: 0;
+	margin-left: 0;
+	padding: 0 10px;
+	}
+	.product-grid .product-thumb .caption {
+		min-height: 0;
+	}
+
+}
+@media (min-width: 767px) {
+	.product-list .product-thumb .image {
+		float: left;
+		padding: 0 15px;
+	}
+}
+@media (max-width: 478px) {
+	#cart .dropdown-menu li > div {
+		min-width: 100%;
+	}
+	#cart .dropdown-menu {
+		width: 100%;
+	}
+}
 @media screen and (max-width: 340px) {
     .col-sm-3 {
         width: 100%;
