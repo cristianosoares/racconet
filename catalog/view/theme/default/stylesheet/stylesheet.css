@@ -1101,6 +1101,17 @@ hr.seta{
 	  border-top: 2px solid #000;
 	}
 	/* end areas */
+	
+	/* lanternas */
+	#lanternas img{margin-top:20px; width:100%}
+	#lanternas h2{font-size:22px}
+	#lanternas ul{ 
+	 	list-style: inherit;
+	  	margin-left: 0;
+  		padding-left: 18px;
+	}
+	#lanternas ul li{margin: 5px 0;}
+	/* end lanternas*/
 
 /* END INFORMACOES TECNICAS */
 @media (max-width: 1200px) {
@@ -1139,6 +1150,7 @@ hr.seta{
 	#menu .dropdown:hover .dropdown-menu {
 		display: block;
 	}
+	/* INFORMACOES TECNICAS */
 	#areas .table-row-info{
 		margin-top: 84px;
   		padding: 9px 4px 0 8px;
@@ -1155,8 +1167,9 @@ hr.seta{
 	.product-list .product-thumb .button-group {
 		border-left: none;
 	}
-		/* INFORMACOES TECNICAS */
+	/* INFORMACOES TECNICAS */
 	.divisoes-descriptions .col-md-6:first-child{border:none;}
+	#lanternas img{width:70%}
 	
 }   
 @media (max-width: 767px) {
