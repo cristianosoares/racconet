@@ -11,6 +11,7 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 }
+ul,ol{list-style:none}
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
 }
@@ -1021,15 +1022,85 @@ h2.price {
 /* END CONTATO & TRABALHE-CONOSCO*/
 
 /* INFORMACOES TECNICAS */
-#certificados h2{font-size:22px;}
-#certificados p{font-size:15px}
-#certificados hr{
-	background: black;
-	color: black;
-	height: 2px;
+hr.seta{
+	background: url(../../../../../modelos/images/seta-down-bg.png) no-repeat;
+	background-position: center center;
+	height: 11px;
+	opacity: 0.6;
 }
-.certificados-container .certificados-single{ text-align:center;margin-bottom: 27px;}
-.certificados-container .certificados-single img{border:solid  #e6e6e6;}
+.arredondar{
+	border: solid thin;
+	padding: 11px;
+	border-radius: 22px;
+}
+.table-curved {
+    border-collapse:separate;
+    border-radius: 27px;
+	margin:30px 0;
+}
+.table-curved thead th:first-child{border-top-left-radius: 25px;}
+.table-curved thead th:last-child{ border-top-right-radius: 25px;}
+
+.table-curved tbody tr:last-child td:first-child{
+	border-bottom-left-radius: 25px;  
+}
+.table-curved tbody tr:last-child td:last-child{
+	border-bottom-right-radius: 25px;  
+}
+
+	/* certificados */
+	#certificados h2{font-size:22px;}
+	#certificados p{font-size:15px}
+	#certificados hr{
+		background: black;
+		color: black;
+		height: 2px;
+	}
+	.certificados-container .certificados-single{ text-align:center;margin-bottom: 27px;}
+	.certificados-container .certificados-single img{border:solid  #e6e6e6;}
+	/* end certificados */
+	
+	/* areas */
+	#areas h2:first-child{margin-left:-15px;}
+	#areas h3{margin:0 0 3px 0}
+	.divisoes-container .col-md-1{
+		height: 68px;
+		padding: 0;
+		width: 2%;
+		margin-top: 3px;
+	}
+	#areas ul{padding-left:0}
+	#areas .divisoes-container{margin-top:35px}
+	#areas img{text-align:center; margin:30px auto; max-width:100%; display:block}
+	.divisoes-container .col-md-11 p strong{text-transform:uppercase;margin-bottom: 1px;}
+	.divisoes-container .col-md-11 p{margin:0;line-height: 1.4;}
+	.divisoes-container .col-md-1.red{background:#ed3338;}
+	.divisoes-container .col-md-1.blue{background:#0099d9;}
+	.divisoes-container .col-md-1.green{background:#5ca37a;}
+	.divisoes-descriptions{
+		margin-top:17px;
+	}
+	.divisoes-descriptions .col-md-6:first-child{border-right: solid thin;}
+	
+	#areas table,#areas thead,#areas th,#areas tbody,#areas tr,#areas td{border-color:black}
+	#areas thead{font-size:18px}
+	#areas tbody{font-size:15px}
+	#areas .table-info{padding:17px;background:#e6e6e6; font-size:13px;  margin-top: 30px;}
+	#areas .table-row-info{
+		background: none;
+	  	position: relative;
+	 	border: solid;
+	 	margin-top: 95px;
+	  	padding: 17px 15px 0 15px;
+  	}
+  #areas .table-row-info hr{
+	  position: relative;
+	  right: -88px;
+	  top: -73px;
+	  width: 32px;
+	  border-top: 2px solid #000;
+	}
+	/* end areas */
 
 /* END INFORMACOES TECNICAS */
 @media (max-width: 1200px) {
@@ -1040,9 +1111,18 @@ h2.price {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
 		width: 33.33%;
 	}
+	
+}
+@media (min-width: 1200px) {
+	#areas .table-row-info{
+		margin-top: 95px !important;
+	  	padding: 17px 15px 0 15px !important;
+	}
+	#areas .table-row-info hr{
+		right: -88px !important;
+	}
 }
 
-/* fixed colum left + content + right*/
 @media (min-width: 768px) {
     #column-left  .product-layout .col-md-3{
        width: 100%;
@@ -1059,17 +1139,25 @@ h2.price {
 	#menu .dropdown:hover .dropdown-menu {
 		display: block;
 	}
+	#areas .table-row-info{
+		margin-top: 84px;
+  		padding: 9px 4px 0 8px;
+	}
+	#areas .table-row-info hr{
+		right: -79px;
+	}
+	
 }
 @media screen and (max-width: 768px) {
-    .col-sm-3 {
-        width: 90%;
-    }
     .cotacao {
         font-size: 0.9em;
     }
 	.product-list .product-thumb .button-group {
 		border-left: none;
 	}
+		/* INFORMACOES TECNICAS */
+	.divisoes-descriptions .col-md-6:first-child{border:none;}
+	
 }   
 @media (max-width: 767px) {
 	#menu {
@@ -1128,9 +1216,6 @@ h2.price {
 	}
 }
 @media screen and (max-width: 340px) {
-    .col-sm-3 {
-        width: 100%;
-    }
     .cotacao {
         font-size: 0.7em;
     }
