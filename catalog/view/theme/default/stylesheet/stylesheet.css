@@ -39,7 +39,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #23a1d1;
+	color: black;
 }
 a:hover {
 	text-decoration: none;
@@ -953,27 +953,27 @@ h2.price {
 	margin-left: 20px;
 }
 /* CONTATO & TRABALHE-CONOSCO */
-.contato input, .contato textarea,.fileUpload{
+.contato input, .contato textarea,.fileUpload, #info-seg #cadastro-email form input{
 	width:100%;
 	border:solid thin #f0f0f0;
 	margin:1px;
 	color: #a1a1a1;
 	font-size: 14px;
 }
-.contato input,.fileUpload{
+.contato input,.fileUpload,#cadastro-email form input{
 	padding: 16px 8px 10px 8px;
 	height: 40px;
 }
-.contato input::-webkit-input-placeholder,.contato textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
-.contato input:-moz-placeholder,.contato textarea::-webkit-input-placeholder {
+input:-moz-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
-.contato input::-moz-placeholder,.contato textarea::-webkit-input-placeholder {
+input::-moz-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
-.contato input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
+input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
 .contato textarea{
@@ -982,7 +982,7 @@ h2.price {
 	max-width: 100%;
 	padding: 18px 4px;
 }
-.contato input[type="submit"]{
+.contato input[type="submit"], #info-seg #cadastro-email form input[type="submit"]{
 	border: none;
 	background: #f57b20;
 	color: white;
@@ -1114,6 +1114,62 @@ hr.seta{
 	/* end lanternas*/
 
 /* END INFORMACOES TECNICAS */
+
+/* INFO SEG */
+	#info-seg{
+		background:url(../../../../../modelos/images/info-seg-bg.png) no-repeat top left;
+	}
+	#info-seg #header{
+		  margin-bottom: 50px;
+	}
+	#info-seg #cadastro-email{
+		background:rgba(0, 0, 0, 0.53);
+		color:rgba(255,255,255,1.00);
+		font-size: 13px !important;
+	}
+	
+	#info-seg #cadastro-email p{
+		  margin: 10px 0 -12px 0;
+	}
+	#info-seg #cadastro-email form input{
+		  margin: 0;
+		  height: 36px !important;
+		  padding: 0 8px 0 8px !important;
+	}
+	#info-seg #cadastro-email input[type="submit"]{
+		  width: 22% !important	;
+		  font-size: 13px !important; 
+		  padding: 0 8px 0 4px !important; 
+	}
+	#info-seg #cadastro-email input[type="text"]:first-child{
+		  width: 65% !important;
+	}
+	#info-seg #cadastro-email input[type="text"]{
+		  width: 34% !important;
+	}
+	#info-seg #cadastro-email input[type="email"]{
+		    width: 77% !important;
+		  margin-top: 2px;
+		  margin-bottom: 2px;
+	}
+	#slide{margin-top:95px}
+	#myCarousel .carousel-control{
+		bottom: 27px;
+		background-size: 30px;
+		width: 5%;
+	}
+	#myCarousel .carousel-control.left {
+		background:url(../../../../../modelos/images/slide-seta-esquerda.png) no-repeat left center;
+		left: 0;
+	}
+	#myCarousel .carousel-control.right {
+		background:url(../../../../../modelos/images/slide-seta-direita.png) no-repeat right center;
+		right: 0;
+	}
+
+	#myCarousel img{max-width:100%;}
+	#myCarousel .carousel .item a{color:black}
+/* END INFO SEG */
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
@@ -1122,7 +1178,6 @@ hr.seta{
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
 		width: 33.33%;
 	}
-	
 }
 @media (min-width: 1200px) {
 	#areas .table-row-info{
@@ -1132,6 +1187,8 @@ hr.seta{
 	#areas .table-row-info hr{
 		right: -88px !important;
 	}
+	/* INFO SEG */
+	#info-seg #cadastro-email form{  margin-bottom: 5%;}
 }
 
 @media (min-width: 768px) {
@@ -1170,6 +1227,8 @@ hr.seta{
 	/* INFORMACOES TECNICAS */
 	.divisoes-descriptions .col-md-6:first-child{border:none;}
 	#lanternas img{width:70%}
+	/* INFO SEG */
+	#info-seg #cadastro-email {  margin-top: 134px;}
 	
 }   
 @media (max-width: 767px) {
@@ -1232,4 +1291,10 @@ hr.seta{
     .cotacao {
         font-size: 0.7em;
     }
+	/* INFO SEG */
+	#info-seg #cadastro-email input[type="submit"],#info-seg #cadastro-email input[type="text"]:first-child,
+	#info-seg #cadastro-email input[type="text"],#info-seg #cadastro-email input[type="email"]{
+		  width: 100% !important	;
+	}
+	
 }  
