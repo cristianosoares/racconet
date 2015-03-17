@@ -11,6 +11,7 @@ body {
 	font-size: 12px;
 	line-height: 20px;
 }
+ul,ol{list-style:none}
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
 }
@@ -38,7 +39,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #23a1d1;
+	color: black;
 }
 a:hover {
 	text-decoration: none;
@@ -1136,27 +1137,27 @@ h2.price {
 	margin-left: 20px;
 }
 /* CONTATO & TRABALHE-CONOSCO */
-.contato input, .contato textarea,.fileUpload{
+.contato input, .contato textarea,.fileUpload, #info-seg #cadastro-email form input{
 	width:100%;
 	border:solid thin #f0f0f0;
 	margin:1px;
 	color: #a1a1a1;
 	font-size: 14px;
 }
-.contato input,.fileUpload{
+.contato input,.fileUpload,#cadastro-email form input{
 	padding: 16px 8px 10px 8px;
 	height: 40px;
 }
-.contato input::-webkit-input-placeholder,.contato textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
-.contato input:-moz-placeholder,.contato textarea::-webkit-input-placeholder {
+input:-moz-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
-.contato input::-moz-placeholder,.contato textarea::-webkit-input-placeholder {
+input::-moz-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
-.contato input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
+input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
     color: #a1a1a1 !important;
 }
 .contato textarea{
@@ -1165,7 +1166,7 @@ h2.price {
 	max-width: 100%;
 	padding: 18px 4px;
 }
-.contato input[type="submit"]{
+.contato input[type="submit"], #info-seg #cadastro-email form input[type="submit"]{
 	border: none;
 	background: #f57b20;
 	color: white;
@@ -1202,9 +1203,162 @@ h2.price {
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
-
-
 /* END CONTATO & TRABALHE-CONOSCO*/
+
+/* INFORMACOES TECNICAS */
+hr.seta{
+	background: url(../../../../../modelos/images/seta-down-bg.png) no-repeat !important;
+	background-position: center center !important;
+	height: 11px !important;
+	opacity: 0.6 !important;
+	border:none !important;
+}
+.arredondar{
+	border: solid thin;
+	padding: 11px;
+	border-radius: 22px;
+}
+.table-curved {
+    border-collapse:separate;
+    border-radius: 27px;
+	margin:30px 0;
+}
+.table-curved thead th:first-child{border-top-left-radius: 25px;}
+.table-curved thead th:last-child{ border-top-right-radius: 25px;}
+
+.table-curved tbody tr:last-child td:first-child{
+	border-bottom-left-radius: 25px;  
+}
+.table-curved tbody tr:last-child td:last-child{
+	border-bottom-right-radius: 25px;  
+}
+
+	/* certificados */
+	#certificados h2{font-size:22px;}
+	#certificados p{font-size:15px}
+	#certificados hr{
+		background: black;
+		color: black;
+		height: 2px;
+	}
+	.certificados-container .certificados-single{ text-align:center;margin-bottom: 27px;}
+	.certificados-container .certificados-single img{border:solid  #e6e6e6;}
+	/* end certificados */
+	
+	/* areas */
+	#areas h2:first-child{margin-left:-15px;}
+	#areas h3{margin:0 0 3px 0}
+	.divisoes-container .col-md-1{
+		height: 68px;
+		padding: 0;
+		width: 2%;
+		margin-top: 3px;
+	}
+	#areas ul{padding-left:0}
+	#areas .divisoes-container{margin-top:35px}
+	#areas img{text-align:center; margin:30px auto; max-width:100%; display:block}
+	.divisoes-container .col-md-11 p strong{text-transform:uppercase;margin-bottom: 1px;}
+	.divisoes-container .col-md-11 p{margin:0;line-height: 1.4;}
+	.divisoes-container .col-md-1.red{background:#ed3338;}
+	.divisoes-container .col-md-1.blue{background:#0099d9;}
+	.divisoes-container .col-md-1.green{background:#5ca37a;}
+	.divisoes-descriptions{
+		margin-top:17px;
+	}
+	.divisoes-descriptions .col-md-6:first-child{border-right: solid thin;}
+	
+	#areas table,#areas thead,#areas th,#areas tbody,#areas tr,#areas td{border-color:black}
+	#areas thead{font-size:18px}
+	#areas tbody{font-size:15px}
+	#areas .table-info{padding:17px;background:#e6e6e6; font-size:13px;  margin-top: 30px;}
+	#areas .table-row-info{
+		background: none;
+	  	position: relative;
+	 	border: solid;
+	 	margin-top: 95px;
+	  	padding: 17px 15px 0 15px;
+  	}
+  #areas .table-row-info hr{
+	  position: relative;
+	  right: -88px;
+	  top: -73px;
+	  width: 32px;
+	  border-top: 2px solid #000;
+	}
+	/* end areas */
+	
+	/* lanternas */
+	#lanternas img{margin-top:20px; width:100%}
+	#lanternas h2{font-size:22px}
+	#lanternas ul{ 
+	 	list-style: inherit;
+	  	margin-left: 0;
+  		padding-left: 18px;
+	}
+	#lanternas ul li{margin: 5px 0;}
+	/* end lanternas*/
+	/* tipos-lampadas */
+	#tipos-lampadas img{max-width:100%}
+	/* end tipos-lampadas */
+/* END INFORMACOES TECNICAS */
+
+/* INFO SEG */
+	#info-seg{
+		background:url(../../../../../modelos/images/info-seg-bg.png) no-repeat top left;
+	}
+	#info-seg #header{
+		  margin-bottom: 50px;
+	}
+	#info-seg #cadastro-email{
+		background:rgba(0, 0, 0, 0.53);
+		color:rgba(255,255,255,1.00);
+		font-size: 13px !important;
+	}
+	
+	#info-seg #cadastro-email p{
+		  margin: 10px 0 -12px 0;
+	}
+	#info-seg #cadastro-email form input{
+		  margin: 0;
+		  height: 36px !important;
+		  padding: 0 8px 0 8px !important;
+	}
+	#info-seg #cadastro-email input[type="submit"]{
+		  width: 22% !important	;
+		  font-size: 13px !important; 
+		  padding: 0 8px 0 4px !important; 
+	}
+	#info-seg #cadastro-email input[type="text"]:first-child{
+		  width: 65% !important;
+	}
+	#info-seg #cadastro-email input[type="text"]{
+		  width: 34% !important;
+	}
+	#info-seg #cadastro-email input[type="email"]{
+		    width: 77% !important;
+		  margin-top: 2px;
+		  margin-bottom: 2px;
+	}
+	#slide{margin-top:95px}
+	#myCarousel .carousel-control{
+		bottom: 27px;
+		background-size: 30px;
+		width: 5%;
+	}
+	#myCarousel .carousel-control.left {
+		background:url(../../../../../modelos/images/slide-seta-esquerda.png) no-repeat left center;
+		left: 0;
+	}
+	#myCarousel .carousel-control.right {
+		background:url(../../../../../modelos/images/slide-seta-direita.png) no-repeat right center;
+		right: 0;
+	}
+
+	#myCarousel img{max-width:100%;}
+	#myCarousel .carousel .item a{color:black}
+	.leia-agora {margin-bottom:50px;}
+	.leia-agora a {color:#f57b20;}
+/* END INFO SEG */
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
@@ -1214,8 +1368,18 @@ h2.price {
 		width: 33.33%;
 	}
 }
+@media (min-width: 1200px) {
+	#areas .table-row-info{
+		margin-top: 95px !important;
+	  	padding: 17px 15px 0 15px !important;
+	}
+	#areas .table-row-info hr{
+		right: -88px !important;
+	}
+	/* INFO SEG */
+	#info-seg #cadastro-email form{  margin-bottom: 5%;}
+}
 
-/* fixed colum left + content + right*/
 @media (min-width: 768px) {
     #column-left  .product-layout .col-md-3{
        width: 100%;
@@ -1229,6 +1393,18 @@ h2.price {
     #content + #column-right .product-layout .col-md-3{
        width: 100%;
     }
+	#menu .dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	/* INFORMACOES TECNICAS */
+	#areas .table-row-info{
+		margin-top: 84px;
+  		padding: 9px 4px 0 8px;
+	}
+	#areas .table-row-info hr{
+		right: -79px;
+	}
+	
 }
 @media screen and (max-width: 768px) {
     .cotacao {
@@ -1237,6 +1413,12 @@ h2.price {
 	.product-list .product-thumb .button-group {
 		border-left: none;
 	}
+	/* INFORMACOES TECNICAS */
+	.divisoes-descriptions .col-md-6:first-child{border:none;}
+	#lanternas img{width:70%}
+	/* INFO SEG */
+	#info-seg #cadastro-email {  margin-top: 134px;}
+	
 }   
 @media (max-width: 767px) {
 	#menu {
@@ -1295,10 +1477,13 @@ h2.price {
 	}
 }
 @media screen and (max-width: 340px) {
-    .col-sm-3 {
-        width: 100%;
-    }
     .cotacao {
         font-size: 0.7em;
     }
+	/* INFO SEG */
+	#info-seg #cadastro-email input[type="submit"],#info-seg #cadastro-email input[type="text"]:first-child,
+	#info-seg #cadastro-email input[type="text"],#info-seg #cadastro-email input[type="email"]{
+		  width: 100% !important	;
+	}
+	
 }  
