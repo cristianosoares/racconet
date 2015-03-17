@@ -39,7 +39,7 @@
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $class; ?>">
-<div class="bg-top-nav">    
+<div class="bg-top-nav pg-interno">    
     <nav id="top">
       <div class="container">
         <?php echo $currency; ?>

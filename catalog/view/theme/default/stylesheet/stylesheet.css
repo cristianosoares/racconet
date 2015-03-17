@@ -78,15 +78,17 @@ div.required .control-label:before {
 .dropdown-menu li > a:hover {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
+	background-color: #f5f5f5;
 }
 /* top */
 .bg-top-nav {
     background: url(../image/bg-top-nav.png);
     height: auto;
     min-height: 425px;
+}
+.bg-top-nav.pg-interno {
+    min-height: 255px !important;
+    margin-bottom: 45px;
 }
 #top {
 	padding: 4px 0px 3px 0;
@@ -291,6 +293,60 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 .owl-pagination {
 	display: none !important;
 }
+/* Menu Home Lateral */
+.menu-bar-home {
+    width: 19%;
+    float: left;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+.menu-bar-home .navbar-collapse {
+    padding: 0px !important;
+}
+.menu-bar-home li.dropdown {
+    width: 100%;
+}
+#menu .nav > li > a {
+	color: #000;
+        padding: 10px 0;
+	min-height: 15px;
+	background-color: transparent;
+        font-family: Arial;
+        font-size: 23px;
+}
+.menu-bar-home .dropdown-menu {
+    position: relative !important;
+    border: 0px !important;
+    box-shadow: none !important;
+}
+#menu .dropdown-inner a {
+	min-width: 160px;
+	display: block;
+	padding: 0px 8px;
+	clear: both;
+	line-height: 20px;
+	color: #333333;
+	font-size: 13px;
+        font-family: Arial;
+}
+#menu .dropdown-inner a:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #333;
+}
+span.caret {
+    background: url(../image/nav-drop-home.png);
+    width: 13px;
+    height: 8px;
+    border: 0px !important;
+    margin-left: 10px !important;
+}
 /* menu */
 .container-top {
     padding: 0 15px;
@@ -307,23 +363,6 @@ nav.navbar-top {
     font-size: 1.3em;
     padding: 5px 11px;
 }
-#menu {
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
-	border-color: #1f90bb #1f90bb #145e7a;
-	min-height: 40px;
-}
-#menu .nav > li > a {
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	padding: 10px 15px 10px 15px;
-	min-height: 15px;
-	background-color: transparent;
-}
-#menu .nav > li > a:hover, #menu .nav > li.open > a {
-	background-color: rgba(0, 0, 0, 0.1);
-}
 #menu .dropdown-menu {
 	padding-bottom: 0;
 }
@@ -333,34 +372,19 @@ nav.navbar-top {
 #menu .dropdown-inner ul {
 	display: table-cell;
 }
-#menu .dropdown-inner a {
-	min-width: 160px;
-	display: block;
-	padding: 3px 20px;
-	clear: both;
-	line-height: 20px;
-	color: #333333;
-	font-size: 12px;
-}
-#menu .dropdown-inner li a:hover {
-	color: #FFFFFF;
-}
 #menu .see-all {
 	display: block;
 	margin-top: 0.5em;
-	border-top: 1px solid #DDD;
-	padding: 3px 20px;
+        padding: 0px 8px;
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 3px 3px;
 	font-size: 12px;
+        color: #f57b20 !important;
 }
 #menu .see-all:hover, #menu .see-all:focus {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
 }
 #menu #category {
 	float: left;
@@ -444,6 +468,9 @@ nav.navbar-top {
 .filter-products {
     width: 100%;
     display: table;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
 }
 .filter-product {
     width: 78.91089108910891%; /* area 797px*/
@@ -458,10 +485,62 @@ nav.navbar-top {
 .filter-product a.industria {
     background: url(../image/seg-industria.png);
     width: 32.49686323713927%;
-    height: 258px;
+    height: 259px;
     text-indent: -9999px;
     float: left;
     margin-left: 1.1311950%;
+}
+.filter-product a.mineracao {
+    background: url(../image/seg-mineracao.png);
+    width: 32.49686323713927%;
+    height: 259px;
+    text-indent: -9999px;
+    float: left;
+    margin-top: 10px;
+}
+.filter-product a.oleo-e-gas {
+    background: url(../image/seg-oleo-gas.png);
+    width: 32.49686323713927%;
+    height: 259px;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 1.2511950%;
+    margin-top: 10px;
+}
+.filter-product a.policia-e-exercito {
+    background: url(../image/seg-policia.png);
+    width: 32.49686323713927%;
+    height: 259px;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 1.2511950%;
+    margin-top: 10px;
+}
+.filter-product a.bombeiros {
+    background: url(../image/seg-bombeiro.png);
+    width: 32.49686323713927%;
+    height: 259px;
+    text-indent: -9999px;
+    float: left;
+    margin-top: 10px;
+}
+.filter-product a.areas-classificadas {
+    background: url(../image/seg-area-classificadas.png);
+    width: 32.49686323713927%;
+    height: 259px;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 1.2511950%;
+    margin-top: 10px;
+}
+.filter-product a.concessionarias-e-ferrovias {
+    background: url(../image/seg-concessionarias.png);
+    width: 32.49686323713927%;
+    height: 259px;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 1.2511950%;
+    margin-top: 10px;
 }
 /* filter marcas */
 .marcas {
@@ -542,6 +621,113 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
+/* Assinaturas footer */
+.assinaturas {
+    margin: 30px 0px;
+}
+.assinaturas .col-lg-4,.assinaturas .col-lg-3 {
+    padding: 0px !important;
+    margin-left: 42px;
+    float: left;
+}
+.assinaturas .col-lg-4:first-child {
+    margin-left: 0px;
+}
+h2.title-ass {
+    text-transform: uppercase;
+    font-family: 'FuturaBT-Book' !important;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+h2.title-ass span {
+    color: #f57b20;
+}
+.col1-ass {
+    background: url(../image/revista-infoseg-home.png);
+    width: 117px;
+    height: 205px;
+    float: left;
+    margin-right: 15px;
+}
+.col2-ass {
+    float: left;
+    width: 60%;
+}
+.logo-infoseg {
+    background: url(../image/title-infoseg.png);
+    width: 170px;
+    height: 46px;
+}
+.text-infoseg {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: Arial;
+    color: #000;
+}
+.btn-infoseg {
+    background: #f57b20;
+    width: 150px;
+    height: 43px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 22px;
+    border: 2px solid #c86217;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'FuturaBT-Book' !important;
+    font-size: 13px;
+}
+.ass-free {
+    font-family: Arial;
+    font-size: 13px;
+    color: #000;
+    padding-top: 2px;
+}
+.junte-se-nos {
+    background: url(../image/seja-representante.png);
+    width: 188px;
+    height: 175px;
+}
+/* Paginas Internas */
+/* Menu Esquerdo das paginas Internas */
+.list-group a {
+    border: 0px !important;
+    padding: 10px 0px;
+    min-height: 15px;
+    color: #000 !important;
+    font-family: Arial;
+    font-size: 20px;
+}
+a.list-group-item.sub-item {
+    min-width: 160px;
+    display: block;
+    padding: 0px 8px;
+    clear: both;
+    line-height: 20px;
+    color: #333333;
+    font-size: 13px !important;
+    font-family: Arial;
+}
+a.list-group-item.sub-item:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #333;
+}
+/* Filter Departamento Paginas Internas */
+column#column-left {
+    float: left !important;
+    margin-right: 0px !important;
+}
+
 /* footer */
 footer {
     margin-top: 30px;
@@ -574,7 +760,7 @@ footer {
 }
 .info-contato {
     position: absolute;
-    top: 60px;
+    top: 40px;
     width: 23.26923076%;
 }
 footer hr {
@@ -804,10 +990,8 @@ footer h5 {
 	padding: 8px 12px;
 }
 .list-group a.active, .list-group a.active:hover, .list-group a:hover {
-	color: #444444;
-	background: #eeeeee;
-	border: 1px solid #DDDDDD;
-	text-shadow: 0 1px 0 #FFF;
+	color: #f57b20 !important;
+	background: transparent;
 }
 /* carousel */
 .carousel-caption {
@@ -1045,14 +1229,8 @@ h2.price {
     #content + #column-right .product-layout .col-md-3{
        width: 100%;
     }
-	#menu .dropdown:hover .dropdown-menu {
-		display: block;
-	}
 }
 @media screen and (max-width: 768px) {
-    .col-sm-3 {
-        width: 90%;
-    }
     .cotacao {
         font-size: 0.9em;
     }

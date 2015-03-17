@@ -10,13 +10,12 @@ class ControllerCommonHome extends Controller {
         if (isset($this->request->get['route'])) {
             $this->document->addLink(HTTP_SERVER, 'canonical');
         }
-
         $this->load->language('product/manufacturer');
         $this->load->language('common/home');
 
         $data['text_marca'] = $this->language->get('text_marcas');
+        $data['text_all'] = $this->language->get('text_all');
 
-        $this->load->model('catalog/manufacturer');
 
         $data['column_left'] = $this->load->controller('common/column_left');
         $data['column_right'] = $this->load->controller('common/column_right');
@@ -26,10 +25,49 @@ class ControllerCommonHome extends Controller {
         $data['header'] = $this->load->controller('common/header');
 
 
+        // Menu
+        $this->load->model('catalog/category');
+
+        $this->load->model('catalog/product');
+
         $data['categories'] = array();
+        
+        $categories = $this->model_catalog_category->getCategories(0);
+       
 
+        foreach ($categories as $category) {
+                if ($category['top']) {
+                        // Level 2
+                        $children_data = array();
+
+                        $children = $this->model_catalog_category->getCategories($category['category_id']);
+
+                        foreach ($children as $child) {
+                                $filter_data = array(
+                                        'filter_category_id'  => $child['category_id'],
+                                        'filter_sub_category' => true
+                                );
+
+                                $children_data[] = array(
+                                        'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+                                        'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
+                                );
+                        }
+
+                        // Level 1
+                        $data['categories'][] = array(
+                                'name'     => $category['name'],
+                                'children' => $children_data,
+                                'column'   => $category['column'] ? $category['column'] : 1,
+                                'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+                        );
+                }
+        }
+	
+        $this->load->model('catalog/manufacturer');
+        $data['categorias'] = array();
         $results = $this->model_catalog_manufacturer->getManufacturers();
-
+        
         foreach ($results as $result) {
             if (is_numeric(utf8_substr($result['name'], 0, 1))) {
                 $key = '0 - 9';
@@ -37,11 +75,11 @@ class ControllerCommonHome extends Controller {
                 $key = utf8_substr(utf8_strtoupper($result['name']), 0, 1);
             }
 
-            if (!isset($data['categories'][$key])) {
-                $data['categories'][$key]['name'] = $key;
+            if (!isset($data['categorias'][$key])) {
+                $data['categorias'][$key]['name'] = $key;
             }
 
-            $data['categories'][$key]['manufacturer'][] = array(
+            $data['categorias'][$key]['manufacturer'][] = array(
                 'name' => $result['name'],
                 'href' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id'])
             );
