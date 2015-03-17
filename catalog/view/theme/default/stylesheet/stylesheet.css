@@ -138,20 +138,20 @@ div.required .control-label:before {
     padding: 15px 0px;
 }
 #logo {
-	margin: 0 0 10px 0;
+	/*margin: 0 0 10px 0;*/
 }
 /* search */
 .search-prod {
-    width: 100%;
+   /* width: 100%;*/
     padding: 20px 0px;
-    display: table;
+    /*display: table;*/
 }
 .col-sm-5.col-searchProd {
-    padding: 0px;
-    width: 42.5%;
+   /* padding: 0px;
+    width: 42.5%;*/
 }
 .title-searchProd {
-    width: 45%;
+    /*width: 45%;*/
     float: left;
     font-family: Arial;
     font-style: italic;
@@ -160,8 +160,8 @@ div.required .control-label:before {
     text-transform: uppercase;
 }
 #search {
-	margin-bottom: 10px;
-        width: 55%;
+/*	margin-bottom: 10px;
+        width: 55%;*/
 }
 #search .input-lg {
         line-height: 15px;
@@ -195,7 +195,7 @@ div.required .control-label:before {
    font: 12px verdana, arial, sans-serif;
 }
 #search .btn-lg {
-	font-size: 15px;
+	/*font-size: 15px;*/
 	padding: 12px 10px;
         margin-top: -5px;
         margin-left: 5px;
@@ -209,7 +209,7 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 }
 .ico-faleconoscoTop {
     width: 11%;
-    background: url(../image/ico-fale-conosco-top.png);
+    background: url(../image/ico-fale-conosco-top.png) no-repeat;
     height: 33px;
     float: left;
     margin-top: -8px;
@@ -238,9 +238,10 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
     width: 75%;
     float: left;
 }
-.col-card, .col-menu {
-    width: 100%;
-    float: left;
+.col-card /*,.col-menu*/ {
+    /*width: 100%;
+    float: left;*/
+	float:right;
 }
 .col-card {
     margin-bottom: 30px;
@@ -1367,6 +1368,11 @@ hr.seta{
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
 		width: 33.33%;
 	}
+	/* HEADER */
+	.cotacao{padding-right:9px}
+	.navbar-top ul li a{font-size:1.2em;}
+	.tel-contato{width:auto}
+	.text-funcionamento{width:34%}
 }
 @media (min-width: 1200px) {
 	#areas .table-row-info{
@@ -1378,6 +1384,9 @@ hr.seta{
 	}
 	/* INFO SEG */
 	#info-seg #cadastro-email form{  margin-bottom: 5%;}
+	/*header */
+	.search-prod{  margin-bottom: 0 !important;}
+	.search-prod  .col-md-4.col-xs-12{  margin: 0 !important;}
 }
 
 @media (min-width: 768px) {
@@ -1404,6 +1413,9 @@ hr.seta{
 	#areas .table-row-info hr{
 		right: -79px;
 	}
+	/*header */
+	.search-prod{  margin-bottom: 147px;}
+	.search-prod  .col-md-4.col-xs-12{  margin: 25px 0;}
 	
 }
 @media screen and (max-width: 768px) {
@@ -1418,6 +1430,9 @@ hr.seta{
 	#lanternas img{width:70%}
 	/* INFO SEG */
 	#info-seg #cadastro-email {  margin-top: 134px;}
+	
+   /* header */
+   header{margin-bottom:178px}
 	
 }   
 @media (max-width: 767px) {
