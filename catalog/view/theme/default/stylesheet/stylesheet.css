@@ -1023,10 +1023,11 @@ input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
 
 /* INFORMACOES TECNICAS */
 hr.seta{
-	background: url(../../../../../modelos/images/seta-down-bg.png) no-repeat;
-	background-position: center center;
-	height: 11px;
-	opacity: 0.6;
+	background: url(../../../../../modelos/images/seta-down-bg.png) no-repeat !important;
+	background-position: center center !important;
+	height: 11px !important;
+	opacity: 0.6 !important;
+	border:none !important;
 }
 .arredondar{
 	border: solid thin;
