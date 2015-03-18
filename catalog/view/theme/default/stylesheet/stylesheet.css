@@ -146,9 +146,12 @@ div.required .control-label:before {
     padding: 20px 0px;
     /*display: table;*/
 }
-.col-sm-5.col-searchProd {
+.search-prod.row  .col-xs-12{  margin-bottom: 25px;}
+
+.col-searchProd {
    /* padding: 0px;
     width: 42.5%;*/
+	margin-bottom:25px
 }
 .title-searchProd {
     /*width: 45%;*/
@@ -297,7 +300,7 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 }
 /* Menu Home Lateral */
 .menu-bar-home {
-    width: 19%;
+   /* width: 19%;*/
     float: left;
     border-top: 1px solid #000;
     padding-top: 10px;
@@ -417,137 +420,104 @@ nav.navbar-top {
 	min-height: 600px;
 }
 /* departament home */
-.home a.list-group-item {
-    float: left;
+.content_bottom a{
+/*	width: 24.51923076923077%;
+*/    height: 115px;
+	background-repeat:no-repeat !important;
+	background-position:center top !important;
+	background-size:98% !important;
+	text-align:center;
+}
+.content_bottom a.list-group-item {
+/*    float: left;
     margin-right: 0.57692307692308% !important;
-    margin-bottom: 10px;
+*/  margin-bottom: 35px;
     border: 0px !important;
     border-radius: 0 !important;
 }
-.home a.lanternas {
-    background: url(../image/dep-lanternas.png);
-    width: 24.51923076923077%;
-    height: 115px;
+.content_bottom a span{
+	position: relative;
+	top: 106px;
 }
-.home a.sistemas-de-iluminacao {
+.content_bottom a.lanternas {
+    background: url(../image/dep-lanternas.png) ;
+}
+.content_bottom a.sistemas-de-iluminacao {
     background: url(../image/dep-sistemas-iluminacao.png);
-    width: 24.51923076923077%;
-    height: 115px;
 }
-.home a.cases {
+.content_bottom a.cases {
     background: url(../image/dep-cases.png);
-    width: 24.51923076923077%;
-    height: 115px;
 }
-.home a.malas-de-ferramentas {
+.content_bottom a.malas-de-ferramentas {
     background: url(../image/dep-malas-ferramentas.png);
-    width: 24.51923076923077%;
-    height: 115px;
-    margin-right: 0px !important;
 }
-.home a.coolers {
+.content_bottom a.coolers {
     background: url(../image/dep-coolers.png);
-    width: 24.51923076923077%;
-    height: 115px;
 }
-.home a.protecao-e-limpeza-de-pele {
+.content_bottom a.protecao-e-limpeza-de-pele {
     background: url(../image/dep-limpeza-pele.png);
-    width: 24.51923076923077%;
-    height: 115px;
 }
-.home a.tubos-colorimetricos {
+.content_bottom a.tubos-colorimetricos {
     background: url(../image/dep-tubos-colorimetricos.png);
-    width: 24.51923076923077%;
-    height: 115px;
 }
-.home a.epis {
+.content_bottom a.epis {
     background: url(../image/dep-epis.png);
-    width: 24.51923076923077%;
-    height: 115px;
-    margin-right: 0px !important;
 }
 /*filter de products */
 .filter-products {
-    width: 100%;
-    display: table;
+    /*width: 100%;
+    display: table;*/
     margin-bottom: 40px;
     border-bottom: 1px solid #000000;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 .filter-product {
-    width: 78.91089108910891%; /* area 797px*/
-    float: right;
+   /* width: 78.91089108910891%; 
+    float: right;*/
 }
 .busca-segmento {
-    width: 66.37390213299875%;
-    height: 259px;
-    float: left;
-    background: url(../image/area-atuacao.png);
+/*    width: 66.37390213299875%;
+*/    height: 259px;
+    /*float: left;*/
+    background: url(../image/area-atuacao.png)no-repeat center top ;
+	background-size:98%;
+} 
+.filter-product a{
+	background-size:98% !important;
+	height:266px;
 }
 .filter-product a.industria {
-    background: url(../image/seg-industria.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-industria.png)no-repeat center top ;
     text-indent: -9999px;
-    float: left;
-    margin-left: 1.1311950%;
 }
 .filter-product a.mineracao {
-    background: url(../image/seg-mineracao.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-mineracao.png)no-repeat center top;
     text-indent: -9999px;
-    float: left;
-    margin-top: 10px;
 }
 .filter-product a.oleo-e-gas {
-    background: url(../image/seg-oleo-gas.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-oleo-gas.png)no-repeat center top;
     text-indent: -9999px;
-    float: left;
-    margin-left: 1.2511950%;
-    margin-top: 10px;
 }
 .filter-product a.policia-e-exercito {
-    background: url(../image/seg-policia.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-policia.png)no-repeat center top;
     text-indent: -9999px;
-    float: left;
-    margin-left: 1.2511950%;
-    margin-top: 10px;
 }
 .filter-product a.bombeiros {
-    background: url(../image/seg-bombeiro.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-bombeiro.png)no-repeat center top;
     text-indent: -9999px;
-    float: left;
-    margin-top: 10px;
 }
 .filter-product a.areas-classificadas {
-    background: url(../image/seg-area-classificadas.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-area-classificadas.png)no-repeat center top;
     text-indent: -9999px;
-    float: left;
-    margin-left: 1.2511950%;
-    margin-top: 10px;
 }
 .filter-product a.concessionarias-e-ferrovias {
-    background: url(../image/seg-concessionarias.png);
-    width: 32.49686323713927%;
-    height: 259px;
+    background: url(../image/seg-concessionarias.png)no-repeat center top;
     text-indent: -9999px;
-    float: left;
-    margin-left: 1.2511950%;
-    margin-top: 10px;
 }
 /* filter marcas */
 .marcas {
-    width: 100%;
-    display: table;
+   /* width: 100%;
+    display: table;*/
 }
 h2.title-marca {
     text-transform: uppercase;
@@ -557,71 +527,37 @@ h2.title-marca {
     font-size: 2.0em;
     margin-bottom: 20px;
 }
+.marcas a{
+	background-position:center center;
+	background-size:contain !important;
+	text-indent: -9999px;
+	width: 100%;
+	height: 110px;
+	float: left;
+}
 .marcas a.ansell {
-    background: url(../image/marca-ansell.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-right: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-ansell.png) no-repeat;
 }
 .marcas a.bw {
-    background: url(../image/marca-bw.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-right: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-bw.png) no-repeat;
 }
 .marcas a.hercules {
-    background: url(../image/marca-hercules.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-right: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-hercules.png) no-repeat;
 }
 .marcas a.kwik-draw {
-    background: url(../image/marca-kwik-draw.png);
-    width: 24.9038461538%;
-    height: 110px;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-kwik-draw.png) no-repeat;
 }
 .marcas a.msa {
-    background: url(../image/marca-msa.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-top: 0.1% !important;
-    margin-right: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-msa.png) no-repeat;
 }
 .marcas a.ns {
-    background: url(../image/marca-ns.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-top: 0.1% !important;
-    margin-right: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-ns.png) no-repeat;
 }
 .marcas a.pelican {
-    background: url(../image/marca-pelican.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-top: 0.1% !important;
-    margin-right: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-pelican.png) no-repeat;
 }
 .marcas a.stoko {
-    background: url(../image/marca-stoko.png);
-    width: 24.9038461538%;
-    height: 110px;
-    margin-top: 0.1% !important;
-    text-indent: -9999px;
-    float: left;
+    background: url(../image/marca-stoko.png) no-repeat;
 }
 /* Assinaturas footer */
 .assinaturas {
@@ -653,14 +589,19 @@ h2.title-ass span {
     margin-right: 15px;
 }
 .col2-ass {
-    float: left;
-    width: 60%;
+  /*  float: left;
+    width: 60%;*/
 }
 .logo-infoseg {
     background: url(../image/title-infoseg.png);
     width: 170px;
     height: 46px;
 }
+.logo-infoseg, .col1-ass, .junte-se-nos{
+	background-repeat: no-repeat !important;
+	background-position: left center !important;
+	background-size: contain !important;
+ }
 .text-infoseg {
     margin-top: 10px;
     font-size: 13px;
@@ -690,26 +631,25 @@ h2.title-ass span {
 }
 .junte-se-nos {
     background: url(../image/seja-representante.png);
-    width: 188px;
     height: 175px;
 }
 /* Paginas Internas */
 /* Menu Esquerdo das paginas Internas */
 .list-group a {
     border: 0px !important;
-    padding: 10px 0px;
-    min-height: 15px;
+/*    padding: 10px 0px;
+*/    min-height: 15px;
     color: #000 !important;
     font-family: Arial;
     font-size: 20px;
 }
 a.list-group-item.sub-item {
-    min-width: 160px;
+    /*min-width: 160px;*/
     display: block;
-    padding: 0px 8px;
+   /* padding: 0px 8px;*/
     clear: both;
     line-height: 20px;
-    color: #333333;
+    /*color: #333333;*/
     font-size: 13px !important;
     font-family: Arial;
 }
@@ -989,12 +929,13 @@ footer h5 {
 .list-group a {
 	border: 1px solid #DDDDDD;
 	color: #888888;
-	padding: 8px 12px;
+	/*padding: 8px 12px;*/
 }
-.list-group a.active, .list-group a.active:hover, .list-group a:hover {
+.list-group a.active, .list-group a.active:hover {
 	color: #f57b20 !important;
 	background: transparent;
 }
+.list-group a:hover{ color: #f57b20 !important;}
 /* carousel */
 .carousel-caption {
 	color: #FFFFFF;
@@ -1386,7 +1327,15 @@ hr.seta{
 	#info-seg #cadastro-email form{  margin-bottom: 5%;}
 	/*header */
 	.search-prod{  margin-bottom: 0 !important;}
-	.search-prod  .col-md-4.col-xs-12{  margin: 0 !important;}
+}
+@media (max-width:991px){
+	.filter-product a{
+		height:130px;
+	}
+	.content_bottom a span{
+		top:86px;
+	}
+	.junte-se-nos{ background-position:center center !important;}
 }
 
 @media (min-width: 768px) {
@@ -1415,7 +1364,6 @@ hr.seta{
 	}
 	/*header */
 	.search-prod{  margin-bottom: 147px;}
-	.search-prod  .col-md-4.col-xs-12{  margin: 25px 0;}
 	
 }
 @media screen and (max-width: 768px) {
@@ -1433,7 +1381,18 @@ hr.seta{
 	
    /* header */
    header{margin-bottom:178px}
-	
+   
+   /* home */
+   .busca-segmento{
+	 height: 370px;
+	   background-size: 99%;
+   }
+   .filter-product a {
+	  height: 248px;
+	}
+	.content_bottom a span {
+	  top: 110px;
+	}
 }   
 @media (max-width: 767px) {
 	#menu {
@@ -1489,6 +1448,10 @@ hr.seta{
 	}
 	#cart .dropdown-menu {
 		width: 100%;
+	}
+	/* home */
+	.content_bottom a span {
+	  top: 90px;
 	}
 }
 @media screen and (max-width: 340px) {
