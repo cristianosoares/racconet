@@ -428,7 +428,7 @@ nav.navbar-top {
     width: 24.51923076923077%;
     height: 115px;
 }
-.home a.sistemas-de-iluminacao {
+.home a.sistemas-de-iluminacao,.home a.sistemas-de-iluminao {
     background: url(../image/dep-sistemas-iluminacao.png);
     width: 24.51923076923077%;
     height: 115px;
@@ -449,12 +449,12 @@ nav.navbar-top {
     width: 24.51923076923077%;
     height: 115px;
 }
-.home a.protecao-e-limpeza-de-pele {
+.home a.protecao-e-limpeza-de-pele,.home a.proteo-e-limpeza-de-pele {
     background: url(../image/dep-limpeza-pele.png);
     width: 24.51923076923077%;
     height: 115px;
 }
-.home a.tubos-colorimetricos {
+.home a.tubos-colorimetricos,.home a.tubos-colorimtricos {
     background: url(../image/dep-tubos-colorimetricos.png);
     width: 24.51923076923077%;
     height: 115px;
@@ -491,7 +491,7 @@ nav.navbar-top {
     float: left;
     margin-left: 1.1311950%;
 }
-.filter-product a.mineracao {
+.filter-product a.mineracao,.filter-product a.minerao {
     background: url(../image/seg-mineracao.png);
     width: 32.49686323713927%;
     height: 259px;
@@ -499,7 +499,7 @@ nav.navbar-top {
     float: left;
     margin-top: 10px;
 }
-.filter-product a.oleo-e-gas {
+.filter-product a.oleo-e-gas,.filter-product a.leo-e-gs {
     background: url(../image/seg-oleo-gas.png);
     width: 32.49686323713927%;
     height: 259px;
@@ -508,7 +508,7 @@ nav.navbar-top {
     margin-left: 1.2511950%;
     margin-top: 10px;
 }
-.filter-product a.policia-e-exercito {
+.filter-product a.policia-e-exercito,.filter-product a.polcia-e-exrcito {
     background: url(../image/seg-policia.png);
     width: 32.49686323713927%;
     height: 259px;
@@ -525,7 +525,7 @@ nav.navbar-top {
     float: left;
     margin-top: 10px;
 }
-.filter-product a.areas-classificadas {
+.filter-product a.areas-classificadas, .filter-product a.reas-classificadas {
     background: url(../image/seg-area-classificadas.png);
     width: 32.49686323713927%;
     height: 259px;
@@ -534,7 +534,7 @@ nav.navbar-top {
     margin-left: 1.2511950%;
     margin-top: 10px;
 }
-.filter-product a.concessionarias-e-ferrovias {
+.filter-product a.concessionarias-e-ferrovias, .filter-product a.concessionrias-e-ferrovias {
     background: url(../image/seg-concessionarias.png);
     width: 32.49686323713927%;
     height: 259px;
@@ -556,7 +556,7 @@ h2.title-marca {
     font-size: 2.0em;
     margin-bottom: 20px;
 }
-.marcas a.ansell {
+.marca a.ansell {
     background: url(../image/marca-ansell.png);
     width: 24.9038461538%;
     height: 110px;
@@ -564,7 +564,7 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
-.marcas a.bw {
+.marca a.bw {
     background: url(../image/marca-bw.png);
     width: 24.9038461538%;
     height: 110px;
@@ -572,7 +572,7 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
-.marcas a.hercules {
+.marca a.hercules,.marca a.hrcules {
     background: url(../image/marca-hercules.png);
     width: 24.9038461538%;
     height: 110px;
@@ -580,14 +580,14 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
-.marcas a.kwik-draw {
+.marca a.kwik-draw {
     background: url(../image/marca-kwik-draw.png);
     width: 24.9038461538%;
     height: 110px;
     text-indent: -9999px;
     float: left;
 }
-.marcas a.msa {
+.marca a.msa {
     background: url(../image/marca-msa.png);
     width: 24.9038461538%;
     height: 110px;
@@ -596,7 +596,7 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
-.marcas a.ns {
+.marca a.ns {
     background: url(../image/marca-ns.png);
     width: 24.9038461538%;
     height: 110px;
@@ -605,7 +605,7 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
-.marcas a.pelican {
+.marca a.pelican {
     background: url(../image/marca-pelican.png);
     width: 24.9038461538%;
     height: 110px;
@@ -614,7 +614,7 @@ h2.title-marca {
     text-indent: -9999px;
     float: left;
 }
-.marcas a.stoko {
+.marca a.stoko {
     background: url(../image/marca-stoko.png);
     width: 24.9038461538%;
     height: 110px;
