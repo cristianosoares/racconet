@@ -89,7 +89,7 @@ class ControllerCommonHome extends Controller {
 
         $data['filter_groups'] = array();
 
-        $data['filter_groups'] = $this->model_catalog_category->getAllCategoryFilters();
+        $data['filter_groups'] = $this->model_catalog_category->getAllCategoryFilters(2);
 
 
         if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {

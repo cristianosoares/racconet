@@ -954,3 +954,11 @@
 2015-03-18 21:48:41 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-18 21:48:44 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-18 21:49:53 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 14:52:58 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 14:55:54 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 14:56:49 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 14:57:26 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 14:59:22 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 15:00:22 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 15:14:23 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 16:33:35 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25

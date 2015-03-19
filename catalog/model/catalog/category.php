@@ -12,9 +12,9 @@ class ModelCatalogCategory extends Model {
 		return $query->rows;
 	}
         
-        public function getAllCategoryFilters() {
+        public function getAllCategoryFilters($filtergroup) {
 
-		$query = $this->db->query("SELECT DISTINCT filter_id, name FROM " . DB_PREFIX . "filter_description WHERE language_id = 2");
+		$query = $this->db->query("SELECT DISTINCT filter_id, name FROM " . DB_PREFIX . "filter_description WHERE language_id = 2 AND filter_group_id ='" . (int)$filtergroup . "'");
 
 		return $query->rows;
 	}
