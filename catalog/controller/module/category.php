@@ -28,6 +28,18 @@ class ControllerModuleCategory extends Controller {
 		$this->load->model('catalog/product');
 
 		$data['categories'] = array();
+		
+		if (isset($this->request->get['route'])) { 
+			if ($this->request->get['route'] !='common/home'){
+				$classes = '';
+			}
+			else{
+				$classes = 'col-md-3 col-sm-4 col-xs-6';
+			}
+		  } else {
+				$classes = 'col-md-3 col-sm-4 col-xs-6';
+		  }
+		$data['class'] = $classes;
 
 		$categories = $this->model_catalog_category->getCategories(0);
 

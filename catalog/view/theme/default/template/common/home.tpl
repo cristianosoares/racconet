@@ -137,7 +137,9 @@
         
         <div class="row">
         	<div class="col-md-12">
-            	<?php echo $column_right; ?>
+            
+            	<?php 
+                echo $column_right; ?>
             </div>
         </div>
 </div><!--container-->
