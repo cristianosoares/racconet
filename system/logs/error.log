@@ -962,3 +962,4 @@
 2015-03-19 15:00:22 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-19 15:14:23 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-19 16:33:35 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-19 16:51:14 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 25
