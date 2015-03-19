@@ -1,36 +1,50 @@
-<footer>
-  <div class="bg-footer">
-      <div class="container">
-          <div class="info-contato">
-              <div class="fone-footer">
-                <div class="ico-telefone-footer"></div>
-                <div class="text-telefone-footer">
-                    31 3029.1477<br>
-                    <span>De segunda à sexta de 8h às 18h</span>
-                </div>
-              </div>
-              <div class="mail-footer">
-                <div class="ico-email-footer"></div>
-                <div class="text-email-footer">
-                    contato@racconet.com.br
-                </div>
-              </div>
-              <div class="local-footer">
-                <div class="ico-localizacao-footer"></div>
-                <div class="text-localizacao-footer">
-                    Belo Horizonte / MG <br>
-                    <span>Av. Altamiro Avelino Soares, 100, Castelo, 31330-000</span>
-                </div>
-              </div>     
-          </div>  
-        <div class="container-footer">
-            <div class="logo-footer"></div>
-            <div class="text-logo">Racco Equipamentos e Serviços Ltda.<br> &COPY; 2015</div>
-        </div>
-      </div>    
-  </div>  
+<footer class="bg-footer container-fluid">
   <div class="container">
-    <div class="row">
+          <div class="row">
+          	<div class="col-md-4 col-sm-5 col-xs-12">
+                <div class="row">
+                    <div class="fone-footer col-md-12 col-sm-12 col-xs-12">
+                    	<div class="row">
+                            <div class="ico-telefone-footer col-md-2 col-sm-2 col-xs-3"></div>
+                            <div class="text-telefone-footer col-md-9 col-xs-9">
+                                31 3029.1477<br>
+                                <span>De segunda à sexta de 8h às 18h</span>
+                            </div><!--text-telefone-footer-->
+                        </div>
+                    </div><!--fone-footer-->
+                                        
+                    <div class="mail-footer col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="ico-email-footer col-md-2 col-sm-2 col-xs-3"></div>
+                            <div class="text-email-footer col-md-9 col-xs-9">
+                                contato@racconet.com.br
+                                </div><!--text-email-footer-->
+                        </div>
+                    </div><!--mail-footer-->
+                    
+                    <div class="local-footer col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="ico-localizacao-footer col-md-2 col-sm-2 col-xs-3"></div>
+                            <div class="text-localizacao-footer col-md-10 col-sm-9 col-xs-9">
+                                Belo Horizonte / MG <br>
+                                <span>Av. Altamiro Avelino Soares, 100, Castelo, 31330-000</span>
+                            </div><!--text-localizacao-footer-->
+                        </div>
+                    </div>  <!--local-footer-->
+                </div> 
+            </div><!-- col-md-4-->
+              
+              <div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-12">
+              	<div class="logo-footer"></div>
+            	<div class="text-logo">Racco Equipamentos e Serviços Ltda.<br> &COPY; 2015</div>
+              </div> 
+             
+          </div> <!-- row-->        
+  </div>  <!--bg-footer-->
+  <div class="clearfix"></div>
+</footer>
+<div class="container">
+	   <div class="row">
       <?php if ($informations) { ?>
       <div class="col-sm-3">
         <h5><?php echo $text_information; ?></h5>
@@ -41,6 +55,7 @@
         </ul>
       </div>
       <?php } ?>
+      
       <div class="col-sm-3">
         <h5><?php echo $text_service; ?></h5>
         <ul class="list-unstyled">
@@ -49,6 +64,7 @@
           <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
         </ul>
       </div>
+      
       <div class="col-sm-3">
         <h5><?php echo $text_extra; ?></h5>
         <ul class="list-unstyled">
@@ -58,6 +74,7 @@
           <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
         </ul>
       </div>
+      
       <div class="col-sm-3">
         <h5><?php echo $text_account; ?></h5>
         <ul class="list-unstyled">
@@ -70,9 +87,7 @@
     </div>
     <hr>
     <p><?php echo $powered; ?></p> 
-  </div>
-</footer>
-
+</div><!--container-->
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com

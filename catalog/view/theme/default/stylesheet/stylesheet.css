@@ -678,8 +678,10 @@ footer {
 }
 .bg-footer {
     background: url(../image/bg-footer.png);
-    width: 100%;
-    height: 269px;
+ /*   width: 100%;
+    height: 269px;*/
+	padding-bottom:20px;
+	padding-top:20px;
 }
 .container-footer {
     width: 30%;
@@ -699,11 +701,14 @@ footer {
     width: 84px;
     margin: 0px auto;
     background-repeat: no-repeat;
+	background-repeat: no-repeat;
+    background-position: center center !important;
+    background-size: contain !important;
 }
 .info-contato {
-    position: absolute;
+/*    position: absolute;
     top: 40px;
-    width: 23.26923076%;
+    width: 23.26923076%;*/
 }
 footer hr {
 	border-top: none;
@@ -722,37 +727,34 @@ footer h5 {
 	color: #fff;
 }
 .fone-footer,.mail-footer,.local-footer {
-    float: left;
+ /*   float: left;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 10px;*/
 }
-.fone-footer{margin-top: 0px}
+.fone-footer{/*margin-top: 0px*/}
+.ico-telefone-footer, .ico-email-footer,.ico-localizacao-footer{
+	/*width: 21.487603%;
+	margin-right: 2%;*/
+	height: 52px;
+	background-repeat:no-repeat !important;
+	background-position:left top !important;
+	background-size:contain !important;
+}
 .ico-telefone-footer {
     background: url(../image/ico-fale-conosco.png);
-    height: 52px;
-    width: 21.487603%;
-    float: left;
-    margin-right: 2%;
 }
 .ico-email-footer {
     background: url(../image/ico-contato.png);
-    height: 52px;
-    width: 21.487603%;
-    float: left;
-    margin-right: 2%;
 }
 .ico-localizacao-footer{
     background: url(../image/ico-localizacao.png);
-    height: 52px;
-    width: 21.487603%;
-    float: left;
-    margin-right: 2%;
 }
-.text-telefone-footer,.text-email-footer {
+.text-telefone-footer,.text-email-footer,text-localizacao-footer{
     height: 52px;
     vertical-align: middle;
     display: table-cell;
     color: #fff;
+	margin-top:5px;
 }
 .text-telefone-footer{
     font-size: 2.0em;
