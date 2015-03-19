@@ -23,8 +23,8 @@ define('DIR_CATALOG', 'C:\wamp\www\new-racconet\upload/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'racconet');
+define('DB_HOSTNAME', '179.188.16.12');
+define('DB_USERNAME', 'racconet14');
 define('DB_PASSWORD', 'made4u');
-define('DB_DATABASE', 'racconet');
+define('DB_DATABASE', 'racconet14');
 define('DB_PREFIX', 'oc_');

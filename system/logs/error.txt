@@ -1,0 +1,16 @@
+2015-03-18 13:40:14 - PHP Notice:  Error: Table 'racconet14.oc_event' doesn't exist<br />Error No: 1146<br />SELECT * FROM oc_event in C:\wamp\www\new-racconet\upload\system\library\db\mysqli.php on line 40
+2015-03-18 13:40:14 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\index.php on line 238
+2015-03-18 13:40:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\index.php on line 238
+2015-03-18 13:40:15 - PHP Notice:  Error: Table 'racconet14.oc_layout_module' doesn't exist<br />Error No: 1146<br />SELECT * FROM oc_layout_module WHERE layout_id = '1' AND position = 'column_left' ORDER BY sort_order in C:\wamp\www\new-racconet\upload\system\library\db\mysqli.php on line 40
+2015-03-18 13:40:15 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\catalog\model\design\layout.php on line 16
+2015-03-18 13:40:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\controller\common\column_left.php on line 48
+2015-03-18 13:40:15 - PHP Notice:  Error: Table 'racconet14.oc_layout_module' doesn't exist<br />Error No: 1146<br />SELECT * FROM oc_layout_module WHERE layout_id = '1' AND position = 'column_right' ORDER BY sort_order in C:\wamp\www\new-racconet\upload\system\library\db\mysqli.php on line 40
+2015-03-18 13:40:15 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\catalog\model\design\layout.php on line 16
+2015-03-18 13:40:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\controller\common\column_right.php on line 46
+2015-03-18 13:40:15 - PHP Notice:  Error: Table 'racconet14.oc_layout_module' doesn't exist<br />Error No: 1146<br />SELECT * FROM oc_layout_module WHERE layout_id = '1' AND position = 'content_top' ORDER BY sort_order in C:\wamp\www\new-racconet\upload\system\library\db\mysqli.php on line 40
+2015-03-18 13:40:15 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\catalog\model\design\layout.php on line 16
+2015-03-18 13:40:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\controller\common\content_top.php on line 46
+2015-03-18 13:40:15 - PHP Notice:  Error: Table 'racconet14.oc_layout_module' doesn't exist<br />Error No: 1146<br />SELECT * FROM oc_layout_module WHERE layout_id = '1' AND position = 'content_bottom' ORDER BY sort_order in C:\wamp\www\new-racconet\upload\system\library\db\mysqli.php on line 40
+2015-03-18 13:40:15 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\catalog\model\design\layout.php on line 16
+2015-03-18 13:40:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\controller\common\content_bottom.php on line 46
+2015-03-18 13:40:16 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 18
