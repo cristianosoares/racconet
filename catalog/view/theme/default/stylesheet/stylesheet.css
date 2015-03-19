@@ -87,9 +87,8 @@ div.required .control-label:before {
     height: auto;
     min-height: 425px;
 }
-.bg-top-nav.pg-interno {
-    min-height: 255px !important;
-    margin-bottom: 45px;
+.pg-interno {
+    min-height: 0;
 }
 #top {
 	padding: 4px 0px 3px 0;
@@ -147,6 +146,7 @@ div.required .control-label:before {
     /*display: table;*/
 }
 .search-prod.row  .col-xs-12{  margin-bottom: 25px;}
+.pg-interno .search-prod.row  .col-xs-12{margin-bottom:0 !important}
 
 .col-searchProd {
    /* padding: 0px;
@@ -1366,6 +1366,7 @@ hr.seta{
 	}
 	/*header */
 	.search-prod{  margin-bottom: 147px;}
+	.pg-interno .search-prod{margin-bottom:0}
 	
 }
 @media screen and (max-width: 768px) {
@@ -1383,6 +1384,7 @@ hr.seta{
 	
    /* header */
    header{margin-bottom:178px}
+   .pg-interno header{margin-bottom:10px}
    
    /* home */
    .busca-segmento{

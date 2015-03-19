@@ -11,40 +11,44 @@
 <title><?php echo $title; ?></title>
 <base href="<?php echo $base; ?>" />
 <?php if ($description) { ?>
-<meta name="description" content="<?php echo $description; ?>" />
+<meta name="description" content="<?php echo $description; ?>" >
 <?php } ?>
 <?php if ($keywords) { ?>
-<meta name="keywords" content= "<?php echo $keywords; ?>" />
+<meta name="keywords" content= "<?php echo $keywords; ?>">
 <?php } ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <?php if ($icon) { ?>
-<link href="<?php echo $icon; ?>" rel="icon" />
+<link href="<?php echo $icon; ?>" rel="icon">
 <?php } ?>
 <?php foreach ($links as $link) { ?>
-<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
+<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>">
 <?php } ?>
-<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
-<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" >
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" >
 <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
-<link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
+<link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" >
 <?php } ?>
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+
 <?php foreach ($scripts as $script) { ?>
 <script src="<?php echo $script; ?>" type="text/javascript"></script>
 <?php } ?>
+
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $class; ?>">
-<div class="bg-top-nav pg-interno">    
-    <nav id="top">
-      <div class="container">
-        <?php echo $currency; ?>
-        <?php echo $language; ?>
-        <div id="top-links" class="nav pull-right">
+
+<div class="container-fluid bg-top-nav pg-interno">
+	<nav class="container">
+    	<div class="row">
+        	<?php echo $currency; ?>
+        	<?php echo $language; ?>
+            
+           <div id="top-links" class="nav pull-right">
           <ul class="list-inline">
             <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
             <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
@@ -65,65 +69,66 @@
             <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
             <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
           </ul>
-        </div>
-      </div>
+        </div><!--top-links-->
+        </div><!--row-->
     </nav>
-    <div class="container">
-        <div class="bg-top-header">
-        <header>
-          <div class="container">
-            <div class="row-top">
-              <div class="col-sm-4">
-                <div id="logo">
+    
+    <header class="container">
+    	<div class="row bg-top-header">
+        	<div class="col-md-3 col-xs-6">
+            	<div id="logo">
                   <?php if ($logo) { ?>
-                  <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+                  <a href="<?php echo $home; ?>">
+                  	<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" ></a>
                   <?php } else { ?>
                   <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
                   <?php } ?>
+                </div><!--logo-->
+            </div><!--col-md-3-->
+            
+            <div class="col-md-9">
+                <div class="col-card col-md-3 col-md-offset-9">
+                    <?php echo $cart; ?>
                 </div>
-              </div>
-                <div class="col-sm-menu">
-                    <div class="col-card">
-                        <div class="col-sm-3">
-                            <?php echo $cart; ?>
-                        </div>
-                    </div>  
-                    <div class="col-menu">
-                        <nav role="navigation" class="navbar navbar-default navbar-top">
-
-                            <div class="navbar-header">
-                                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">                    
-                                    <span class="sr-only">Menu</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>                
-                                </button>                             
-                            </div>
-
-                            <div id="navbarCollapse" class="collapse navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#"><?php echo $text_navProdutos; ?></a></li>
-                                    <li><a href="#"><?php echo $text_navServicos; ?></a></li>
-                                    <li><a href="#"><?php echo $text_navInfoseg; ?></a></li>
-                                    <li><a href="#"><?php echo $text_navContato; ?></a></li>
-                                    <li><a href="#"><?php echo $text_navQuemSomos; ?></a></li>
-                                    <li><a href="#"><?php echo $text_navTrabalhe; ?></a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>    
-                </div>    
-            </div>
-          </div>
-        </header>
-        </div>
-        <div class="search-prod">
-            <div class="col-sm-5 col-searchProd"><?php echo $search; ?></div>
-            <div class="col-faleconosco">
-                <div class="ico-faleconoscoTop"></div>
+                <div class="row">
+                    <nav role="navigation" class="navbar navbar-default navbar-top col-md-12">
+                        <div class="navbar-header col-xs-12">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle pull-left">
+                                <span class="sr-only">Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>  
+                                              
+                            </button>                             
+                        </div><!--navbar-header-->
+        
+                        <div id="navbarCollapse" class="collapse navbar-collapse pull-right col-xs-12">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><?php echo $text_navProdutos; ?></a></li>
+                                <li><a href="#"><?php echo $text_navServicos; ?></a></li>
+                                <li><a href="#"><?php echo $text_navInfoseg; ?></a></li>
+                                <li><a href="#"><?php echo $text_navContato; ?></a></li>
+                                <li><a href="#"><?php echo $text_navQuemSomos; ?></a></li>
+                                <li><a href="#"><?php echo $text_navTrabalhe; ?></a></li>
+                            </ul>
+                        </div><!--navbarCollapse-->
+                    </nav>
+                </div><!--row-->
+            </div><!--col-md-9-->
+        </div><!--row bg-top-header-->
+        
+         <div class="search-prod row">
+            <div class="col-md-5 col-searchProd col-xs-6"><?php echo $search; ?></div>
+            
+            <div class="col-md-3 col-xs-6"><!--Busque por c.a--></div>
+            
+            <div class="col-md-4 col-xs-12">
+                <div><div class="ico-faleconoscoTop"></div>
                 <div class="tel-contato">31 3029.1477</div>
-                <div class="text-funcionamento"><?php echo $text_funcionamento; ?></div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="text-funcionamento"><?php echo $text_funcionamento; ?></div></div>
+            </div><!--col-md-4 col-xs-12-->
+        </div><!--search-prod-->
+    </header><!--container-->
+</div><!--container-fluid-->
+
+<div class="clearfix"></div>
