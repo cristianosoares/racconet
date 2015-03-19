@@ -1,6 +1,6 @@
 <div class="list-group">
   <?php foreach ($categories as $category) { 
-      $v = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $category['category'] ));
+      $v = preg_replace( '/[`^~?\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $category['category'] ));
       $categoria = strtolower(str_replace(' ','-', $v));
   ?>
   <?php if ($category['category_id'] == $category_id) { ?>
