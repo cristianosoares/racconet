@@ -48,7 +48,7 @@
                 <div class="busca-segmento"></div>    
                 <?php if ($filter_groups) { ?>
                     <?php foreach ($filter_groups as $filter_group) { 
-                    $f = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $filter_group['name'] ));
+                    $f = preg_replace( '/[`^~?\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $filter_group['name'] ));
                     $filterProd = strtolower(str_replace(' ','-', $f));
                     ?>
                             <a href="<?php echo $filter_group['filter_id']; ?>" class="<?php echo $filterProd; ?>"><?php echo $filter_group['name']; ?></a>
@@ -58,13 +58,13 @@
         </div>    
         <?php echo $content_bottom; ?>
         <!-- Filtro de Marcas -->
-        <div class="marcas">
+        <div class="marca">
             <h2 class="title-marca"><?php echo $text_marca; ?></h2>
             <?php foreach ($categorias as $marca) { ?>
               <?php if ($marca['manufacturer']) { ?>
               <?php foreach (array_chunk($marca['manufacturer'], 4) as $manufacturers) { ?>
                 <?php foreach ($manufacturers as $manufacturer) { 
-                $m = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $manufacturer['name'] ));
+                $m = preg_replace( '/[`^~?\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $manufacturer['name'] ));
                 $marcas = strtolower(str_replace(' ','-', $m));
                 ?>
                 <a href="<?php echo $manufacturer['href']; ?>" class="<?php echo $marcas; ?>"><?php echo $manufacturer['name']; ?></a>
