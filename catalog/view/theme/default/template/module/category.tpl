@@ -15,7 +15,7 @@
   <?php } ?>
   <?php } ?>
   <?php } else { ?>
-  <a href="<?php echo $category['href']; ?>" class="col-md-3 col-sm-4 col-xs-6 <?php echo $categoria; ?> list-group-item"><span><?php echo $category['name']; ?></span></a>
+  <a href="<?php echo $category['href']; ?>" class=" <?php echo $categoria; ?> list-group-item"><span><?php echo $category['name']; ?></span></a>
   <?php } ?>
   <?php } ?>
 </div>

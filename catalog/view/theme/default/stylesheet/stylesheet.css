@@ -299,9 +299,9 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 	display: none !important;
 }
 /* Menu Home Lateral */
-.menu-bar-home {
+.menu-bar-home, #column-left {
    /* width: 19%;*/
-    float: left;
+   /* float: left*/;
     border-top: 1px solid #000;
     padding-top: 10px;
 }
@@ -666,8 +666,9 @@ a.list-group-item.sub-item:before {
 }
 /* Filter Departamento Paginas Internas */
 column#column-left {
-    float: left !important;
-    margin-right: 0px !important;
+/*    float: left !important;
+    margin-right: 0px !important;*/
+	margin-top: 36px;
 }
 
 /* footer */
@@ -1328,7 +1329,7 @@ hr.seta{
 	/* INFO SEG */
 	#info-seg #cadastro-email form{  margin-bottom: 5%;}
 	/*header */
-	.search-prod{  margin-bottom: 0 !important;}
+	/*.search-prod{  margin-bottom: 0 !important;}*/
 }
 @media (max-width:991px){
 	.filter-product a{
