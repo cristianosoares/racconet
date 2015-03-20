@@ -45,10 +45,13 @@
 <div class="container-fluid bg-top-nav pg-interno">
 	<nav class="container">
     	<div class="row">
+          <div class="col-top-midias col-md-2">
         	<?php echo $currency; ?>
         	<?php echo $language; ?>
-            
-           <div id="top-links" class="nav pull-right">
+                <div class="facebook"></div>
+                <div class="blog"></div>
+          </div>
+          <!-- <div id="top-links" class="nav pull-right">
           <ul class="list-inline">
             <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
             <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
@@ -69,7 +72,9 @@
             <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
             <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
           </ul>
-        </div><!--top-links-->
+        </div>-->
+          
+          <!--top-links-->
         </div><!--row-->
     </nav>
     
@@ -105,10 +110,11 @@
                         <div id="navbarCollapse" class="collapse navbar-collapse pull-right col-xs-12">
                             <ul class="nav navbar-nav">
                                 <li><a href="#"><?php echo $text_navProdutos; ?></a></li>
-                                <li><a href="#"><?php echo $text_navServicos; ?></a></li>
+                                <?php foreach ($informations as $information) { ?>
+                                    <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+                                <?php } ?>
                                 <li><a href="#"><?php echo $text_navInfoseg; ?></a></li>
-                                <li><a href="#"><?php echo $text_navContato; ?></a></li>
-                                <li><a href="#"><?php echo $text_navQuemSomos; ?></a></li>
+                                <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
                                 <li><a href="#"><?php echo $text_navTrabalhe; ?></a></li>
                             </ul>
                         </div><!--navbarCollapse-->

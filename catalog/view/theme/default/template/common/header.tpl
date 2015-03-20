@@ -109,10 +109,11 @@
                         <div id="navbarCollapse" class="collapse navbar-collapse pull-right col-xs-12">
                             <ul class="nav navbar-nav">
                                 <li><a href="#"><?php echo $text_navProdutos; ?></a></li>
-                                <li><a href="#"><?php echo $text_navServicos; ?></a></li>
+                                <?php foreach ($informations as $information) { ?>
+                                    <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+                                <?php } ?>
                                 <li><a href="#"><?php echo $text_navInfoseg; ?></a></li>
-                                <li><a href="#"><?php echo $text_navContato; ?></a></li>
-                                <li><a href="#"><?php echo $text_navQuemSomos; ?></a></li>
+                                <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
                                 <li><a href="#"><?php echo $text_navTrabalhe; ?></a></li>
                             </ul>
                         </div><!--navbarCollapse-->

@@ -19,6 +19,8 @@ class ControllerCommonHeader extends Controller {
 		$data['direction'] = $this->language->get('direction');
 		$data['google_analytics'] = html_entity_decode($this->config->get('config_google_analytics'), ENT_QUOTES, 'UTF-8');
 		$data['name'] = $this->config->get('config_name');
+                
+                $data['contact'] = $this->url->link('information/contact');
 
 		if (is_file(DIR_IMAGE . $this->config->get('config_icon'))) {
 			$data['icon'] = $server . 'image/' . $this->config->get('config_icon');
@@ -84,6 +86,15 @@ class ControllerCommonHeader extends Controller {
 					break;
 				}
 			}
+		}
+                
+                $data['informations'] = array();
+
+		foreach ($this->model_catalog_information->getInformations() as $result) {
+				$data['informations'][] = array(
+					'title' => $result['title'],
+					'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+				);
 		}
 
 		$data['language'] = $this->load->controller('common/language');

@@ -1053,3 +1053,4 @@
 2015-03-19 19:55:44 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-19 20:04:16 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-19 20:04:31 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
+2015-03-20 13:33:08 - PHP Notice:  Undefined offset: 0 in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\footer.tpl on line 53
