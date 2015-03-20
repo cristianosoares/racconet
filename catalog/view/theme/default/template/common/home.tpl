@@ -125,6 +125,8 @@
                 <h2 class="title-ass">
                     <span>Acompanhe</span> a Racco
                 </h2>
+                <?php 
+                echo $column_right; ?>
             </div><!--col-md-4-->
             
             <div class="col-md-3 col-sm-12  col-xs-12">
@@ -134,13 +136,5 @@
                 <div class="junte-se-nos"></div>
             </div><!--col-md-3-->
         </div> <!--assinaturas-->
-        
-        <div class="row">
-        	<div class="col-md-12">
-            
-            	<?php 
-                echo $column_right; ?>
-            </div>
-        </div>
 </div><!--container-->
 <?php echo $footer; ?>
