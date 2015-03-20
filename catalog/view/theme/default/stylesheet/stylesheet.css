@@ -546,7 +546,8 @@ h2.title-marca {
 }
 /* Assinaturas footer */
 .assinaturas {
-    margin: 30px 0px;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 .assinaturas .col-lg-4,.assinaturas .col-lg-3 {
     padding: 0px !important;
@@ -568,17 +569,15 @@ h2.title-ass span {
 }
 .col1-ass {
     background: url(../image/revista-infoseg-home.png);
-    width: 117px;
     height: 205px;
     float: left;
-    margin-right: 15px;
 }
 .logo-infoseg {
     background: url(../image/title-infoseg.png);
     width: 155px;
     height: 46px;
 }
-.logo-infoseg, .col1-ass, .junte-se-nos{
+.logo-infoseg, .col1-ass{
 	background-repeat: no-repeat !important;
 	background-position: left center !important;
 	background-size: contain !important;
@@ -613,6 +612,9 @@ h2.title-ass span {
 .junte-se-nos {
     background: url(../image/seja-representante.png);
     height: 175px;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
 }
 
 .assinaturas #column-right{
@@ -770,36 +772,28 @@ footer h5 {
 /* breadcrumb */
 .breadcrumb {
 	margin: 0 0 20px 0;
-	padding: 8px 0;
-	border: 1px solid #ddd;
+  padding: 8px 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  background: none;
 }
 .breadcrumb i {
 	font-size: 15px;
 }
 .breadcrumb > li {
 	text-shadow: 0 1px 0 #FFF;
-	padding: 0 20px;
 	position: relative;
 	white-space: nowrap;
+}
+.breadcrumb li:last-child a{
+	color:#f57b20 ;
+}
+.breadcrumb li:last-child span{
+	display:none;
 }
 .breadcrumb > li + li:before {
 	content: '';
 	padding: 0;
-}
-.breadcrumb > li:after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: -3px;
-	right: -5px;
-	width: 26px;
-	height: 26px;
-	border-right: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
 }
 .pagination {
 	margin: 0;
@@ -942,7 +936,6 @@ footer h5 {
 }
 /* product list */
 .product-thumb {
-	border: 1px solid #ddd;
 	margin-bottom: 20px;
 	overflow: auto;
 }
@@ -968,7 +961,7 @@ footer h5 {
 }
 .product-thumb .caption {
 	padding: 0 20px;
-	min-height: 180px;
+	/*min-height: 180px;*/
 }
 .product-list .product-thumb .caption {
 	margin-left: 230px;
@@ -1140,7 +1133,7 @@ input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
 
 /* INFORMACOES TECNICAS */
 hr.seta{
-	background: url(../../../../../modelos/images/seta-down-bg.png) no-repeat !important;
+	background: url(../image/seta-down-bg.png) no-repeat !important;
 	background-position: center center !important;
 	height: 11px !important;
 	opacity: 0.6 !important;
@@ -1237,7 +1230,7 @@ hr.seta{
 
 /* INFO SEG */
 	#info-seg{
-		background:url(../../../../../modelos/images/info-seg-bg.png) no-repeat top left;
+		background:url(../image/info-seg-bg.png) no-repeat top left;
 	}
 	#info-seg #header{
 		  margin-bottom: 50px;
@@ -1279,11 +1272,11 @@ hr.seta{
 		width: 5%;
 	}
 	#myCarousel .carousel-control.left {
-		background:url(../../../../../modelos/images/slide-seta-esquerda.png) no-repeat left center;
+		background:url(../image/slide-seta-esquerda.png) no-repeat left center;
 		left: 0;
 	}
 	#myCarousel .carousel-control.right {
-		background:url(../../../../../modelos/images/slide-seta-direita.png) no-repeat right center;
+		background:url(../image/slide-seta-direita.png) no-repeat right center;
 		right: 0;
 	}
 
@@ -1356,6 +1349,8 @@ hr.seta{
 	.search-prod{  margin-bottom: 147px;}
 	.pg-interno .search-prod{margin-bottom:0}
 	
+	#banner{padding:0}
+	
 }
 @media screen and (max-width: 768px) {
     .cotacao {
@@ -1419,12 +1414,15 @@ hr.seta{
 		width: 33.33%;
 	}
 	.product-list .product-thumb .caption {
-	min-height: 0;
-	margin-left: 0;
-	padding: 0 10px;
+		min-height: 0;
+		margin-left: 0;
+		padding: 0 10px;
 	}
 	.product-grid .product-thumb .caption {
 		min-height: 0;
+	}
+	.col1-ass{
+	  background-position: right center !important;
 	}
 
 }

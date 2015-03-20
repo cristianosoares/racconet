@@ -2,7 +2,7 @@
 <div id="content" class="container">
 	<!--BANNER-->
 	<div class="row">
-        <div class="col-md-12">
+        <div id="banner" class="col-md-12">
             <?php echo $content_top; ?>
         </div>
     </div>
@@ -106,12 +106,12 @@
         
          <!-- Area de Assinaturas -->
         <div class="assinaturas row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-5 col-sm-6 col-xs-12">
                 <h2 class="title-ass">
                     <span>Assine</span> a Infoseg
                 </h2>
-                <div class="col1-ass col-md-6 col-sm-6 col-xs-6"></div>
-                <div class=" col-md-6 col-sm-6 col-xs-6">
+                <div class="col1-ass col-md-4 col-sm-6 col-xs-6"></div>
+                <div class=" col-md-8 col-sm-6 col-xs-6">
                     <div class="logo-infoseg"></div>
                     <div class="text-infoseg">
                         É o primeiro informativo eletrônico voltado para os profissionais da área de segurança no trabalho.
@@ -119,9 +119,9 @@
                     <div class="btn-infoseg">Cadastre-se Já</div>
                     <div class="ass-free">*Cadastro Gratuito</div>
                 </div><!--col2-ass-->
-            </div><!--col-md-4-->
+            </div><!--col-md-5-->
             
-            <div class="col-md-4 col-sm-6  col-xs-12" style="height: 319px;">
+            <div class="col-md-4 col-sm-6  col-xs-12">
                 <h2 class="title-ass">
                     <span>Acompanhe</span> a Racco
                 </h2>
