@@ -574,7 +574,7 @@ h2.title-ass span {
 }
 .logo-infoseg {
     background: url(../image/title-infoseg.png);
-    width: 170px;
+    width: 155px;
     height: 46px;
 }
 .logo-infoseg, .col1-ass, .junte-se-nos{
@@ -612,6 +612,34 @@ h2.title-ass span {
 .junte-se-nos {
     background: url(../image/seja-representante.png);
     height: 175px;
+}
+
+.assinaturas #column-right{
+	background:#A1A1A1;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+.assinaturas #column-right span,.assinaturas #column-right h3{
+	color:rgba(255,255,255,1.00);
+}
+.assinaturas #column-right h3{
+	margin-top:0
+}
+.assinaturas #column-right span{
+	font-size:13px;
+}
+#subscribe input{
+	width:85%;
+}
+#subscribe a{
+	display:inline-block;
+}
+.assinaturas #column-right #subscribe span{
+	display: inline-block;
+  position: relative;
+  top: 8px;
+  font-size: 24px;
+  width: 101%;
 }
 /* Paginas Internas */
 /* Menu Esquerdo das paginas Internas */
