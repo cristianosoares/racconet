@@ -455,6 +455,7 @@ nav.navbar-top {
 .content_bottom a span{
 	position: relative;
 	top: 106px;
+        font-size: 13px;
 }
 .content_bottom a.lanternas {
     background: url(../image/dep-lanternas.png) ;
@@ -956,6 +957,7 @@ footer h5 {
 	background: transparent;
 }
 .list-group a:hover{ color: #f57b20 !important;}
+.content_bottom .list-group a:hover {color: #000 !important;}
 /* carousel */
 .carousel-caption {
 	color: #FFFFFF;
