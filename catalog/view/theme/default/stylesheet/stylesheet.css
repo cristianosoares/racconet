@@ -87,6 +87,23 @@ div.required .control-label:before {
     height: auto;
     min-height: 425px;
 }
+.facebook {
+    width: 20px;
+    background: url(../image/facebook.png) no-repeat;
+    height: 20px;
+    float: left;
+    margin: 0 5px;
+}
+.blog {
+    width: 20px;
+    background: url(../image/blog.png) no-repeat;
+    height: 20px;
+    float: left;
+}
+.col-top-midias {
+    float: right;
+    padding: 5px 0px;
+}
 .pg-interno {
     min-height: 0;
 }
