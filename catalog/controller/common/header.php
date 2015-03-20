@@ -115,6 +115,7 @@ class ControllerCommonHeader extends Controller {
                             }
                         }
                         else{
+							$classes = 'col-md-3 col-sm-4 col-xs-6';
                             if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
                                 return $this->load->view($this->config->get('config_template') . '/template/common/header.tpl', $data);
                             } else {
