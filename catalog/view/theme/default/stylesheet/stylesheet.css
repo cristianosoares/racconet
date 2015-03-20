@@ -136,35 +136,23 @@ div.required .control-label:before {
     background: rgb(0, 0, 0);
     padding: 15px 0px;
 }
-#logo {
-	/*margin: 0 0 10px 0;*/
-}
 /* search */
 .search-prod {
-   /* width: 100%;*/
     padding: 20px 0px;
-    /*display: table;*/
 }
 .search-prod.row  .col-xs-12{  margin-bottom: 25px;}
 .pg-interno .search-prod.row  .col-xs-12{margin-bottom:0 !important}
 
 .col-searchProd {
-   /* padding: 0px;
-    width: 42.5%;*/
 	margin-bottom:25px
 }
 .title-searchProd {
-    /*width: 45%;*/
     float: left;
     font-family: Arial;
     font-style: italic;
     font-size: 1.3em;
     color: #000;
     text-transform: uppercase;
-}
-#search {
-/*	margin-bottom: 10px;
-        width: 55%;*/
 }
 #search .input-lg {
         line-height: 15px;
@@ -198,7 +186,6 @@ div.required .control-label:before {
    font: 12px verdana, arial, sans-serif;
 }
 #search .btn-lg {
-	/*font-size: 15px;*/
 	padding: 12px 10px;
         margin-top: -5px;
         margin-left: 5px;
@@ -241,9 +228,8 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
     width: 75%;
     float: left;
 }
-.col-card /*,.col-menu*/ {
-    /*width: 100%;
-    float: left;*/
+.col-card  {
+    
 	float:right;
 }
 .col-card {
@@ -300,8 +286,6 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 }
 /* Menu Home Lateral */
 .menu-bar-home, #column-left {
-   /* width: 19%;*/
-   /* float: left*/;
     border-top: 1px solid #000;
     padding-top: 10px;
 }
@@ -313,11 +297,11 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 }
 #menu .nav > li > a {
 	color: #000;
-        padding: 10px 0;
+    padding: 10px 0;
 	min-height: 15px;
 	background-color: transparent;
-        font-family: Arial;
-        font-size: 23px;
+     font-family: Arial;
+     font-size: 23px;
 }
 .menu-bar-home .dropdown-menu {
     position: relative !important;
@@ -419,19 +403,15 @@ nav.navbar-top {
 #content {
 	min-height: 600px;
 }
-/* departament home */
 .content_bottom a{
-/*	width: 24.51923076923077%;
-*/    height: 115px;
+    height: 115px;
 	background-repeat:no-repeat !important;
 	background-position:center top !important;
 	background-size:98% !important;
 	text-align:center;
 }
 .content_bottom a.list-group-item {
-/*    float: left;
-    margin-right: 0.57692307692308% !important;
-*/  margin-bottom: 35px;
+    margin-bottom: 35px;
     border: 0px !important;
     border-radius: 0 !important;
 }
@@ -465,20 +445,11 @@ nav.navbar-top {
 }
 /*filter de products */
 .filter-products {
-    /*width: 100%;
-    display: table;*/
     margin-bottom: 40px;
     border-bottom: 1px solid #000000;
-    /*padding-bottom: 20px;*/
-}
-.filter-product {
-   /* width: 78.91089108910891%; 
-    float: right;*/
 }
 .busca-segmento {
-/*    width: 66.37390213299875%;
-*/    height: 259px;
-    /*float: left;*/
+    height: 259px;
     background: url(../image/area-atuacao.png)no-repeat center top ;
 	background-size:98%;
 } 
@@ -515,10 +486,6 @@ nav.navbar-top {
     text-indent: -9999px;
 }
 /* filter marcas */
-.marcas {
-   /* width: 100%;
-    display: table;*/
-}
 h2.title-marca {
     text-transform: uppercase;
     border-bottom: 1px solid;
@@ -588,10 +555,6 @@ h2.title-ass span {
     float: left;
     margin-right: 15px;
 }
-.col2-ass {
-  /*  float: left;
-    width: 60%;*/
-}
 .logo-infoseg {
     background: url(../image/title-infoseg.png);
     width: 170px;
@@ -637,19 +600,15 @@ h2.title-ass span {
 /* Menu Esquerdo das paginas Internas */
 .list-group a {
     border: 0px !important;
-/*    padding: 10px 0px;
-*/    min-height: 15px;
+    min-height: 15px;
     color: #000 !important;
     font-family: Arial;
     font-size: 20px;
 }
 a.list-group-item.sub-item {
-    /*min-width: 160px;*/
     display: block;
-   /* padding: 0px 8px;*/
     clear: both;
     line-height: 20px;
-    /*color: #333333;*/
     font-size: 13px !important;
     font-family: Arial;
 }
@@ -666,8 +625,6 @@ a.list-group-item.sub-item:before {
 }
 /* Filter Departamento Paginas Internas */
 column#column-left {
-/*    float: left !important;
-    margin-right: 0px !important;*/
 	margin-top: 36px;
 }
 
@@ -679,8 +636,6 @@ footer {
 }
 .bg-footer {
     background: url(../image/bg-footer.png);
- /*   width: 100%;
-    height: 269px;*/
 	padding-bottom:20px;
 	padding-top:20px;
 }
@@ -706,11 +661,6 @@ footer {
     background-position: center center !important;
     background-size: contain !important;
 }
-.info-contato {
-/*    position: absolute;
-    top: 40px;
-    width: 23.26923076%;*/
-}
 footer hr {
 	border-top: none;
 	border-bottom: 1px solid #666;
@@ -727,15 +677,7 @@ footer h5 {
 	font-weight: bold;
 	color: #fff;
 }
-.fone-footer,.mail-footer,.local-footer {
- /*   float: left;
-    width: 100%;
-    margin-top: 10px;*/
-}
-.fone-footer{/*margin-top: 0px*/}
 .ico-telefone-footer, .ico-email-footer,.ico-localizacao-footer{
-	/*width: 21.487603%;
-	margin-right: 2%;*/
 	height: 52px;
 	background-repeat:no-repeat !important;
 	background-position:left top !important;
@@ -932,7 +874,6 @@ footer h5 {
 .list-group a {
 	border: 1px solid #DDDDDD;
 	color: #888888;
-	/*padding: 8px 12px;*/
 }
 .list-group a.active, .list-group a.active:hover {
 	color: #f57b20 !important;
@@ -1329,7 +1270,6 @@ hr.seta{
 	/* INFO SEG */
 	#info-seg #cadastro-email form{  margin-bottom: 5%;}
 	/*header */
-	/*.search-prod{  margin-bottom: 0 !important;}*/
 }
 @media (max-width:991px){
 	.filter-product a{
