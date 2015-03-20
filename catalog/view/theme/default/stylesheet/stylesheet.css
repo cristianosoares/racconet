@@ -546,7 +546,8 @@ h2.title-marca {
 }
 /* Assinaturas footer */
 .assinaturas {
-    margin: 30px 0px;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 .assinaturas .col-lg-4,.assinaturas .col-lg-3 {
     padding: 0px !important;
@@ -568,17 +569,15 @@ h2.title-ass span {
 }
 .col1-ass {
     background: url(../image/revista-infoseg-home.png);
-    width: 117px;
     height: 205px;
     float: left;
-    margin-right: 15px;
 }
 .logo-infoseg {
     background: url(../image/title-infoseg.png);
     width: 155px;
     height: 46px;
 }
-.logo-infoseg, .col1-ass, .junte-se-nos{
+.logo-infoseg, .col1-ass{
 	background-repeat: no-repeat !important;
 	background-position: left center !important;
 	background-size: contain !important;
@@ -613,6 +612,9 @@ h2.title-ass span {
 .junte-se-nos {
     background: url(../image/seja-representante.png);
     height: 175px;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
 }
 
 .assinaturas #column-right{
@@ -1413,12 +1415,15 @@ hr.seta{
 		width: 33.33%;
 	}
 	.product-list .product-thumb .caption {
-	min-height: 0;
-	margin-left: 0;
-	padding: 0 10px;
+		min-height: 0;
+		margin-left: 0;
+		padding: 0 10px;
 	}
 	.product-grid .product-thumb .caption {
 		min-height: 0;
+	}
+	.col1-ass{
+	  background-position: right center !important;
 	}
 
 }
