@@ -936,7 +936,6 @@ footer h5 {
 }
 /* product list */
 .product-thumb {
-	/*border: 1px solid #ddd;*/
 	margin-bottom: 20px;
 	overflow: auto;
 }
@@ -1134,7 +1133,7 @@ input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
 
 /* INFORMACOES TECNICAS */
 hr.seta{
-	background: url(../../../../../modelos/images/seta-down-bg.png) no-repeat !important;
+	background: url(../image/seta-down-bg.png) no-repeat !important;
 	background-position: center center !important;
 	height: 11px !important;
 	opacity: 0.6 !important;
@@ -1231,7 +1230,7 @@ hr.seta{
 
 /* INFO SEG */
 	#info-seg{
-		background:url(../../../../../modelos/images/info-seg-bg.png) no-repeat top left;
+		background:url(../image/info-seg-bg.png) no-repeat top left;
 	}
 	#info-seg #header{
 		  margin-bottom: 50px;
@@ -1273,11 +1272,11 @@ hr.seta{
 		width: 5%;
 	}
 	#myCarousel .carousel-control.left {
-		background:url(../../../../../modelos/images/slide-seta-esquerda.png) no-repeat left center;
+		background:url(../image/slide-seta-esquerda.png) no-repeat left center;
 		left: 0;
 	}
 	#myCarousel .carousel-control.right {
-		background:url(../../../../../modelos/images/slide-seta-direita.png) no-repeat right center;
+		background:url(../image/slide-seta-direita.png) no-repeat right center;
 		right: 0;
 	}
 
