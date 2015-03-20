@@ -2,7 +2,7 @@
 <div id="content" class="container">
 	<!--BANNER-->
 	<div class="row">
-        <div class="col-md-12">
+        <div id="banner" class="col-md-12">
             <?php echo $content_top; ?>
         </div>
     </div>

@@ -46,10 +46,13 @@
 	<nav class="container">
     	<div class="row">
             <div class="col-top-midias col-md-2">
-        	<?php echo $currency; ?>
-        	<?php echo $language; ?>
-                <div class="facebook"></div>
-                <div class="blog"></div>
+            	<div class="facebook pull-right"></div>
+                <div class="blog pull-right"></div>
+                <div class="pull-right">
+                    <?php echo $currency; ?>
+                    <?php echo $language; ?>
+                </div>
+                
             </div>
            <!--<div id="top-links" class="nav pull-right">
           <ul class="list-inline">
