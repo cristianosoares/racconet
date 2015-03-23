@@ -986,6 +986,9 @@ footer h5 {
 h2.price {
 	margin: 0;
 }
+.produto-detalhe h1{
+	border-bottom: solid thin #c7c7c7;
+}
 .product-thumb .price {
 	color: #444;
 }
@@ -1056,11 +1059,11 @@ h2.price {
 	border: 1px solid #ddd;
 }
 .image-additional {
-	max-width: 78px;
+	/*max-width: 78px;*/
 }
 .thumbnails .image-additional {
-	float: left;
-	margin-left: 20px;
+/*	float: left;
+	margin-left: 20px;*/
 }
 /* CONTATO & TRABALHE-CONOSCO */
 .contato input, .contato textarea,.fileUpload, #info-seg #cadastro-email form input{
