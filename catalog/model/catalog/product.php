@@ -398,6 +398,11 @@ class ModelCatalogProduct extends Model {
 
 		return $query->rows;
 	}
+        
+        public function getFilterProduct($product_id) {
+		$filters = $this->db->query("SELECT DISTINCT * FROM " . DB_PREFIX . "product_filter pf LEFT JOIN `" . DB_PREFIX . "filter_description` f ON (pf.filter_id = f.filter_id) WHERE pf.product_id = '" . (int)$product_id . "' AND f.language_id = '" . (int)$this->config->get('config_language_id') . "'");
+		return $filters->rows;
+	}
 
 	public function getTotalProducts($data = array()) {
 		$sql = "SELECT COUNT(DISTINCT p.product_id) AS total";
