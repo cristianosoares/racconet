@@ -97,6 +97,9 @@
           <!-- Fim do preço do produto -->
           
           <?php } ?>
+          
+          <!-- selecao de SKU -->
+          
           <div id="product">
             <?php if ($options) { ?>
             <hr>
@@ -246,6 +249,8 @@
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
           </div>
+          <!-- selecao de SKU -->
+          
           <?php if ($review_status) { ?>
           <div class="rating">
             <p>
@@ -265,6 +270,7 @@
           </div>
           <?php } ?>
         </div>
+        
         <!-- Especificação do Produto -->
         <div class="col-sm-12">
           <h2><?php echo $tab_attribute; ?></h2>
@@ -272,23 +278,20 @@
           <div class="tab-content">
             <?php if ($attribute_groups) { ?>
             <div id="tab-specification">
-              <table class="table table-bordered">
+              <div class="table table-bordered">
                 <?php foreach ($attribute_groups as $attribute_group) { ?>
-                <thead>
-                  <tr>
-                    <td colspan="2"><strong><?php echo $attribute_group['name']; ?></strong></td>
-                  </tr>
-                </thead>
-                <tbody>
+                <div class="col-lg-2">
+                    <?php echo $attribute_group['name']; ?>
+                </div>    
+                <div class="col-lg-10">
                   <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-                  <tr>
-                    <td><?php echo $attribute['name']; ?></td>
-                    <td><?php echo $attribute['text']; ?></td>
-                  </tr>
+                    
+                    <div class="col-lg-4"><?php echo $attribute['name']; ?></div>
+                    <div class="col-lg-8"><?php echo $attribute['text']; ?></div>
                   <?php } ?>
-                </tbody>
+                </div>
                 <?php } ?>
-              </table>
+              </div>
             </div>
             <?php } ?>
             <?php if ($review_status) { ?>

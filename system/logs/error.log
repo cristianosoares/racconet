@@ -1154,3 +1154,4 @@
 2015-03-19 20:04:31 - PHP Notice:  Undefined variable: text_category in C:\wamp\www\racconet\catalog\view\theme\default\template\common\home.tpl on line 25
 2015-03-20 13:33:08 - PHP Notice:  Undefined offset: 0 in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\footer.tpl on line 53
 >>>>>>> e5a076ce9aecfd0afb1a3a5a1f005ba5aff8cab9
+2015-03-23 14:17:24 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
