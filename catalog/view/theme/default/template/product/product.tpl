@@ -64,12 +64,7 @@
         <?php $class = 'col-md-6'; ?>
         <?php } ?>
         
-        <div class="<?php echo $class; ?>">
-          <div class="btn-group">
-            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
-            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
-          </div>
-          
+        <div class="<?php echo $class; ?>">          
           <h1><strong><?php echo $heading_title; ?></strong></h1>
           <div class="description-product">
               <?php echo $description; ?>
@@ -281,6 +276,14 @@
             <?php } ?>
           </div>
           <!-- selecao de SKU -->
+
+          <!-- adicionar a lista de preferencia -->
+          <div class="btn-group">
+            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');">Adicionar a lista de Cotacão</button>
+            <!--<button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>-->
+          </div>
+          
+          <!-- fim da lista de preferencia -->
           
           <?php if ($review_status) { ?>
           <div class="rating">
@@ -301,6 +304,28 @@
           </div>
           <?php } ?>
         </div>
+        
+        
+        <!-- Icones dos Atributos do Produto -->
+        <div class="carac-principais col-sm-12">
+            <ul>
+                <?php if ($data['porte']) { ?>
+                    <?php foreach ($data['porte'] as $porte) { ?>
+                    <?php $porteProd = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $porte['name']));
+                        $tipPorte = strtolower(str_replace(' ','-', $porteProd));?>
+                        <li class="<?php echo $tipPorte; ?>"><?php echo $porte['name']; ?></li>
+                    <?php } ?>
+                <?php } ?>
+                <?php if ($data['caracteristicas']) { ?>
+                    <?php foreach ($data['caracteristicas'] as $caracteristicas) { ?>
+                        <?php $caracteristica = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $caracteristicas['name'] ));
+                        $caracteristicaProd = strtolower(str_replace(' ','-', $caracteristica));?>
+                        <li class="<?php echo $caracteristicaProd; ?>"><?php echo $caracteristicas['name']; ?></li>
+                    <?php } ?>
+                <?php } ?>
+            </ul>
+        </div>    
+        <!-- Fim de Icones da pagina de produtos -->
         
         <!-- Especificação do Produto -->
         <div class="col-sm-12">

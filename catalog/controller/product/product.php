@@ -159,36 +159,21 @@ class ControllerProductProduct extends Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
                 $filter_prod = $this->model_catalog_product->getFilterProduct($product_id);
                 
+                
+                $data['aplicacao'] = array();
+                $data['porte']= array();
+                $data['caracteristicas']= array();
                 foreach ($filter_prod as $filters) {
                     if($filters['filter_group_id']==2){
                         $data['aplicacao'][] = array('name' => $filters['name']);
                     }
                     if($filters['filter_group_id']==3){
-                        $data['porte'] = $filters['name'];
+                        $data['porte'][] = array('name' => $filters['name']);
                     }
-                    if($filters['filter_group_id']==4){
-                        $data['corpo'] = $filters['name'];
-                    }
-                    if($filters['filter_group_id']==5){
-                        $data['espuma'] = $filters['name'];
-                    }
-                    if($filters['filter_group_id']==6){
-                        $data['trava'] = $filters['name'];
-                    }
-                    if($filters['filter_group_id']==7){
-                        $data['lid'] = $filters['name'];
-                    }
-                    if($filters['filter_group_id']==8){
-                        $data['pins'] = $filters['name'];
-                    }
-                    if($filters['filter_group_id']==10){
-                        $data['lampadas'] = $filters['name'];
-                    }
-                    if($filters['filter_group_id']==11){
-                        $data['tip_ilumincacao'] = $filters['name'];
+                    if($filters['filter_group_id']==12){
+                        $data['caracteristicas'][] = array('name' => $filters['name']);
                     }
 		}
-
 		if ($product_info) {
 			$url = '';
 
@@ -422,6 +407,7 @@ class ControllerProductProduct extends Controller {
 			$data['rating'] = (int)$product_info['rating'];
 			$data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
 			$data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
+                        
 			$data['products'] = array();
 
 			$results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
