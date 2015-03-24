@@ -91,7 +91,13 @@ class ControllerCommonHome extends Controller {
         $data['filter_groups'] = array();
 
         $data['filter_groups'] = $this->model_catalog_category->getAllCategoryFilters(2);
-
+        
+        foreach ($data['filter_groups'] as $atributes) {
+            $data['aplicacao'][] = array(
+                    'name' => $atributes['name'],
+                    'href'        => $this->url->link('product/search-result', 'path=' . $atributes['filter_id'])
+            );
+        }
 
         if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {
             $this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/common/home.tpl', $data));

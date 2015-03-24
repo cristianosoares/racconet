@@ -56,15 +56,15 @@
         <div class="<?php echo $class; ?> ">
         	<div class="filter-product row">
                 <div class="busca-segmento col-md-8 col-sm-12 "></div>    
-                <?php if ($filter_groups) { ?>
+                <?php if ($data['aplicacao']) { ?>
                     <?php 
                     $count =1; 
-                    foreach ($filter_groups as $filter_group) { 
+                    foreach ($data['aplicacao'] as $filter_group) { 
                     $count++;
                     $f = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $filter_group['name'] ));
                     $filterProd = strtolower(str_replace(' ','-', $f));
                     ?>
-                            <a href="<?php echo $filter_group['filter_id']; ?>" class="<?php echo $filterProd; ?> col-md-4 col-sm-4 col-xs-4"><?php echo $filter_group['name']; ?></a>
+                            <a href="<?php echo $filter_group['href']; ?>" class="<?php echo $filterProd; ?> col-md-4 col-sm-4 col-xs-4"><?php echo $filter_group['name']; ?></a>
                     <?php }
                 } ?>
             </div><!--filter-product-->

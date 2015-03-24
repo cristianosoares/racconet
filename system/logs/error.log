@@ -1221,3 +1221,28 @@
 2015-03-23 20:34:24 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 310
 2015-03-24 12:30:26 - PHP Notice:  Undefined index: caracteristicas in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 315
 2015-03-24 12:37:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 316
+2015-03-24 17:10:00 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 70
+2015-03-24 17:10:32 - PHP Notice:  Undefined variable: category_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 91
+2015-03-24 17:55:12 - PHP Notice:  Error: Could not load model C:\wamp\www\new-racconet\upload\catalog\model/catalog/searchresult.php! in C:\wamp\www\new-racconet\upload\system\modification\system\engine\loader.php on line 24
+2015-03-24 17:55:27 - PHP Notice:  Undefined variable: category_info in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 94
+2015-03-24 19:00:22 - PHP Notice:  Undefined variable: filter_data in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 152
+2015-03-24 19:20:27 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:20:27 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:20:51 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:20:51 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:22:34 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:22:34 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:22:46 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:22:46 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:23:16 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:23:16 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:23:31 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:23:31 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:24:10 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:24:10 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:24:40 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:24:40 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:47:20 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 166
+2015-03-24 19:47:21 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\category.tpl on line 111
+2015-03-24 19:50:28 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\category.tpl on line 111
+2015-03-24 20:00:03 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\category.tpl on line 111
