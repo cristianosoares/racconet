@@ -44,6 +44,11 @@ class ControllerCommonMenu extends Controller {
 		$data['text_manufacturer'] = $this->language->get('text_manufacturer');
 		$data['text_module'] = $this->language->get('text_module');
 		$data['text_option'] = $this->language->get('text_option');
+                $data['text_envio_news'] = $this->language->get('text_envio_news');
+                $data['text_historico_news'] = $this->language->get('text_historico_news');
+                $data['text_agendar_news'] = $this->language->get('text_agendar_news');
+                $data['text_template_news'] = $this->language->get('text_template_news');
+                $data['text_inscritos_news'] = $this->language->get('text_inscritos_news');
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_order_status'] = $this->language->get('text_order_status');
 		$data['text_opencart'] = $this->language->get('text_opencart');
@@ -137,6 +142,13 @@ class ControllerCommonMenu extends Controller {
 		$data['marketing'] = $this->url->link('marketing/marketing', 'token=' . $this->session->data['token'], 'SSL');
 		$data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
 		$data['option'] = $this->url->link('catalog/option', 'token=' . $this->session->data['token'], 'SSL');
+                
+                $data['envio_newsletter'] = $this->url->link('sale/mailsubscribe', 'token=' . $this->session->data['token'], 'SSL');
+                $data['history_newsletter'] = $this->url->link('sale/mailsubscribe_historystat', 'token=' . $this->session->data['token'], 'SSL');
+                $data['agendados_newsletter'] = $this->url->link('sale/mailsubscribe_scheduler', 'token=' . $this->session->data['token'], 'SSL');
+                $data['templates_newsletter'] = $this->url->link('sale/mailsubscribe_template', 'token=' . $this->session->data['token'], 'SSL');
+                $data['incritos_newsletter'] = $this->url->link('sale/newssubscribers', 'token=' . $this->session->data['token'], 'SSL');
+                
 		$data['order'] = $this->url->link('sale/order', 'token=' . $this->session->data['token'], 'SSL');
 		$data['order_status'] = $this->url->link('localisation/order_status', 'token=' . $this->session->data['token'], 'SSL');
 		$data['payment'] = $this->url->link('extension/payment', 'token=' . $this->session->data['token'], 'SSL');

@@ -77,10 +77,19 @@
     </ul>
   </li>
   <li id="sale"><a class="parent"><i class="fa fa-shopping-cart fa-fw"></i> <span><?php echo $text_sale; ?></span></a>
-    <ul>
+    <ul> 
       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
       <li><a href="<?php echo $order_recurring; ?>"><?php echo $text_order_recurring; ?></a></li>
       <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+      <li><a class="parent">Newsletter</a>
+        <ul>
+          <li><a href="<?php echo $envio_newsletter; ?>"><?php echo $text_envio_news; ?></a></li> 
+          <li><a href="<?php echo $history_newsletter; ?>"><?php echo $text_historico_news; ?></a></li> 
+          <li><a href="<?php echo $agendados_newsletter; ?>"><?php echo $text_agendar_news; ?></a></li>
+          <li><a href="<?php echo $templates_newsletter; ?>"><?php echo $text_template_news; ?></a></li>
+          <li><a href="<?php echo $incritos_newsletter; ?>"><?php echo $text_inscritos_news; ?></a></li>
+        </ul>
+      </li>
       <li><a class="parent"><?php echo $text_customer; ?></a>
         <ul>
           <li><a href="<?php echo $customer; ?>"><?php echo $text_customer; ?></a></li>

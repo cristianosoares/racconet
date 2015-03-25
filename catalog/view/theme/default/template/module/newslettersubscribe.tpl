@@ -1,7 +1,8 @@
 <h3><strong>CADASTRE SEU E-MAIL</strong><br> <span><em>e receba novas notícias e promoções exclusivas</em></span></h3>
 <div id="frm_subscribe">
   <form name="subscribe" id="subscribe">
-    <input type="text" value="" name="subscribe_email" id="subscribe_email">
+    <input type="text" value="" placeholder="Nome" name="subscribe_name" id="subscribe_name">  
+    <input type="text" value="" placeholder="Email" name="subscribe_email" id="subscribe_email">
 
      <a onclick="email_subscribe()"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
 	 <?php if($option_unsubscribe) { ?>
@@ -21,7 +22,7 @@ function email_subscribe(){
 			dataType: 'html',
             data:$("#subscribe").serialize(),
 			success: function (html) {
-				eval(html);
+                                eval(html);
 			}}); 
 }
 function email_unsubscribe(){
