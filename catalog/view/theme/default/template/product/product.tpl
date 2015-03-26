@@ -322,8 +322,10 @@
                 <?php if ($data['caracteristicas']) { ?>
                     <?php foreach ($data['caracteristicas'] as $caracteristicas) { ?>
                         <?php $caracteristica = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $caracteristicas['name'] ));
-                        $caracteristicaProd = strtolower(str_replace(' ','-', $caracteristica));?>
-                        <li class="<?php echo $caracteristicaProd; ?>"><?php echo $caracteristicas['name']; ?></li>
+                        $caracteristicaProd = strtolower(str_replace(' ','-', $caracteristica));
+                        $caracProd = str_replace(',','-', $caracteristicaProd);
+                        ?>
+                        <li class="<?php echo $caracProd; ?>"><?php echo $caracteristicas['name']; ?></li>
                     <?php } ?>
                 <?php } ?>
             </ul>
