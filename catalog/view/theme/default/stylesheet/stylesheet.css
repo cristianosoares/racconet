@@ -1073,7 +1073,7 @@ h2.price {
 /*	float: left;
 	margin-left: 20px;*/
 }
-.list-unstyled li{
+.produto-detalhe .list-unstyled li{
 	  float: left;
   margin-right: 10px;
   text-transform: uppercase;
@@ -1114,6 +1114,15 @@ h2.price {
 }
 .form-group.required .radio .preto{
 	background-color: black;
+}
+.form-group.required .radio .laranja{
+	background-color:orange;
+}
+.form-group.required .radio .azul{
+	background-color:blue;
+}
+.form-group.required .radio .vermelho{
+	background-color:red;
 }
 .form-group.required .radio+.radio{
 	margin-top:10px;
@@ -1206,6 +1215,12 @@ h2.price {
 }
 .carac-principais ul li.garantia-eterna-incondicional span{
 	background-image:url(../image/ico-garantia.png);
+}
+.carac-principais ul li.case-indestrutivel span{
+	background-image:url(../image/ico-indestritivel.png);
+}
+.carac-principais ul li.interior-com-espuma-microserrilhada span{
+	background-image:url(../image/ico-espuma.png);
 }
 #tab-specification .row{
 	padding: 10px 27px;
