@@ -368,7 +368,10 @@
                         $caracteristicaProd = strtolower(str_replace(' ','-', $caracteristica));
                         $caracProd = str_replace(',','-', $caracteristicaProd);
                         ?>
-                        <li class="<?php echo $caracProd; ?>"><?php echo $caracteristicas['name']; ?></li>
+                        <li class="<?php echo $caracProd; ?>">
+                            <span class="img"></span><br>
+                            <h4><?php echo $caracteristicas['name']; ?></h4>
+                        </li>
                     <?php } ?>
                 </ul>
             </div>        
