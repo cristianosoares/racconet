@@ -81,14 +81,7 @@
             <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
           </ul>-->
           <!-- fim das informações sobre o modelo e disponibilidade -->
-          <h3>Indicado para</h3>
-          <ul class="list-unstyled">
-            <?php if ($data['aplicacao']) { ?>
-                <?php foreach ($data['aplicacao'] as $tip_aplicacao) { ?>
-                    <li class="aplicacao"><?php echo $tip_aplicacao['name']; ?></li>
-                <?php } ?>
-            <?php } ?>
-          </ul>
+         
           
           <!-- Preço do Produto -->
           
@@ -110,6 +103,9 @@
             <?php } ?>
             <?php if ($points) { ?>
             <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+
+
+
             <?php } ?>
             <?php if ($discounts) { ?>
             <li>
@@ -129,10 +125,11 @@
           
           <div id="product">
             <?php if ($options) { ?>
-            <hr>
-            <h3><?php echo $text_option; ?></h3>
+            <?php /*?><h3><?php echo $text_option; ?></h3><?php */?>
             <?php foreach ($options as $option) { ?>
+            
             <?php if ($option['type'] == 'select') { ?>
+            
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <select name="option[<?php echo $option['product_option_id']; ?>]" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control">
@@ -145,8 +142,9 @@
                 </option>
                 <?php } ?>
               </select>
-            </div>
+            </div><!--form-group-->
             <?php } ?>
+            
             <?php if ($option['type'] == 'radio') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label"><?php echo $option['name']; ?></label>
@@ -162,11 +160,14 @@
                     (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
                     <?php } ?>
                   </label>
-                </div>
+                </div><!--radio-->
                 <?php } ?>
-              </div>
-            </div>
+              </div><!--input-option-->
+              <div class="clearfix"></div>
+            </div><!--form-group-->
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'checkbox') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label"><?php echo $option['name']; ?></label>
@@ -185,6 +186,8 @@
               </div>
             </div>
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'image') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label"><?php echo $option['name']; ?></label>
@@ -203,18 +206,23 @@
               </div>
             </div>
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'text') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <input type="text" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option['value']; ?>" placeholder="<?php echo $option['name']; ?>" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control" >
             </div>
             <?php } ?>
+            
             <?php if ($option['type'] == 'textarea') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <textarea name="option[<?php echo $option['product_option_id']; ?>]" rows="5" placeholder="<?php echo $option['name']; ?>" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control"><?php echo $option['value']; ?></textarea>
             </div>
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'file') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label"><?php echo $option['name']; ?></label>
@@ -222,6 +230,8 @@
               <input type="hidden" name="option[<?php echo $option['product_option_id']; ?>]" value="" id="input-option<?php echo $option['product_option_id']; ?>" >
             </div>
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'date') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
@@ -232,6 +242,8 @@
                 </span></div>
             </div>
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'datetime') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
@@ -242,6 +254,8 @@
                 </span></div>
             </div>
             <?php } ?>
+            
+            
             <?php if ($option['type'] == 'time') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
@@ -254,8 +268,10 @@
             <?php } ?>
             <?php } ?>
             <?php } ?>
+            
             <?php if ($recurrings) { ?>
             <hr>
+            
             <h3><?php echo $text_payment_recurring ?></h3>
             <div class="form-group required">
               <select name="recurring_id" class="form-control">
@@ -267,24 +283,32 @@
               <div class="help-block" id="recurring-description"></div>
             </div>
             <?php } ?>
-            <div class="form-group">
-              <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" >
-              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" >
-              <br >
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
-            </div>
+            
+            <div class="form-group row">
+              <div class="col-md-6">
+                  <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+                  <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" >
+                  <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" >
+              </div>
+                  <br >
+              <div class="col-md-6">  
+            	<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block">
+				<span class="ico-carrinho"></span> <?php echo $button_cart; ?></button>
+              
+                   <!-- adicionar a lista de preferencia -->
+                  <div class="btn-group">
+                    <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');">Adicionar a lista de Cotacão</button>
+                    <!--<button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>-->
+                  </div><!--btn-group-->
+              </div>          
+            </div><!--form-group (qntidade)-->
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
           </div>
           <!-- selecao de SKU -->
 
-          <!-- adicionar a lista de preferencia -->
-          <div class="btn-group">
-            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');">Adicionar a lista de Cotacão</button>
-            <!--<button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>-->
-          </div>
+         
           
           <!-- fim da lista de preferencia -->
           
@@ -306,53 +330,82 @@
             <!-- AddThis Button END --> 
           </div>
           <?php } ?>
+          
+                  
+         <h3>Indicado para</h3>
+          <ul class="list-unstyled">
+            <?php if ($data['aplicacao']) { ?>
+                <?php foreach ($data['aplicacao'] as $tip_aplicacao) { ?>
+                    <li class="aplicacao"><?php echo $tip_aplicacao['name']; ?></li>
+                <?php } ?>
+            <?php } ?>
+          </ul>
+
         </div>
         
         
+        
         <!-- Icones dos Atributos do Produto -->
-        <div class="carac-principais col-sm-12">
-            <ul>
-                <?php if ($data['porte']) { ?>
-                    <?php foreach ($data['porte'] as $porte) { ?>
-                    <?php $porteProd = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $porte['name']));
-                        $tipPorte = strtolower(str_replace(' ','-', $porteProd));?>
-                        <li class="<?php echo $tipPorte; ?>"><?php echo $porte['name']; ?></li>
+        <div class="carac-principais col-md-12">
+            <div class="row">            
+            	<ul class="col-md-8 col-md-offset-2">
+					<?php if ($data['porte']) { ?>
+                        <?php foreach ($data['porte'] as $porte) { ?>
+                        <?php $porteProd = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $porte['name']));
+                            $tipPorte = strtolower(str_replace(' ','-', $porteProd));?>
+                            
+                            <li class="<?php echo $tipPorte; ?>">
+                                <span class="img"></span><br>
+                                <h4><?php echo $porte['name']; ?></h4>
+                            </li>
+                            
+                        <?php } ?>
                     <?php } ?>
-                <?php } ?>
-                <?php if ($data['caracteristicas']) { ?>
-                    <?php foreach ($data['caracteristicas'] as $caracteristicas) { ?>
-                        <?php $caracteristica = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $caracteristicas['name'] ));
-                        $caracteristicaProd = strtolower(str_replace(' ','-', $caracteristica));?>
-                        <li class="<?php echo $caracteristicaProd; ?>"><?php echo $caracteristicas['name']; ?></li>
+                    <?php if ($data['caracteristicas']) { ?>
+                        <?php foreach ($data['caracteristicas'] as $caracteristicas) { ?>
+                            <?php $caracteristica = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $caracteristicas['name'] ));
+                            $caracteristicaProd = strtolower(str_replace(' ','-', $caracteristica));?>
+                            
+                            <li class="<?php echo $caracteristicaProd; ?>">
+                                <span class="img"></span><br>
+                                <h4><?php echo $caracteristicas['name']; ?></h4>
+                            </li>
+                            
+                        <?php } ?>
                     <?php } ?>
-                <?php } ?>
-            </ul>
-        </div>    
+                </ul>
+            </div>        
+		</div><!--carac-principais-->    
         <!-- Fim de Icones da pagina de produtos -->
         
         <!-- Especificação do Produto -->
-        <div class="col-sm-12">
-          <h2><?php echo $tab_attribute; ?></h2>
+        <div class="col-md-12 col-sm-12">
+          <h2><?php /*?><?php echo $tab_attribute; ?><?php */?></h2>
 
           <div class="tab-content">
             <?php if ($attribute_groups) { ?>
             <div id="tab-specification">
-              <div class="table table-bordered">
+              <div class="">
                 <?php foreach ($attribute_groups as $attribute_group) { ?>
-                <div class="col-lg-2">
-                    <?php echo $attribute_group['name']; ?>
-                </div>    
-                <div class="col-lg-10">
-                  <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-                    
-                    <div class="col-lg-4"><?php echo $attribute['name']; ?></div>
-                    <div class="col-lg-8"><?php echo $attribute['text']; ?></div>
-                  <?php } ?>
-                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2">
+                        <?php echo $attribute_group['name']; ?>
+                    </div>    
+                    <div class="col-md-10 col-sm-10">
+                      <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                        
+                        <span class="name"><?php echo $attribute['name']; ?></span>
+                        <span class="text"><?php echo $attribute['text']; ?></span><br>
+
+                      <?php } ?>
+                    </div>
+                </div><!--row-->
                 <?php } ?>
+                
               </div>
-            </div>
+            </div><!--tab-specification-->
             <?php } ?>
+            
             <?php if ($review_status) { ?>
             <div class="tab-pane" id="tab-review">
               <form class="form-horizontal">
@@ -444,6 +497,7 @@
               <?php if ($product['price']) { ?>
               <p class="price">
                 <?php if (!$product['special']) { ?>
+
                 <?php echo $product['price']; ?>
                 <?php } else { ?>
                 <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
