@@ -69,7 +69,8 @@
           <div class="description-product">
               <?php echo $description; ?>
           </div>
-          <ul class="list-unstyled">
+          <!-- Informações sobre o modelo e disponibilidade -->
+          <!--<ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
@@ -78,8 +79,8 @@
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
             <?php } ?>
             <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-          </ul>
-          
+          </ul>-->
+          <!-- fim das informações sobre o modelo e disponibilidade -->
           <h3>Indicado para</h3>
           <ul class="list-unstyled">
             <?php if ($data['aplicacao']) { ?>
@@ -151,8 +152,10 @@
               <label class="control-label"><?php echo $option['name']; ?></label>
               <div id="input-option<?php echo $option['product_option_id']; ?>">
                 <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                <?php $options = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $option_value['name']));
+                $optionProd = strtolower(str_replace(' ','-', $options));?>
                 <div class="radio">
-                  <label>
+                  <label class="<?php echo $optionProd; ?>">
                     <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" >
                     <?php echo $option_value['name']; ?>
                     <?php if ($option_value['price']) { ?>
@@ -188,7 +191,7 @@
               <div id="input-option<?php echo $option['product_option_id']; ?>">
                 <?php foreach ($option['product_option_value'] as $option_value) { ?>
                 <div class="radio">
-                  <label>
+                    <label>
                     <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" >
                     <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" > <?php echo $option_value['name']; ?>
                     <?php if ($option_value['price']) { ?>
