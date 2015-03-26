@@ -106,6 +106,8 @@
 
 
 
+
+
             <?php } ?>
             <?php if ($discounts) { ?>
             <li>
@@ -361,7 +363,7 @@
                             
                         <?php } ?>
                     <?php } ?>
-                <?php } ?>
+
                 <?php if ($data['caracteristicas']) { ?>
                     <?php foreach ($data['caracteristicas'] as $caracteristicas) { ?>
                         <?php $caracteristica = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $caracteristicas['name'] ));
@@ -373,6 +375,7 @@
                             <h4><?php echo $caracteristicas['name']; ?></h4>
                         </li>
                     <?php } ?>
+                <?php } ?>
                 </ul>
             </div>        
 		</div><!--carac-principais-->    
