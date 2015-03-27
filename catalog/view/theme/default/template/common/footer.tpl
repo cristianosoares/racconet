@@ -85,8 +85,15 @@
         </ul>
       </div>
     </div>-->
-    <p><?php echo $powered; ?></p> 
+
 </div><!--container-->
+<div class="container" style="margin-top:20px">
+	<div class="row">
+    	<div class="col-md-12">
+        	<a href="http://made4u.com.br/" title="Made 4U" target="_blank" class="pull-right">produzido por: <img src="<?php echo $logo_footer; ?>" alt="Made 4U"></a>
+        </div>
+     </div>
+</div>
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com

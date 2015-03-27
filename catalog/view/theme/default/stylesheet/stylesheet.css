@@ -270,6 +270,9 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 	margin-bottom: 10px;
         width: 45%;
 }
+#cart.btn-group{
+	margin-top:0
+}
 #cart > .btn {
 	font-size: 12px;
 	color: #FFF;
@@ -1096,6 +1099,9 @@ h2.price {
   border: solid #bfb7b4;
   font-size: 0;
 }
+.form-group.required .radio label.checked{
+ border-color:goldenrod !important;
+}
 .form-group.required .radio{
 	float:left;
 	padding-left: 6px;
@@ -1184,9 +1190,9 @@ h2.price {
 }
 .carac-principais ul li{
 	float:left;
-	  width: 137px;
-  text-align: center;
-  margin: 0 10px;
+	width: calc(90%/5);
+    text-align: center;
+    margin: 0 10px;
 }
 .carac-principais ul li:first-child{
 	margin-left:0
@@ -1491,6 +1497,11 @@ hr.seta{
 		top:86px;
 	}
 	.junte-se-nos{ background-position:center center !important;}
+	
+	.carac-principais ul li{
+	  margin: 0 5px;
+
+   }
 }
 
 @media (min-width: 768px) {
@@ -1596,6 +1607,21 @@ hr.seta{
 	.col1-ass{
 	  background-position: right center !important;
 	}
+			/* Produtos */
+	.carac-principais ul li{
+	  width: calc(90%/2);
+	  margin: 0 5px;
+	  margin-top: 40px;
+   }
+   .carac-principais {
+	  margin: 60px 0;
+	}
+	.carac-principais ul li:first-child {
+	  margin-left: initial;
+	}
+	.carac-principais ul li:last-child {
+	  margin-right: initial;
+	}
 
 }
 @media (min-width: 767px) {
@@ -1603,7 +1629,9 @@ hr.seta{
 		float: left;
 		padding: 0 15px;
 	}
+
 }
+
 @media (max-width: 478px) {
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
@@ -1615,6 +1643,8 @@ hr.seta{
 	.content_bottom a span {
 	  top: 90px;
 	}
+	
+
 }
 @media screen and (max-width: 340px) {
     .cotacao {
