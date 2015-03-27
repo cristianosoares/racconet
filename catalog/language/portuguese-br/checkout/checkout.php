@@ -1,9 +1,9 @@
 <?php
 // Heading
-$_['heading_title']                  = 'Finalizar pedido';
+$_['heading_title']                  = 'Cotação';
 
 // Text
-$_['text_cart']                      = 'Carrinho de compras';
+$_['text_cart']                      = 'Lista de cotação';
 $_['text_checkout_option']           = 'Acesse sua conta';
 $_['text_checkout_account']          = 'Detalhes da sua conta';
 $_['text_checkout_payment_address']  = 'Endereço para fatura';

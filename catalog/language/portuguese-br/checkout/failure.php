@@ -3,8 +3,8 @@
 $_['heading_title'] = 'Falha no pagamento!';
 
 // Text
-$_['text_basket']   = 'Carrinho de compras';
-$_['text_checkout'] = 'Finalizar pedido';
+$_['text_basket']   = 'Lista de Cotação';
+$_['text_checkout'] = 'Finalizar cotação';
 $_['text_failure']  = 'Falha no pagamento';
 $_['text_message']  = '<p>Houve um problema ao processar o seu pagamento, por isso, seu pedido não foi concluído.</p>
 

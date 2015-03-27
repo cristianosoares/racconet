@@ -3,8 +3,8 @@
 $_['heading_title'] = 'Failed Payment!';
 
 // Text
-$_['text_basket']   = 'Shopping Cart';
-$_['text_checkout'] = 'Checkout';
+$_['text_basket']   = 'List Quote';
+$_['text_checkout'] = 'Quotation';
 $_['text_failure']  = 'Failed Payment';
 $_['text_message']  = '<p>There was a problem processing your payment and the order did not complete.</p>
 

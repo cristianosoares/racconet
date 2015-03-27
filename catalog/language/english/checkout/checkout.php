@@ -1,9 +1,9 @@
 <?php
 // Heading
-$_['heading_title']                  = 'Checkout';
+$_['heading_title']                  = 'Quotation';
 
 // Text
-$_['text_cart']                      = 'Shopping Cart';
+$_['text_cart']                      = 'List Quote';
 $_['text_checkout_option']           = 'Step 1: Checkout Options';
 $_['text_checkout_account']          = 'Step 2: Account &amp; Billing Details';
 $_['text_checkout_payment_address']  = 'Step 2: Billing Details';
