@@ -108,6 +108,8 @@
 
 
 
+
+
             <?php } ?>
             <?php if ($discounts) { ?>
             <li>
@@ -350,7 +352,7 @@
         <!-- Icones dos Atributos do Produto -->
         <div class="carac-principais col-md-12">
             <div class="row">            
-            	<ul class="col-md-8 col-md-offset-2">
+            	<ul class="">
 					<?php if ($data['porte']) { ?>
                         <?php foreach ($data['porte'] as $porte) { ?>
                         <?php $porteProd = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $porte['name']));
