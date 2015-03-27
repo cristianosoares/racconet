@@ -1309,3 +1309,11 @@
 2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 918
 2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 1073
 2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 1073
+2015-03-27 17:27:45 - PHP Notice:  Undefined variable: empresa in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 18
+2015-03-27 17:30:28 - PHP Notice:  Undefined variable: empresa in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 16
+2015-03-27 17:31:04 - PHP Notice:  Undefined variable: empresa in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 18
+2015-03-27 17:40:23 - PHP Notice:  Undefined variable: empresa in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 18
+2015-03-27 17:42:32 - PHP Notice:  Undefined index: enquiry in C:\wamp\www\new-racconet\upload\catalog\controller\information\infoseg.php on line 224
+2015-03-27 17:43:44 - PHP Notice:  Undefined index: enquiry in C:\wamp\www\new-racconet\upload\catalog\controller\information\infoseg.php on line 18
+2015-03-27 17:43:44 - PHP Notice:  Error: E-Mail message required! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 83
+2015-03-27 17:45:42 - PHP Notice:  Error: E-Mail message required! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 83
