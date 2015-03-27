@@ -404,7 +404,18 @@
                     </div>
                 </div><!--row-->
                 <?php } ?>
-                
+                <?php if ($data['caracteristicas']) { ?>
+                  <div class="row">
+                      <div class="col-md-2 col-sm-2">
+                          Características do Produto
+                      </div>
+                      <div class="col-md-10 col-sm-10">
+                        <?php foreach ($data['caracteristicas'] as $caracteristicas) { ?>
+                            <span class="text"><?php echo $caracteristicas['name']; ?></span><br>
+                        <?php } ?>
+                      </div> 
+                   </div>   
+                <?php } ?>
               </div>
             </div><!--tab-specification-->
             <?php } ?>
@@ -731,6 +742,12 @@ $(document).ready(function() {
 			enabled:true
 		}
 	});
+        // funcao para colocar checked na selecao de sku
+        $(".radio input[type='radio']").click(function() {  
+            $(".radio input[type='radio']").parent().removeClass('checked');
+            $(".radio input[type='radio']:checked").parent().addClass('checked');
+        });
+        
 });
 //--></script> 
 <?php echo $footer; ?>

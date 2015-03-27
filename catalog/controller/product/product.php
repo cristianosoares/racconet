@@ -159,7 +159,6 @@ class ControllerProductProduct extends Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
                 $filter_prod = $this->model_catalog_product->getFilterProduct($product_id);
                 
-                
                 $data['aplicacao'] = array();
                 $data['porte']= array();
                 $data['caracteristicas']= array();
