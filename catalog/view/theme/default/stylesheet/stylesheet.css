@@ -433,6 +433,14 @@ nav.navbar-top {
 	background-size:98% !important;
 	text-align:center;
 }
+.content_bottom a{
+	filter:grayscale(1);
+ 	-webkit-filter: grayscale(1);
+}
+.content_bottom a:hover{
+	filter:grayscale(0);
+ 	-webkit-filter: grayscale(0);
+}
 .content_bottom a.list-group-item {
     margin-bottom: 35px;
     border: 0px !important;
@@ -480,6 +488,12 @@ nav.navbar-top {
 .filter-product a{
 	background-size:98% !important;
 	height:266px;
+	filter:grayscale(1);
+	  -webkit-filter: grayscale(1);
+}
+.filter-product a:hover{
+	filter:grayscale(0);
+	 -webkit-filter: grayscale(0);
 }
 .filter-product a.industria {
     background: url(../image/seg-industria.png)no-repeat center top ;
@@ -1558,7 +1572,7 @@ hr.seta{
 	   background-size: 99%;
    }
    .filter-product a {
-	  height: 248px;
+	  height: 190px;
 	}
 	.content_bottom a span {
 	  top: 110px;
@@ -1621,6 +1635,15 @@ hr.seta{
 	}
 	.carac-principais ul li:last-child {
 	  margin-right: initial;
+	}
+	
+	.content_bottom a{
+		filter:grayscale(0);
+		-webkit-filter: grayscale(0);
+	}
+	.filter-product a{
+		filter:grayscale(0);
+		-webkit-filter: grayscale(0);
 	}
 
 }
