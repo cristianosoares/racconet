@@ -1309,3 +1309,4 @@
 2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 918
 2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 1073
 2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 1073
+2015-03-27 18:57:59 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
