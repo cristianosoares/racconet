@@ -1217,3 +1217,164 @@
 2015-03-27 17:43:44 - PHP Notice:  Undefined index: enquiry in C:\wamp\www\new-racconet\upload\catalog\controller\information\infoseg.php on line 18
 2015-03-27 17:43:44 - PHP Notice:  Error: E-Mail message required! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 83
 2015-03-27 17:45:42 - PHP Notice:  Error: E-Mail message required! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 83
+2015-03-23 14:17:24 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
+2015-03-23 16:00:36 - PHP Notice:  Undefined variable: product_option_value in C:\wamp\www\new-racconet\upload\catalog\model\catalog\product.php on line 358
+2015-03-23 19:38:26 - PHP Notice:  Use of undefined constant aplicacao - assumed 'aplicacao' in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 67
+2015-03-23 19:38:26 - PHP Notice:  Use of undefined constant aplicacao - assumed 'aplicacao' in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:40:28 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:40:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:41:44 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:43:28 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:47:03 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:50:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 19:55:16 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 68
+2015-03-23 20:00:15 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 165
+2015-03-23 20:14:21 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 309
+2015-03-23 20:14:42 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:15:14 - PHP Notice:  Undefined variable: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:16:09 - PHP Notice:  Undefined variable: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 309
+2015-03-23 20:17:50 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:18:22 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 191
+2015-03-23 20:19:01 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 191
+2015-03-23 20:19:03 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 191
+2015-03-23 20:19:18 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 191
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: aplicacao in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 163
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:25:24 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:25:26 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:26:11 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:11 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:11 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:11 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:11 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:11 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:13 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:26:27 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:27 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:27 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:27 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:27 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:27 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:26:28 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:27:16 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:27:16 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:27:16 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:27:16 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:27:16 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:27:16 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:27:18 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:28:00 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:28:00 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:28:00 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:28:00 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:28:00 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:28:00 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\controller\product\product.php on line 164
+2015-03-23 20:28:01 - PHP Notice:  Undefined index: porte in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 308
+2015-03-23 20:34:24 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 92
+2015-03-23 20:34:24 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 310
+2015-03-24 12:30:26 - PHP Notice:  Undefined index: caracteristicas in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 315
+2015-03-24 12:37:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\product.tpl on line 316
+2015-03-24 17:10:00 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 70
+2015-03-24 17:10:32 - PHP Notice:  Undefined variable: category_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 91
+2015-03-24 17:55:12 - PHP Notice:  Error: Could not load model C:\wamp\www\new-racconet\upload\catalog\model/catalog/searchresult.php! in C:\wamp\www\new-racconet\upload\system\modification\system\engine\loader.php on line 24
+2015-03-24 17:55:27 - PHP Notice:  Undefined variable: category_info in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 94
+2015-03-24 19:00:22 - PHP Notice:  Undefined variable: filter_data in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 152
+2015-03-24 19:20:27 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:20:27 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:20:51 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:20:51 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:22:34 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:22:34 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:22:46 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:22:46 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:23:16 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:23:16 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:23:31 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:23:31 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:24:10 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:24:10 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:24:40 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 167
+2015-03-24 19:24:40 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 193
+2015-03-24 19:47:20 - PHP Notice:  Undefined index: special in C:\wamp\www\new-racconet\upload\catalog\controller\product\search-result.php on line 166
+2015-03-24 19:47:21 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\category.tpl on line 111
+2015-03-24 19:50:28 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\category.tpl on line 111
+2015-03-24 20:00:03 - PHP Notice:  Undefined index: rating in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\product\category.tpl on line 111
+2015-03-25 18:04:57 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
+2015-03-25 18:05:44 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
+2015-03-25 18:05:47 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
+2015-03-25 18:05:55 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
+2015-03-25 18:07:35 - PHP Notice:  Undefined index: subscribe_name in C:\wamp\www\new-racconet\upload\catalog\controller\module\newslettersubscribe.php on line 361
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: button_save in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 6
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: cancel in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 7
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: button_cancel in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 7
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: heading_title in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 8
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: breadcrumbs in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 10
+2015-03-25 18:40:24 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 10
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: error_warning in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 17
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: heading_title2 in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 24
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: action in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 27
+2015-03-25 18:40:24 - PHP Notice:  Undefined variable: text_info in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 390
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: button_save in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 6
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: cancel in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 7
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: button_cancel in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 7
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: heading_title in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 8
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: breadcrumbs in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 10
+2015-03-25 18:40:44 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 10
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: error_warning in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 17
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: heading_title2 in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 24
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: action in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 27
+2015-03-25 18:40:44 - PHP Notice:  Undefined variable: text_info in C:\wamp\www\new-racconet\upload\admin\view\template\module\mailsubscribe.tpl on line 390
+2015-03-25 19:12:50 - PHP Notice:  Undefined variable: insert in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_historystat.tpl on line 6
+2015-03-25 19:12:50 - PHP Notice:  Undefined variable: button_insert in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_historystat.tpl on line 6
+2015-03-25 19:15:37 - PHP Notice:  Undefined variable: insert in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_historystat.tpl on line 6
+2015-03-25 19:15:37 - PHP Notice:  Undefined variable: button_insert in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_historystat.tpl on line 6
+2015-03-25 19:18:57 - PHP Notice:  Undefined variable: newslettersubscribe_status in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_scheduler_form.tpl on line 250
+2015-03-25 19:18:57 - PHP Notice:  Undefined variable: help_customer in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_scheduler_form.tpl on line 275
+2015-03-25 19:18:57 - PHP Notice:  Undefined variable: help_affiliate in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_scheduler_form.tpl on line 287
+2015-03-25 19:18:57 - PHP Notice:  Undefined variable: help_product in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_scheduler_form.tpl on line 300
+2015-03-25 19:21:15 - PHP Notice:  Undefined variable: template_newsletter in C:\wamp\www\new-racconet\upload\admin\view\template\common\menu.tpl on line 89
+2015-03-25 19:21:41 - PHP Notice:  Undefined variable: template_newsletter in C:\wamp\www\new-racconet\upload\admin\view\template\common\menu.tpl on line 89
+2015-03-25 19:29:23 - PHP Notice:  Undefined variable: insert in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_historystat.tpl on line 6
+2015-03-25 19:29:23 - PHP Notice:  Undefined variable: button_insert in C:\wamp\www\new-racconet\upload\admin\view\template\sale\mailsubscribe_historystat.tpl on line 6
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 44
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 44
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 49
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 49
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 438
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 918
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 918
+2015-03-26 12:12:15 - PHP Notice:  Undefined variable: languages in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 1073
+2015-03-26 12:12:15 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\new-racconet\upload\admin\view\template\catalog\product_form.tpl on line 1073
+2015-03-27 18:57:59 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-27 19:17:53 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-27 19:21:33 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-27 19:22:13 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-27 19:25:07 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-27 19:26:31 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
