@@ -496,8 +496,8 @@ nav.navbar-top {
 .filter-product a{
 	background-size:98% !important;
 	height:266px;
-	filter:grayscale(1);
-	  -webkit-filter: grayscale(1);
+	filter:grayscale(0.8);
+	  -webkit-filter: grayscale(0.8);
 }
 .filter-product a:hover{
 	filter:grayscale(0);
@@ -547,6 +547,12 @@ h2.title-marca {
 	width: 100%;
 	height: 110px;
 	float: left;
+	filter:grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+.marcas a:hover{
+	filter:grayscale(0);
+	-webkit-filter: grayscale(0);
 }
 .marcas a.ansell {
     background: url(../image/marca-ansell.png) no-repeat;
@@ -1488,6 +1494,34 @@ hr.seta{
 	.leia-agora {margin-bottom:50px;}
 	.leia-agora a {color:#f57b20;}
 /* END INFO SEG */
+
+/* search result segmento */
+.search .buttons a,.product-search .btn.btn-primary{
+	font-size: 15px;
+  padding: 7px;
+  text-shadow: none;
+  box-shadow: none;
+  background: #f57b20;
+}
+.search .buttons a:hover{
+	opacity:.8;
+}
+/* END search result segmento */
+.checkout-cart table tr td:nth-child(5),.checkout-cart table tr td:last-child{
+	display:none;
+}
+.checkout-cart table button[type="submit"],.checkout-cart table  button[type="button"]{
+  padding: 8px 11px;
+}
+.checkout-cart table button[type="submit"]{
+  margin: 0 10px !important;
+  background: #f57b20;
+ }
+ .checkout-cart table button[type="button"]{
+    background: #f54320;
+ }
+/* checkout */
+/* END checkout */
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
@@ -1649,8 +1683,8 @@ hr.seta{
 	}
 	
 	.content_bottom a{
-		filter:grayscale(0);
-		-webkit-filter: grayscale(0);
+		filter:grayscale(0.8);
+		-webkit-filter: grayscale(0.8);
 	}
 	.filter-product a{
 		filter:grayscale(0);
