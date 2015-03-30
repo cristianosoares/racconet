@@ -1315,3 +1315,5 @@
 2015-03-27 19:22:13 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
 2015-03-27 19:25:07 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
 2015-03-27 19:26:31 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-27 19:27:33 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
+2015-03-30 21:49:42 - PHP Notice:  Undefined variable: logo_footer in C:\wamp\www\racconet\catalog\view\theme\default\template\common\footer.tpl on line 93
