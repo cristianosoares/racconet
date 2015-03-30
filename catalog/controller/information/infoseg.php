@@ -4,6 +4,14 @@ class ControllerInformationInfoseg extends Controller {
 
 	public function index() {
 		$this->load->language('information/infoseg');
+                
+                if ($this->request->server['HTTPS']) {
+			$server = $this->config->get('config_ssl');
+		} else {
+			$server = $this->config->get('config_url');
+		}
+                
+                $data['image_revista'] = $server . 'revistas/';
 
 		$this->document->setTitle($this->language->get('heading_title'));
 

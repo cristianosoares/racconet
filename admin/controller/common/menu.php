@@ -28,6 +28,7 @@ class ControllerCommonMenu extends Controller {
 		$data['text_download'] = $this->language->get('text_download');
 		$data['text_error_log'] = $this->language->get('text_error_log');
 		$data['text_extension'] = $this->language->get('text_extension');
+                $data['text_infoseg'] = $this->language->get('text_infoseg');
 		$data['text_feed'] = $this->language->get('text_feed');
 		$data['text_filter'] = $this->language->get('text_filter');
 		$data['text_geo_zone'] = $this->language->get('text_geo_zone');
@@ -129,6 +130,7 @@ class ControllerCommonMenu extends Controller {
 		$data['custom_field'] = $this->url->link('sale/custom_field', 'token=' . $this->session->data['token'], 'SSL');
 		$data['download'] = $this->url->link('catalog/download', 'token=' . $this->session->data['token'], 'SSL');
 		$data['error_log'] = $this->url->link('tool/error_log', 'token=' . $this->session->data['token'], 'SSL');
+                $data['infoseg'] = $this->url->link('extension/infoseg', 'token=' . $this->session->data['token'], 'SSL');
 		$data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
 		$data['filter'] = $this->url->link('catalog/filter', 'token=' . $this->session->data['token'], 'SSL');
 		$data['geo_zone'] = $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'], 'SSL');

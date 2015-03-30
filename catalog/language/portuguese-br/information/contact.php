@@ -25,5 +25,6 @@ $_['email_subject']  = 'Contato - %s';
 // Errors
 $_['error_name']     = 'O seu nome de ter entre 3 e 32 caracteres!';
 $_['error_email']    = 'O e-mail não é válido!';
+$_['error_empresa']  = 'O nome da empresa deve ter entre 3 e 32 caracteres!';
 $_['error_enquiry']  = 'A dúvida deve ter entre 10 e 3000 caracteres!';
 $_['error_captcha']  = 'O código no campo não é o mesmo da imagem!';

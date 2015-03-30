@@ -47,8 +47,9 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
         </div><!--col-md-4-->
         
         <div class="col-md-8 col-sm-7">
-        	<img class="center-block" src="images/resvista-destaque.png" alt="Info Seg">
-           
+        	<div data-configid="16538984/12094000" style="width:auto; height:450px;" class="issuuembed"></div>
+                <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+
         </div><!--col-md-8-->
     </div><!--row-->
  	
@@ -60,9 +61,10 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
                 <div class="item col-md-10 col-md-offset-1 col-sm-12 active">
                     <div class="row-fluid">
                         <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" class="thumbnail text-center">
-                            	<img src="images/revista-thumb.png" alt="Image">
-                                Edição n&deg;35
+                            <a href="#x" data-image="" data-id="" class="thumbnail text-center">
+                                <?php $image = $image_revista.'revista-thumb.png';?>
+                            	<img src="<?php echo $image; ?>" alt="Image">
+                                <span class="title-ed">Edição n&deg;35</span>$logo_footer; ?>.'revista-thumb.png'
                             </a>
                         </div><!--col-md-2-->
                         <div class="col-md-2 col-sm-2 col-xs-2">

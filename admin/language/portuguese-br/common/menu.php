@@ -20,6 +20,7 @@ $_['text_design']                      = 'Design';
 $_['text_download']                    = 'Downloads';
 $_['text_error_log']                   = 'Log de erros';
 $_['text_extension']                   = 'Extensões';
+$_['text_infoseg']                     = 'Infoseg';
 $_['text_feed']                        = 'Alimentadores';
 $_['text_filter']                      = 'Filtros';
 $_['text_geo_zone']                    = 'Regiões geográficas';

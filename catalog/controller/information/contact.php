@@ -8,14 +8,33 @@ class ControllerInformationContact extends Controller {
 		$this->document->setTitle($this->language->get('heading_title'));
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-			unset($this->session->data['captcha']);
+			//unset($this->session->data['captcha']);
 
 			$mail = new Mail($this->config->get('config_mail'));
 			$mail->setTo($this->config->get('config_email'));
 			$mail->setFrom($this->request->post['email']);
 			$mail->setSender($this->request->post['name']);
 			$mail->setSubject(sprintf($this->language->get('email_subject'), $this->request->post['name']));
-			$mail->setText(strip_tags($this->request->post['enquiry']));
+                        $mailText = '
+                        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                        <html>
+                            <head>
+                                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                            </head>
+                            <body>
+                                <div class="confirmacion">
+                                    <p>'.$this->request->post["enquiry"].'</p>
+                                    <hr/>    
+                                    <p><b>Dados para Contato:</b></p>
+                                    <p>
+                                        Nome:'.$this->request->post["name"].'<br>
+                                        Empresa:'.$this->request->post["empresa"].'<br>
+                                        Telefone:'.$this->request->post["telephone"].'    
+                                    </p>                                    
+                                </div>
+                            </body>
+                        </html>';
+			$mail->setHtml($mailText);
 			$mail->send();
 
 			$this->response->redirect($this->url->link('information/contact/success'));
@@ -69,11 +88,6 @@ class ControllerInformationContact extends Controller {
 			$data['error_enquiry'] = '';
 		}
 
-		if (isset($this->error['captcha'])) {
-			$data['error_captcha'] = $this->error['captcha'];
-		} else {
-			$data['error_captcha'] = '';
-		}
 
 		$data['button_submit'] = $this->language->get('button_submit');
 
@@ -133,6 +147,12 @@ class ControllerInformationContact extends Controller {
 			$data['email'] = $this->request->post['email'];
 		} else {
 			$data['email'] = $this->customer->getEmail();
+		}
+                
+                if (isset($this->request->post['telephone'])) {
+			$data['telephone'] = $this->request->post['telephone'];
+		} else {
+			$data['telephone'] = $this->customer->getTelephone();
 		}
 
 		if (isset($this->request->post['enquiry'])) {
@@ -208,13 +228,13 @@ class ControllerInformationContact extends Controller {
 		if (!preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $this->request->post['email'])) {
 			$this->error['email'] = $this->language->get('error_email');
 		}
+                
+                if ((utf8_strlen($this->request->post['empresa']) < 3) || (utf8_strlen($this->request->post['name']) > 32)) {
+			$this->error['empresa'] = $this->language->get('error_empresa');
+		}
 
 		if ((utf8_strlen($this->request->post['enquiry']) < 10) || (utf8_strlen($this->request->post['enquiry']) > 3000)) {
 			$this->error['enquiry'] = $this->language->get('error_enquiry');
-		}
-
-		if (empty($this->session->data['captcha']) || ($this->session->data['captcha'] != $this->request->post['captcha'])) {
-			$this->error['captcha'] = $this->language->get('error_captcha');
 		}
 
 		return !$this->error;

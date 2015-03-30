@@ -130,7 +130,7 @@
             
             <div class="col-md-3 col-xs-6"><!--Busque por c.a--></div>
             
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-4 col-info-contato col-xs-12">
                 <div><div class="ico-faleconoscoTop"></div>
                 <div class="tel-contato">31 3029.1477</div>
                 <div class="text-funcionamento"><?php echo $text_funcionamento; ?></div></div>

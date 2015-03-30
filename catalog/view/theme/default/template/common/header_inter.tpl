@@ -46,10 +46,12 @@
 	<nav class="container">
     	<div class="row">
           <div class="col-top-midias col-md-2">
-        	<?php echo $currency; ?>
-        	<?php echo $language; ?>
-                <div class="facebook"></div>
-                <div class="blog"></div>
+        	<div class="facebook pull-right"></div>
+                <div class="blog pull-right"></div>
+                <div class="pull-right">
+                    <?php echo $currency; ?>
+                    <?php echo $language; ?>
+                </div>
           </div>
           <!-- <div id="top-links" class="nav pull-right">
           <ul class="list-inline">
@@ -128,7 +130,7 @@
             
             <div class="col-md-3 col-xs-6"><!--Busque por c.a--></div>
             
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-4 col-info-contato col-xs-12">
                 <div><div class="ico-faleconoscoTop"></div>
                 <div class="tel-contato">31 3029.1477</div>
                 <div class="text-funcionamento"><?php echo $text_funcionamento; ?></div></div>
