@@ -115,7 +115,7 @@
                                 <?php foreach ($informations as $information) { ?>
                                     <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
                                 <?php } ?>
-                                <li><a href="#"><?php echo $text_navInfoseg; ?></a></li>
+                                <li><a href="<?php echo $infoseg; ?>"><?php echo $text_navInfoseg; ?></a></li>
                                 <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
                                 <li><a href="#"><?php echo $text_navTrabalhe; ?></a></li>
                             </ul>
@@ -130,7 +130,7 @@
             
             <div class="col-md-3 col-xs-6"><!--Busque por c.a--></div>
             
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-4 col-info-contato col-xs-12">
                 <div><div class="ico-faleconoscoTop"></div>
                 <div class="tel-contato">31 3029.1477</div>
                 <div class="text-funcionamento"><?php echo $text_funcionamento; ?></div></div>

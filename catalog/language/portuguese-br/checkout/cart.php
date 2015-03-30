@@ -1,16 +1,16 @@
 <?php
 // Heading
-$_['heading_title']            = 'Carrinho de compras';
+$_['heading_title']            = 'Finalizar Cotação';
 
 // Text
-$_['text_success']             = 'Você adicionou <a href="%s">%s</a> ao seu <a href="%s">carrinho de compras</a>!';
-$_['text_remove']              = 'Você modificou seu carrinho de compras!';
+$_['text_success']             = 'Você adicionou <a href="%s">%s</a> a sua <a href="%s">lista de cotação</a>!';
+$_['text_remove']              = 'Você modificou sua lista de cotação!';
 $_['text_login']               = 'Atenção: Você necessita <a href="%s">acessar</a> sua conta ou <a href="%s">cadastrar-se</a> para ver os preços!';
 $_['text_items']               = '%s';
 $_['text_points']              = 'Pontos: %s';
 $_['text_next']                = 'O que você gostaria de fazer?';
 $_['text_next_choice']         = 'Se você deseja utilizar um cupom, vale presentes, pontos ou calcular o frete, utilize uma das opções abaixo:';
-$_['text_empty']               = 'Seu carrinho de compras está vazio!';
+$_['text_empty']               = 'Sua lista de cotação está vazia!';
 $_['text_orcament']            = 'Minha lista de cotação';
 $_['text_day']                 = 'Diária';
 $_['text_week']                = 'Semanal';

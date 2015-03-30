@@ -347,13 +347,12 @@
 
         </div>
         
-        
-        
         <!-- Icones dos Atributos do Produto -->
+        <?php if (($data['porte']!=null)||($data['caracteristicas']!=null)){ ?>
         <div class="carac-principais col-md-12">
             <div class="row">            
             	<ul class="">
-					<?php if ($data['porte']) { ?>
+		   <?php if ($data['porte']) { ?>
                         <?php foreach ($data['porte'] as $porte) { ?>
                         <?php $porteProd = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $porte['name']));
                             $tipPorte = strtolower(str_replace(' ','-', $porteProd));?>
@@ -380,7 +379,9 @@
                 <?php } ?>
                 </ul>
             </div>        
-		</div><!--carac-principais-->    
+        </div>
+        <?php } ?>
+        <!--carac-principais-->  
         <!-- Fim de Icones da pagina de produtos -->
         
         <!-- Especificação do Produto -->

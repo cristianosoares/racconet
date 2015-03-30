@@ -31,8 +31,8 @@
                     <?php if ($error_email) { ?>
                   		<div class="text-danger"><?php echo $error_email; ?></div>
                     <?php } ?>
-                    <input type="tel"  placeholder="Telefone" name="tel" required>
-                    <input type="text" placeholder="Empresa" name="empresa">
+                    <input id="input-telephone" type="tel"  placeholder="Telefone" name="telephone" required>
+                    <input id="input-empresa" type="text" placeholder="Empresa" name="empresa" required>
                    </div>
                    <div class="col-md-6">
                    		<textarea id="input-enquiry" placeholder="Mensagem" name="enquiry" required><?php echo $enquiry; ?></textarea>
