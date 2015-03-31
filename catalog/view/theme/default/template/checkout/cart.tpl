@@ -2,7 +2,7 @@
 <div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?> <span>></span> </a></li>
     <?php } ?>
   </ul>
   <?php if ($attention) { ?>
@@ -97,7 +97,7 @@
           </table>
         </div>
       </form>
-      <?php if ($coupon || $voucher || $reward || $shipping) { ?>
+     <?php /*?> <?php if ($coupon || $voucher || $reward || $shipping) { ?>
       <h2><?php echo $text_next; ?></h2>
       <p><?php echo $text_next_choice; ?></p>
       <div class="panel-group" id="accordion"><?php echo $coupon; ?><?php echo $voucher; ?><?php echo $reward; ?><?php echo $shipping; ?></div>
@@ -114,7 +114,7 @@
             <?php } ?>
           </table>
         </div>
-      </div>
+      </div><?php */?>
       <div class="buttons">
         <div class="pull-left"><a href="<?php echo $continue; ?>" class="btn btn-default"><?php echo $button_shopping; ?></a></div>
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="btn btn-primary"><?php echo $button_checkout; ?></a></div>
