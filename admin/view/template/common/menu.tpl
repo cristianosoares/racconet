@@ -17,11 +17,11 @@
       <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
       <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
       <li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
+      <li><a href="<?php echo $infoseg; ?>"><?php echo $text_infoseg; ?></a></li> 
     </ul>
   </li>
   <li id="extension"><a class="parent"><i class="fa fa-puzzle-piece fa-fw"></i> <span><?php echo $text_extension; ?></span></a>
-    <ul>
-      <li><a href="<?php echo $infoseg; ?>"><?php echo $text_infoseg; ?></a></li>  
+    <ul> 
       <li><a href="<?php echo $installer; ?>"><?php echo $text_installer; ?></a></li>
       <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
       <li><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>

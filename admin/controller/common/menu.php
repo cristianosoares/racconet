@@ -130,7 +130,7 @@ class ControllerCommonMenu extends Controller {
 		$data['custom_field'] = $this->url->link('sale/custom_field', 'token=' . $this->session->data['token'], 'SSL');
 		$data['download'] = $this->url->link('catalog/download', 'token=' . $this->session->data['token'], 'SSL');
 		$data['error_log'] = $this->url->link('tool/error_log', 'token=' . $this->session->data['token'], 'SSL');
-                $data['infoseg'] = $this->url->link('extension/infoseg', 'token=' . $this->session->data['token'], 'SSL');
+                $data['infoseg'] = $this->url->link('catalog/infoseg', 'token=' . $this->session->data['token'], 'SSL');
 		$data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
 		$data['filter'] = $this->url->link('catalog/filter', 'token=' . $this->session->data['token'], 'SSL');
 		$data['geo_zone'] = $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'], 'SSL');

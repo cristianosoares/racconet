@@ -10,8 +10,6 @@ class ControllerInformationInfoseg extends Controller {
 		} else {
 			$server = $this->config->get('config_url');
 		}
-                
-                $data['image_revista'] = $server . 'revistas/';
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -108,6 +106,24 @@ class ControllerInformationInfoseg extends Controller {
 		$data['fax'] = $this->config->get('config_fax');
 		$data['open'] = nl2br($this->config->get('config_open'));
 		$data['comment'] = $this->config->get('config_comment');
+                
+                $data['infosegs'] = array();
+                
+                $this->load->model('information/infoseg');
+                
+                $results = $this->model_information_infoseg->getAllInfoseg();
+                
+
+                foreach ($results as $result) {
+                        $data['infosegs'][] = array(
+                                'title'  => $result['name'], 
+                                'edicao'  => $result['edicao'],
+                                'capa'  => $server . 'image/'. $result['image'],
+                                'arquivo'  => $server . 'system/download/'. $result['filename'],
+                                'id_issuu'  => $result['id_issuu'],
+                                'cod_revista'  => $result['cod_revista']
+                        );
+                }
 
 		$data['locations'] = array();
 

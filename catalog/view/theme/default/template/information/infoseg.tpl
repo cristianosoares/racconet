@@ -37,19 +37,17 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
 			
             <div class="row">
                 <div class="leia-agora col-md-10 col-sm-10 col-xs-6">
-                    <img class="pull-left" src="images/revista-thumb.png" alt="Image">
+                    <img class="pull-left" src="" alt="Image" width="172">
                     <div class="pull-right">
-                     <h3> Edição n&deg;35</h3>
-                     <a href="#" title="Leia Agora">Leia Agora > </a>
+                     <h3></h3>
+                     <a href="" title="Leia Agora" class="baixar-infoseg">Leia Agora > </a>
                     </div>
                 </div>
             </div>
         </div><!--col-md-4-->
         
-        <div class="col-md-8 col-sm-7">
-        	<div data-configid="16538984/12094000" style="width:auto; height:450px;" class="issuuembed"></div>
-                <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
-
+        <div class="col-md-8 col-sm-7 revista">
+            <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
         </div><!--col-md-8-->
     </div><!--row-->
  	
@@ -59,44 +57,18 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
             <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="item col-md-10 col-md-offset-1 col-sm-12 active">
-                    <div class="row-fluid">
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" data-image="" data-id="" class="thumbnail text-center">
-                                <?php $image = $image_revista.'revista-thumb.png';?>
-                            	<img src="<?php echo $image; ?>" alt="Image">
-                                <span class="title-ed">Edição n&deg;35</span>$logo_footer; ?>.'revista-thumb.png'
-                            </a>
-                        </div><!--col-md-2-->
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" class="thumbnail text-center">
-                            	<img src="images/revista-thumb.png" alt="Image">
-                                Edição n&deg;35
-                            </a>
-                        </div><!--col-md-2-->
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" class="thumbnail text-center">
-                            	<img src="images/revista-thumb.png" alt="Image">
-                                Edição n&deg;35
-                            </a>
-                        </div><!--col-md-2-->
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" class="thumbnail text-center">
-                            	<img src="images/revista-thumb.png" alt="Image">
-                                Edição n&deg;35
-                            </a>
-                        </div><!--col-md-2-->
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" class="thumbnail text-center">
-                            	<img src="images/revista-thumb.png" alt="Image">
-                                Edição n&deg;35
-                            </a>
-                        </div><!--col-md-2-->
-                        <div class="col-md-2 col-sm-2 col-xs-2">
-                            <a href="#x" class="thumbnail text-center">
-                            	<img src="images/revista-thumb.png" alt="Image">
-                                Edição n&deg;35
-                            </a>
-                        </div><!--col-md-2-->
+                    <div class="row-fluid infosegs">
+                        <?php if ($data['infosegs']) { ?>
+                            <?php foreach ($data['infosegs'] as $infoseg) { ?>
+                                <div class="col-md-2 col-sm-2 col-xs-2 infoseg">
+                                    <div data-config="<?php echo $infoseg['cod_revista']; ?>" data-id="<?php echo $infoseg['id_issuu']; ?>" data-arquivo ="<?php echo $infoseg['arquivo']; ?>" data-title="<?php echo $infoseg['title']; ?>" class="thumbnail text-center">
+                                        <img src="<?php echo $infoseg['capa']; ?>" alt="Image">
+                                        <span class="title-ed">Edição n&deg;<?php echo $infoseg['edicao']; ?></span>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
+                        <!--col-md-2-->
                     </div><!--/row-fluid-->
                 </div><!--/item-->
                 
@@ -113,4 +85,33 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
       </div><!--col-md-12-->
     </div><!--row-->
 </div><!--info-seg-->
+<script>
+    //iniciar revista principal
+    var configid = $('.infosegs div div:first-child').attr('data-id')+'/'+$('.infosegs div div:first-child').attr('data-config');
+    var arquivo = $('.infosegs div div:first-child').attr('data-arquivo');
+    var title = $('.infosegs div div:first-child').attr('data-title');
+    var capa = $('.infosegs div div img:first-child').attr('src');
+    $('.leia-agora img').attr('src', capa);
+    $('.leia-agora h3').append(title);
+    $('.revista').append('<div data-configid="'+configid+'" style="width:auto; height:600px;" class="issuuembed"></div>');
+    $('.baixar-infoseg').attr('href', arquivo);
+    
+    // função de alterar revista principal
+    $( ".infoseg" ).click(function() {
+            $( ".leia-agora h3,.revista" ).empty();
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//e.issuu.com/embed.js";
+            configid = $(this).find("div").attr('data-id')+'/'+$(this).find("div").attr('data-config');
+            arquivo = $(this).find("div").attr('data-arquivo');
+            title = $(this).find("div").attr('data-title');
+            capa = $(this).find("img").attr('src');
+            $('.leia-agora img').attr('src', capa);
+            $('.leia-agora h3').append(title);
+            $('.revista').append('<div data-configid="'+configid+'" style="width:auto; height:600px;" class="issuuembed"></div>');
+            $(".revista").append(s);
+            $('.baixar-infoseg').attr('href', arquivo);
+    });
+    
+</script>    
 <?php echo $footer; ?>
