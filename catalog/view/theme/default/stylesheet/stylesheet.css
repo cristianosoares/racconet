@@ -1533,6 +1533,14 @@ hr.seta{
  }
 /* checkout */
 /* END checkout */
+
+/* COOLERS */
+#coolers h3{ 
+	color:#f57b20;
+	font-size:22px;
+}
+/* END COOLERS */
+
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
