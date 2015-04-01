@@ -37,8 +37,8 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
 			
             <div class="row">
                 <div class="leia-agora col-md-10 col-sm-10 col-xs-6">
-                    <img class="pull-left" src="" alt="Image" width="172">
-                    <div class="pull-right">
+                    <img class="pull-left" src="" alt="Image" width="220">
+                    <div class="pull-left title-rev">
                      <h3></h3>
                      <a href="" title="Leia Agora" class="baixar-infoseg">Leia Agora > </a>
                     </div>
@@ -55,42 +55,33 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
       <div class="col-md-12">
             <div id="myCarousel" class="carousel slide">
             <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="item col-md-10 col-md-offset-1 col-sm-12 active">
-                    <div class="row-fluid infosegs">
+                <div class="jcarousel">
+                    <ul class="row-fluid infosegs">
                         <?php if ($data['infosegs']) { ?>
                             <?php foreach ($data['infosegs'] as $infoseg) { ?>
-                                <div class="col-md-2 col-sm-2 col-xs-2 infoseg">
+                                <li class="col-md-2 col-sm-2 col-xs-2 infoseg">
                                     <div data-config="<?php echo $infoseg['cod_revista']; ?>" data-id="<?php echo $infoseg['id_issuu']; ?>" data-arquivo ="<?php echo $infoseg['arquivo']; ?>" data-title="<?php echo $infoseg['title']; ?>" class="thumbnail text-center">
                                         <img src="<?php echo $infoseg['capa']; ?>" alt="Image">
                                         <span class="title-ed">Edição n&deg;<?php echo $infoseg['edicao']; ?></span>
                                     </div>
-                                </div>
+                                </li>
                             <?php } ?>
                         <?php } ?>
                         <!--col-md-2-->
-                    </div><!--/row-fluid-->
+                    </ul><!--/row-fluid-->
                 </div><!--/item-->
-                
-                 
-            </div><!--/carousel-inner-->
-             
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            	
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            	
-            </a>
+                <a class="left carousel-control jcarousel-control-prev" href="#" data-slide="prev"></a>
+                <a class="right carousel-control jcarousel-control-next" href="#" data-slide="next"></a>
             </div><!--/myCarousel-->
       </div><!--col-md-12-->
     </div><!--row-->
 </div><!--info-seg-->
 <script>
     //iniciar revista principal
-    var configid = $('.infosegs div div:first-child').attr('data-id')+'/'+$('.infosegs div div:first-child').attr('data-config');
-    var arquivo = $('.infosegs div div:first-child').attr('data-arquivo');
-    var title = $('.infosegs div div:first-child').attr('data-title');
-    var capa = $('.infosegs div div img:first-child').attr('src');
+    var configid = $('.infosegs li div:first-child').attr('data-id')+'/'+$('.infosegs li div:first-child').attr('data-config');
+    var arquivo = $('.infosegs li div:first-child').attr('data-arquivo');
+    var title = $('.infosegs li div:first-child').attr('data-title');
+    var capa = $('.infosegs li div img:first-child').attr('src');
     $('.leia-agora img').attr('src', capa);
     $('.leia-agora h3').append(title);
     $('.revista').append('<div data-configid="'+configid+'" style="width:auto; height:600px;" class="issuuembed"></div>');

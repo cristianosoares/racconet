@@ -126,9 +126,9 @@
         </div><!--row bg-top-header-->
         
          <div class="search-prod row">
-            <div class="col-md-5 col-searchProd col-xs-6"><?php echo $search; ?></div>
+            <div class="col-md-7 col-searchProd col-xs-8"><?php echo $search; ?></div>
             
-            <div class="col-md-3 col-xs-6"><!--Busque por c.a--></div>
+            <div class="col-md-1 col-xs-6"><!--Busque por c.a--></div>
             
             <div class="col-md-4 col-info-contato col-xs-12">
                 <div><div class="ico-faleconoscoTop"></div>

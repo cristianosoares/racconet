@@ -399,8 +399,9 @@
                     </div>    
                     <div class="col-md-10 col-sm-10">
                       <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-                        
-                        <span class="name"><?php echo $attribute['name']; ?></span>
+                         <?php $attributes = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $attribute['name'] ));
+                        $atributoProd = strtolower(str_replace(' ','-', $attributes)); ?>
+                        <span class="name atributes <?php echo $atributoProd; ?> "><?php echo $attribute['name']; ?></span>
                         <span class="text"><?php echo $attribute['text']; ?></span><br>
 
                       <?php } ?>

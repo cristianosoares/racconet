@@ -27,12 +27,15 @@
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" >
 <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+<link href="catalog/view/theme/default/stylesheet/jcarousel.responsive.css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" >
 <?php } ?>
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jcarousel.responsive.js" type="text/javascript"></script>
 
 <?php foreach ($scripts as $script) { ?>
 <script src="<?php echo $script; ?>" type="text/javascript"></script>
@@ -126,9 +129,9 @@
         </div><!--row bg-top-header-->
         
          <div class="search-prod row">
-            <div class="col-md-5 col-searchProd col-xs-6"><?php echo $search; ?></div>
+            <div class="col-md-7 col-searchProd col-xs-8"><?php echo $search; ?></div>
             
-            <div class="col-md-3 col-xs-6"><!--Busque por c.a--></div>
+            <div class="col-md-1 col-xs-6"><!--Busque por c.a--></div>
             
             <div class="col-md-4 col-info-contato col-xs-12">
                 <div><div class="ico-faleconoscoTop"></div>
