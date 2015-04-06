@@ -8,6 +8,12 @@ class ControllerProductCategory extends Controller {
 		$this->load->model('catalog/product');
 
 		$this->load->model('tool/image');
+                
+                if ($this->request->server['HTTPS']) {
+			$server = $this->config->get('config_ssl');
+		} else {
+			$server = $this->config->get('config_url');
+		}
 
 		if (isset($this->request->get['filter'])) {
 			$filter = $this->request->get['filter'];
@@ -64,9 +70,48 @@ class ControllerProductCategory extends Controller {
 			$path = '';
 
 			$parts = explode('_', (string)$this->request->get['path']);
-
+                        
+                        $data['banner'] = array();
+                        $data['banner_link'] = array();
+                        
+                        if($parts){
+                                //banner de cases
+                                if($parts[0] == 18){
+                                    $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-cases.png';
+                                    $data['banner_link']= $server .'/index.php?route=information/technical-information-cases';
+                                }
+                                //banner de sistema de iluminacao
+                                if($parts[0] == 20){
+                                    $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-kit-iluminacao.png';
+                                    $data['banner_link']='';
+                                }
+                                //banner de cooler
+                                if($parts[0] == 24){
+                                    $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-cooler.png';
+                                    $data['banner_link']='';
+                                }
+                                //banner de lanternas
+                                if($parts[0] == 25){
+                                    $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-lanternas.png';
+                                    $data['banner_link']='';
+                                }
+                                //banner de malas de ferramentas
+                                if($parts[0] == 33){
+                                    $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banners-malas.png';
+                                    $data['banner_link']='';
+                                }
+                                //banner de protecao de limpeza
+                                if($parts[0] == 34){
+                                    
+                                    $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-stoko.png';
+                                    $data['banner_link']='';
+                                }
+                        }
+                        
+                        //var_dump($data['banner']);die;
+                        
 			$category_id = (int)array_pop($parts);
-
+                        
 			foreach ($parts as $path_id) {
 				if (!$path) {
 					$path = (int)$path_id;
@@ -86,6 +131,8 @@ class ControllerProductCategory extends Controller {
 		} else {
 			$category_id = 0;
 		}
+                
+                
 
 		$category_info = $this->model_catalog_category->getCategory($category_id);
 
@@ -164,6 +211,7 @@ class ControllerProductCategory extends Controller {
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
 				);
 			}
+                       
 
 			$data['products'] = array();
 

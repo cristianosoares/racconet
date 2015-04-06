@@ -1,16 +1,21 @@
 <?php echo $header; ?>
-<div class="container">
+<div class="container"> 
   <div class="row">
-  	<?php 
-		echo $column_left; 
-		
-		if ($column_left && $column_right) { 
-		 	$class = 'col-sm-6';
-		 } elseif ($column_left || $column_right) { 
-		 	$class = 'col-md-9 col-sm-9'; 
-		 } else {
-		 	$class = 'col-sm-12'; 
-     	}  ?>
+    <!-- mini banners -->  
+    <div class="mini-banners">
+        <a href="<?php echo $data['banner_link']; ?>"><img src="<?php echo $data['banner']; ?>"></a>
+    </div> 
+    
+    <?php 
+            echo $column_left; 
+
+            if ($column_left && $column_right) { 
+                    $class = 'col-sm-6';
+             } elseif ($column_left || $column_right) { 
+                    $class = 'col-md-9 col-sm-9'; 
+             } else {
+                    $class = 'col-sm-12'; 
+    }  ?>
     <div id="content" class="<?php echo $class; ?>">
     
       <ul class="breadcrumb">

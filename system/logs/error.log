@@ -1286,3 +1286,19 @@
 2015-04-01 19:53:58 - PHP Notice:  Undefined variable: errors in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 56
 2015-04-01 19:57:00 - PHP Warning:  move_uploaded_file(http://localhost/new-racconet/upload/curriculos/infoseg38.pdf) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: HTTP wrapper does not support writeable connections in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 52
 2015-04-01 19:57:00 - PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\wamp\tmp\php8AA4.tmp' to 'http://localhost/new-racconet/upload/curriculos/infoseg38.pdf' in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 52
+2015-04-02 12:17:10 - PHP Notice:  Error: Could not load template C:\wamp\www\new-racconet\upload\catalog\view\theme\default/template/information/technical-information-cases.tpl! in C:\wamp\www\new-racconet\upload\system\modification\system\engine\loader.php on line 45
+2015-04-02 13:51:05 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 90
+2015-04-02 13:51:13 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 90
+2015-04-02 13:53:33 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 90
+2015-04-02 13:54:10 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 90
+2015-04-02 13:54:10 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 91
+2015-04-02 13:54:10 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 95
+2015-04-02 14:43:34 - PHP Notice:  Undefined variable: path_id in C:\wamp\www\new-racconet\upload\catalog\controller\product\category.php on line 90
+2015-04-06 14:30:05 - PHP Notice:  Undefined variable: query in C:\wamp\www\new-racconet\upload\catalog\model\catalog\manufacturer.php on line 47
+2015-04-06 14:30:05 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\catalog\model\catalog\manufacturer.php on line 47
+2015-04-06 14:30:23 - PHP Notice:  Undefined variable: query in C:\wamp\www\new-racconet\upload\catalog\model\catalog\manufacturer.php on line 47
+2015-04-06 14:30:23 - PHP Notice:  Trying to get property of non-object in C:\wamp\www\new-racconet\upload\catalog\model\catalog\manufacturer.php on line 47
+2015-04-06 14:31:12 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 73
+2015-04-06 14:31:12 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 76
+2015-04-06 14:31:12 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 84
+2015-04-06 14:31:12 - PHP Notice:  Undefined index: manufacturer_id in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 85

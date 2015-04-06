@@ -402,7 +402,7 @@
                          <?php $attributes = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $attribute['name'] ));
                         $atributoProd = strtolower(str_replace(' ','-', $attributes)); ?>
                         <span class="name atributes <?php echo $atributoProd; ?> "><?php echo $attribute['name']; ?></span>
-                        <span class="text"><?php echo $attribute['text']; ?></span><br>
+                        <span class="text"><?php echo html_entity_decode($attribute['text'], ENT_QUOTES, 'UTF-8'); ?></span><br>
 
                       <?php } ?>
                     </div>
