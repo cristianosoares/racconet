@@ -78,12 +78,12 @@ class ControllerProductCategory extends Controller {
                                 //banner de cases
                                 if($parts[0] == 18){
                                     $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-cases.png';
-                                    $data['banner_link']= $server .'/index.php?route=information/technical-information-cases';
+                                    $data['banner_link']= $server .'index.php?route=information/technical-information-cases';
                                 }
                                 //banner de sistema de iluminacao
                                 if($parts[0] == 20){
                                     $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-kit-iluminacao.png';
-                                    $data['banner_link']='';
+                                    $data['banner_link']= $server .'index.php?route=information/technical-information-lighting-systems';
                                 }
                                 //banner de cooler
                                 if($parts[0] == 24){
@@ -93,7 +93,7 @@ class ControllerProductCategory extends Controller {
                                 //banner de lanternas
                                 if($parts[0] == 25){
                                     $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-lanternas.png';
-                                    $data['banner_link']='';
+                                    $data['banner_link']= $server .'index.php?route=information/technical-information-flashlights';
                                 }
                                 //banner de malas de ferramentas
                                 if($parts[0] == 33){
