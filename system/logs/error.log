@@ -1271,3 +1271,18 @@
 2015-03-31 18:43:40 - PHP Notice:  Undefined index: image in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 67
 2015-03-31 18:43:40 - PHP Notice:  Undefined index: image in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 67
 2015-03-31 18:43:40 - PHP Notice:  Undefined index: image in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\information\infoseg.tpl on line 67
+2015-04-01 18:14:37 - PHP Notice:  Undefined index: empresa in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 242
+2015-04-01 18:17:40 - PHP Notice:  Undefined property: Request::$file in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 18
+2015-04-01 18:30:25 - PHP Notice:  Undefined index: empresa in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 35
+2015-04-01 18:30:25 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 18:30:56 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 18:54:58 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 18:55:25 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 18:57:05 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 18:58:56 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 19:23:05 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 19:24:10 - PHP Notice:  Error: RCPT TO not accepted from server! in C:\wamp\www\new-racconet\upload\system\library\mail.php on line 345
+2015-04-01 19:53:58 - PHP Warning:  copy(http://localhost/new-racconet/upload/curriculos/infoseg38.pdf) [<a href='function.copy'>function.copy</a>]: failed to open stream: HTTP wrapper does not support writeable connections in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 54
+2015-04-01 19:53:58 - PHP Notice:  Undefined variable: errors in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 56
+2015-04-01 19:57:00 - PHP Warning:  move_uploaded_file(http://localhost/new-racconet/upload/curriculos/infoseg38.pdf) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: HTTP wrapper does not support writeable connections in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 52
+2015-04-01 19:57:00 - PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\wamp\tmp\php8AA4.tmp' to 'http://localhost/new-racconet/upload/curriculos/infoseg38.pdf' in C:\wamp\www\new-racconet\upload\catalog\controller\information\work-with-us.php on line 52

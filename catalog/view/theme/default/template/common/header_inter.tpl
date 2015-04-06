@@ -120,7 +120,7 @@
                                 <?php } ?>
                                 <li><a href="<?php echo $infoseg; ?>"><?php echo $text_navInfoseg; ?></a></li>
                                 <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
-                                <li><a href="#"><?php echo $text_navTrabalhe; ?></a></li>
+                                <li><a href="<?php echo $work; ?>"><?php echo $text_navTrabalhe; ?></a></li>
                             </ul>
                         </div><!--navbarCollapse-->
                     </nav>
