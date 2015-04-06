@@ -88,7 +88,7 @@ class ControllerProductCategory extends Controller {
                                 //banner de cooler
                                 if($parts[0] == 24){
                                     $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-cooler.png';
-                                    $data['banner_link']='';
+                                    $data['banner_link']= $server .'index.php?route=information/technical-information-coolers';
                                 }
                                 //banner de lanternas
                                 if($parts[0] == 25){
@@ -104,7 +104,7 @@ class ControllerProductCategory extends Controller {
                                 if($parts[0] == 34){
                                     
                                     $data['banner']= $server . 'catalog/view/theme/default/image/mini-banners/mini-banner-stoko.png';
-                                    $data['banner_link']='';
+                                    $data['banner_link']= $server .'index.php?route=information/technical-information-creams';
                                 }
                         }
                         
