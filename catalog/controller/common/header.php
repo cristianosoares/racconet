@@ -58,6 +58,7 @@ class ControllerCommonHeader extends Controller {
                 $data['text_navContato']    =  $this->language->get('text_navContato');
                 $data['text_navQuemSomos']  =  $this->language->get('text_navQuemSomos');
                 $data['text_navTrabalhe']   =  $this->language->get('text_navTrabalhe');
+                $data['text_navRevendedor']   =  $this->language->get('text_navRevendedor');
 
 		$data['home'] = $this->url->link('common/home');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
@@ -73,6 +74,7 @@ class ControllerCommonHeader extends Controller {
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 		$data['contact'] = $this->url->link('information/contact');
                 $data['work'] = $this->url->link('information/work-with-us');
+                $data['dealer'] = $this->url->link('information/dealer');
                 $data['infoseg'] = $this->url->link('information/infoseg');
 		$data['telephone'] = $this->config->get('config_telephone');
 

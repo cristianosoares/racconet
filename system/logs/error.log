@@ -1302,3 +1302,4 @@
 2015-04-06 14:31:12 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 76
 2015-04-06 14:31:12 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 84
 2015-04-06 14:31:12 - PHP Notice:  Undefined index: manufacturer_id in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 85
+2015-04-06 18:37:26 - PHP Notice:  Undefined variable: text_navRevendedor in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 119

@@ -1353,6 +1353,14 @@ input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
+
+select.campo-estado {
+    padding: 10px 8px 10px 8px;
+    width: 318px;
+    border: solid thin #f0f0f0;
+    color: #a1a1a1;
+    font-size: 13px;
+}
 /* END CONTATO & TRABALHE-CONOSCO*/
 
 /* INFORMACOES TECNICAS */

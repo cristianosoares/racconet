@@ -48,11 +48,25 @@
             <div class="col-top-midias col-md-2">
             	<div class="facebook pull-right"></div>
                 <div class="blog pull-right"></div>
-                <div class="pull-right">
+                <!--<div class="pull-right">
                     <?php echo $currency; ?>
                     <?php echo $language; ?>
-                </div>
-                
+                </div>-->
+                <ul class="list-inline">
+                    <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                        <?php if ($logged) { ?>
+                        <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+                        <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+                        <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
+                        <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+                        <?php } else { ?>
+                        <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+                        <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+                        <?php } ?>
+                      </ul>
+                    </li>
+               </ul>
             </div>
            <!--<div id="top-links" class="nav pull-right">
           <ul class="list-inline">
@@ -111,13 +125,14 @@
         
                         <div id="navbarCollapse" class="collapse navbar-collapse pull-right col-xs-12">
                             <ul class="nav navbar-nav">
-                                <li><a href="#"><?php echo $text_navProdutos; ?></a></li>
+                                <!--<li><a href="#"><?php echo $text_navProdutos; ?></a></li>-->
                                 <?php foreach ($informations as $information) { ?>
                                     <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
                                 <?php } ?>
                                 <li><a href="<?php echo $infoseg; ?>"><?php echo $text_navInfoseg; ?></a></li>
                                 <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
-                                <li><a href="<?php echo $work; ?>"><?php echo $text_navTrabalhe; ?></a></li>
+                                <li><a href="<?php echo $dealer; ?>"><?php echo $text_navRevendedor; ?></a></li>
+                                <!--<li><a href="<?php echo $work; ?>"><?php echo $text_navTrabalhe; ?></a></li>-->
                             </ul>
                         </div><!--navbarCollapse-->
                     </nav>

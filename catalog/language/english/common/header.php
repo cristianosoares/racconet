@@ -22,3 +22,4 @@ $_['text_navInfoseg']    = 'Infoseg';
 $_['text_navContato']    = 'Contact';
 $_['text_navQuemSomos']  = 'About Us';
 $_['text_navTrabalhe']   = 'Work with us';
+$_['text_navRevendedor'] = 'Becoming a partner';

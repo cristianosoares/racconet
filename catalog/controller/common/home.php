@@ -16,6 +16,10 @@ class ControllerCommonHome extends Controller {
         $data['text_marca'] = $this->language->get('text_marcas');
         $data['text_all'] = $this->language->get('text_all');
         $data['text_category'] = $this->language->get('text_category');
+        $data['text_btnInfoseg']   =  $this->language->get('text_btnInfoseg');
+        
+        $data['infoseg'] = $this->url->link('information/infoseg');
+        $data['dealer'] = $this->url->link('information/dealer');
 
 
         $data['column_left'] = $this->load->controller('common/column_left');

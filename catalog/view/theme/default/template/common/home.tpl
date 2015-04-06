@@ -116,7 +116,7 @@
                     <div class="text-infoseg">
                         É o primeiro informativo eletrônico voltado para os profissionais da área de segurança no trabalho.
                     </div>
-                    <div class="btn-infoseg">Cadastre-se Já</div>
+                    <a href="<?php echo $infoseg; ?>"><div class="btn-infoseg"><?php echo $text_btnInfoseg; ?></div></a>
                     <div class="ass-free">*Cadastro Gratuito</div>
                 </div><!--col2-ass-->
             </div><!--col-md-5-->
@@ -130,9 +130,9 @@
             
             <div class="col-md-3 col-sm-12  col-xs-12">
                 <h2 class="title-ass">
-                    <span>Junte-se</span> a Nós
+                    <span>Seja</span> um Parceiro
                 </h2>
-                <div class="junte-se-nos"></div>
+                <a href="<?php echo $dealer; ?>"><div class="junte-se-nos"></div></a>
             </div><!--col-md-3-->
         </div> <!--assinaturas-->
 </div><!--container-->
