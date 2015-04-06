@@ -1540,7 +1540,7 @@ hr.seta{
 	font-size:22px;
 }
 /* END COOLERS */
-#cases img{
+#cases img, #coolers img{
 	border: solid thin #f57b20;
 	margin:5px auto;
 }
