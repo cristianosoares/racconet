@@ -1544,12 +1544,17 @@ hr.seta{
 	border: solid thin #f57b20;
 	margin:5px auto;
 }
-#cases nav ul{margin:0; padding:0;}
+#cases nav ,#cremes nav {
+  border-bottom: solid thin;
+  margin-bottom: 35px;
+}
+#cases nav ul,#cremes nav ul{margin:0; padding:0;}
 
-#cases nav ul li{font-size:22px; margin:20px auto;  cursor:pointer}
-#cases nav ul li.active{color:#f57b20; cursor:default}
-.smartphone,.malas,.backpak,.stom{display:none;}
-
+#cases nav ul li,#cremes nav ul li{font-size:22px; margin:20px auto;  cursor:pointer}
+#cases nav ul li.active,#cremes nav ul li.active{color:#f57b20; cursor:default}
+.smartphone,.malas,.backpak,.stom,.dermatoses{display:none;}
+#cremes h5{font-size:16px;}
+#cremes p{font-size:13px;}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
