@@ -1540,7 +1540,9 @@ hr.seta{
 	font-size:22px;
 }
 /* END COOLERS */
-
+#cases img{
+	border: solid thin #f57b20;
+}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
