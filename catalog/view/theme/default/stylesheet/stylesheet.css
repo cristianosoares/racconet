@@ -1548,17 +1548,20 @@ hr.seta{
   border-bottom: solid thin;
   margin-bottom: 35px;
 }
-#cases nav ul,#cremes nav ul, #info-epi nav ul{margin:0; padding:0;}
-
-#cases nav ul li,#cremes nav ul li,#info-epi nav ul li{font-size:22px; margin:20px auto;  cursor:pointer}
-#cases nav ul li.active,#cremes nav ul li.active,#info-epi nav ul li.active{color:#f57b20; cursor:default}
-.smartphone,.malas,.backpak,.stom,.dermatoses,#info-epi .msa,#info-epi .hercules{display:none;}
+#cases nav ul,#cremes nav ul, #info-epi nav ul,#quem-somos nav ul{margin:0; padding:0;}
+#cases nav ul li,#cremes nav ul li,#info-epi nav ul li,#quem-somos nav ul li{font-size:22px; margin:20px auto;  cursor:pointer}
+#cases nav ul li.active,#cremes nav ul li.active,#info-epi nav ul li.active,#quem-somos nav ul li.active{color:#f57b20; cursor:default}
+.smartphone,.malas,.backpak,.stom,.dermatoses,#info-epi .msa,#info-epi .hercules,.instalacoes,.fundador{display:none;}
 #cremes h5{font-size:16px;}
 #cremes p,#info-epi p{font-size:13px;}
 #info-epi h4{font-size:20px;}
 #info-epi img{
 	border: solid  #f57b20;
 }
+/* QUEM SOMOS */
+.quem-somos .row{ margin-top:30px}
+.quem-somos .col-md-3{ border-right:solid thin;}
+.fundador img{ margin-top:60px;}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
@@ -1727,7 +1730,7 @@ hr.seta{
 		filter:grayscale(0);
 		-webkit-filter: grayscale(0);
 	}
-
+	.quem-somos .col-md-3{ border-right:none}
 }
 @media (min-width: 767px) {
 	.product-list .product-thumb .image {
