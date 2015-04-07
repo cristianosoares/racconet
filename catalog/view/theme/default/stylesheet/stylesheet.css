@@ -1579,6 +1579,9 @@ hr.seta{
 .quem-somos .row{ margin-top:30px}
 .quem-somos .col-md-3{ border-right:solid thin;}
 .fundador img{ margin-top:60px;}
+
+/* SEFRVICOS */
+#servicos img{  width:calc(95%/5); margin-top:5px}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
@@ -1679,6 +1682,7 @@ hr.seta{
 	.content_bottom a span {
 	  top: 110px;
 	}
+	#servicos img{  width:calc(95%/3)}
 }   
 @media (max-width: 767px) {
 	#menu {
