@@ -75,7 +75,8 @@
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div>
               <div class="caption">
-                <p><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?> - <?php echo $product['description']; ?></a></p>
+                <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>  
+                <p><a href="<?php echo $product['href']; ?>"><?php echo $product['description']; ?></a></p>
                 <?php /* PREÇO:
 				?><?php if ($product['price']) { ?>
                 <p class="price">
