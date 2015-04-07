@@ -21,4 +21,5 @@
 	  <a href="<?php echo $category['href']; ?>" class="<?php echo $data['class']; ?> <?php echo $categoria; ?> list-group-item"><span><?php echo $category['name']; ?></span></a>
 	  <?php } ?>
   <?php } ?>
+  <a href="<?php echo $epis; ?>" class="col-md-3 col-sm-4 col-xs-6 epis list-group-item"><span>EPI'S (0)</span></a>
 </div>

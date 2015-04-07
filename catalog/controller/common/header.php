@@ -76,6 +76,9 @@ class ControllerCommonHeader extends Controller {
                 $data['work'] = $this->url->link('information/work-with-us');
                 $data['dealer'] = $this->url->link('information/dealer');
                 $data['infoseg'] = $this->url->link('information/infoseg');
+                $data['about'] = $this->url->link('information/about-us');
+                $data['services'] = $this->url->link('information/services');
+                
 		$data['telephone'] = $this->config->get('config_telephone');
 
 		$status = true;

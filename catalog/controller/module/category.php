@@ -4,6 +4,9 @@ class ControllerModuleCategory extends Controller {
 		$this->load->language('module/category');
 
 		$data['heading_title'] = $this->language->get('heading_title');
+                
+                //link do mini banner estatico
+                $data['epis'] = $this->url->link('information/technical-information-epis');
 
 		if (isset($this->request->get['path'])) {
 			$parts = explode('_', (string)$this->request->get['path']);
@@ -22,7 +25,7 @@ class ControllerModuleCategory extends Controller {
 		} else {
 			$data['child_id'] = 0;
 		}
-
+                
 		$this->load->model('catalog/category');
 
 		$this->load->model('catalog/product');

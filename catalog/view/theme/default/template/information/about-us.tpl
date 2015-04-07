@@ -26,7 +26,7 @@
             </p>
             <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos01.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos01.png">
                 </div>
                 <div class="col-md-9"><br>
                 	<p>Soluções de iluminação através de Kit`s de iluminação, lanternas, refletores e holofotes mais potentes do mundo, através de 
@@ -36,7 +36,7 @@ LED`s e baterias recarregáveis de alta performance.</p>
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos02.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos02.png">
                 </div>
                 <div class="col-md-9">
                 	<p>Cases ultra resistentes para acondicionamento de equipamentos e instrumentos. E modelos especiais desenvolvidas para 
@@ -46,7 +46,7 @@ bicicletas e seus acessórios. Além disso, uma linha exclusiva de maletas e bol
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos03.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos03.png">
                 </div>
                 <div class="col-md-9">
                 	<p>Distribuidor Master exclusivo para o Brasil. Uma das lideres mundiais em detecção de gases através de tubos colorimétricos.
@@ -56,7 +56,7 @@ Adquiriu em 2014  a linha Kwik Draw de bombas e tubos da MSA.</p>
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos04.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos04.png">
                 </div>
                 <div class="col-md-9"><br>
                 	<p>Distribuidor Master do lider mundial em produtos para limpeza, proteção e regeneração da pele.</p>
@@ -65,7 +65,7 @@ Adquiriu em 2014  a linha Kwik Draw de bombas e tubos da MSA.</p>
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos05.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos05.png">
                 </div>
                 <div class="col-md-9">
                 	<p>Distribuidor e Importador oficial exclusivo da Líder mundial na fabricação de lanternas profissionais antiexplosão para áreas 
@@ -75,7 +75,7 @@ classificadas e Cases (maletas) especiais indestrutíveis para armazenamento de 
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos06.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos06.png">
                 </div>
                 <div class="col-md-9">
                 	<p>Distribuidor Máster de uma das mais reconhecidas e líderes do mercado como fabricante de equipamentos e instrumentos 
@@ -86,7 +86,7 @@ queda, instrumentos para detecção e monitoramento de gases..</p>
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos07.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos07.png">
                 </div>
                 <div class="col-md-9"><br>
                 	<p>Distribuidor de uma das mais reconhecidas e líderes do mercado como fabricante de luvas. </p>
@@ -95,7 +95,7 @@ queda, instrumentos para detecção e monitoramento de gases..</p>
             
              <div class="row">
             	<div class="col-md-3">
-                	<img class="img-responsive center-block" alt="" src="../catalog/view/theme/default/image/quem-somos08.png">
+                	<img class="img-responsive center-block" alt="" src="<?php echo $data['dominio'];?>quem-somos08.png">
                 </div>
                 <div class="col-md-9">
                 	<p>Distribuidor de uma das mais reconhecidas empresas do mercado como fabricante de equipamentos para equipamentos de
@@ -110,7 +110,7 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
             
             <div class="row">
             	<div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-right" alt="" src="../catalog/view/theme/default/image/fundador01.png">
+                	<img class="img-responsive pull-right" alt="" src="<?php echo $data['dominio'];?>fundador01.png">
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8">
                 	 <p>A história do Grupo Racco confunde-se com a de seu fundador, o Sr. Adair Dutra, o Dutra, para muitos. Nascido 
@@ -153,14 +153,14 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
                 </div>
                 
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-left" alt="" src="../catalog/view/theme/default/image/fundador02.png">
+                	<img class="img-responsive pull-left" alt="" src="<?php echo $data['dominio'];?>fundador02.png">
                 </div>
             </div><!--row-->
             
             
              <div class="row">
                  <div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-right" alt="" src="../catalog/view/theme/default/image/fundador03.png">
+                	<img class="img-responsive pull-right" alt="" src="<?php echo $data['dominio'];?>fundador03.png">
                 </div>
                 
                 
@@ -204,7 +204,7 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
                 </div>
                 
                <div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-left" alt="" src="../catalog/view/theme/default/image/fundador04.png">
+                	<img class="img-responsive pull-left" alt="" src="<?php echo $data['dominio'];?>fundador04.png">
                 </div>
             </div><!--row-->
        </div><!--fundador-->
@@ -213,7 +213,7 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
        
        		<div class="row">
             	<div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="pull-right img-responsive" alt="" src="../catalog/view/theme/default/image/instalacoes.png">
+                	<img class="pull-right img-responsive" alt="" src="<?php echo $data['dominio'];?>instalacoes.png">
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8"><br>
                 	<p>Amplo imóvel com escritórios e galpão de 800m2 para o perfeito 

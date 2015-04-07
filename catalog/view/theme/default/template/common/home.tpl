@@ -40,12 +40,23 @@
                       </ul>
                       <?php } ?>
                     </div>
-                    <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?></a> </div>
+                    <!--<a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?></a>--> </div>
                 </li>
                 <?php } else { ?>
                 <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
                 <?php } ?>
                 <?php } ?>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">EPI'S<span class="caret"></span></a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-inner">
+                      <ul class="list-unstyled">
+                        <li><a href="<?php echo $epis; ?>">ANSELL</a></li>
+                        <li><a href="<?php echo $epis; ?>">HÉRCULES</a></li>
+                        <li><a href="<?php echo $epis; ?>">MSA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div><!--collapse navbar-collapse navbar-ex1-collapse-->
           </nav>
@@ -99,6 +110,15 @@
                   <?php } ?>
                   <?php } ?>
                   <?php } ?>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                        <a href="<?php echo $epis; ?>" class="msa"><?php echo $manufacturer['name']; ?></a>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                        <a href="<?php echo $epis; ?>" class="ansell"><?php echo $manufacturer['name']; ?></a>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                        <a href="<?php echo $epis; ?>" class="hercules"><?php echo $manufacturer['name']; ?></a>
+                  </div>
               </div><!--row-->
         </div><!--marcas-->
         

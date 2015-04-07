@@ -20,6 +20,7 @@ class ControllerCommonHome extends Controller {
         
         $data['infoseg'] = $this->url->link('information/infoseg');
         $data['dealer'] = $this->url->link('information/dealer');
+        $data['epis'] = $this->url->link('information/technical-information-epis');
 
 
         $data['column_left'] = $this->load->controller('common/column_left');
