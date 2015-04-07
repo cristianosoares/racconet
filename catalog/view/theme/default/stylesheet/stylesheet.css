@@ -1561,17 +1561,21 @@ hr.seta{
 	border: solid thin #f57b20;
 	margin:5px auto;
 }
-#cases nav ,#cremes nav {
+#cases nav ,#cremes nav,#info-epi nav {
   border-bottom: solid thin;
   margin-bottom: 35px;
 }
-#cases nav ul,#cremes nav ul{margin:0; padding:0;}
+#cases nav ul,#cremes nav ul, #info-epi nav ul{margin:0; padding:0;}
 
-#cases nav ul li,#cremes nav ul li{font-size:22px; margin:20px auto;  cursor:pointer}
-#cases nav ul li.active,#cremes nav ul li.active{color:#f57b20; cursor:default}
-.smartphone,.malas,.backpak,.stom,.dermatoses{display:none;}
+#cases nav ul li,#cremes nav ul li,#info-epi nav ul li{font-size:22px; margin:20px auto;  cursor:pointer}
+#cases nav ul li.active,#cremes nav ul li.active,#info-epi nav ul li.active{color:#f57b20; cursor:default}
+.smartphone,.malas,.backpak,.stom,.dermatoses,#info-epi .msa,#info-epi .hercules{display:none;}
 #cremes h5{font-size:16px;}
-#cremes p{font-size:13px;}
+#cremes p,#info-epi p{font-size:13px;}
+#info-epi h4{font-size:20px;}
+#info-epi img{
+	border: solid  #f57b20;
+}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
