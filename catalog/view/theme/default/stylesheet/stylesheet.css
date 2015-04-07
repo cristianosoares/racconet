@@ -311,6 +311,9 @@ button.btn.btn-default.btn-lg:hover,button.btn.btn-default.btn-lg:active {
 #cart .dropdown-menu li p {
 	margin: 20px 0;
 }
+#cart .table.table-striped tr td:nth-child(4), #cart .table.table-bordered {
+  display: none;
+}
 /* Banner Home */
 .owl-pagination {
 	display: none !important;
@@ -1625,6 +1628,9 @@ hr.seta{
   font-size: 12px;
   background-color: #F57B20 !important;
   background-image: none;
+}
+.account-account #column-right{
+	display:none;
 }
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
