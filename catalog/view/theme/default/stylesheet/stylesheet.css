@@ -1282,6 +1282,7 @@ h2.price {
 }
 .carac-principais ul li.pequeno span{
 	background-image:url(../image/ico-pequeno-porte.png);
+	  margin-bottom: 17px;
 }
 .carac-principais ul li.resistente-a-agua--poeira-e-umidade span{
  	background-image:url(../image/ico-resistente.png);
