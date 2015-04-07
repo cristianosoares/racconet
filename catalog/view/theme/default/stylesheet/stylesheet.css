@@ -462,8 +462,8 @@ nav.navbar-top {
 	top: 106px;
         font-size: 13px;
 }
-.content_bottom a.lanternas {
-    background: url(../image/dep-lanternas.png) ;
+.content_bottom a.lanternas-profissionais-e-antiexplosao {
+    background: url(../image/dep-lanternas.png);
 }
 .content_bottom a.sistemas-de-iluminacao {
     background: url(../image/dep-sistemas-iluminacao.png);
