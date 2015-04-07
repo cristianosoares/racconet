@@ -723,6 +723,27 @@ span.name.atributes {
     line-height: 20px !important;
     background-color: #f5f5f5 !important;
 }
+#tab-specification span.ceex,#tab-specification span.csa,#tab-specification span.etl,#tab-specification span.fm,
+#tab-specification span.fm-us,#tab-specification span.iec,#tab-specification span.inmetro,
+#tab-specification span.msha,#tab-specification span.qps,#tab-specification span.ul,#tab-specification span.ustc
+{
+	width:50px;
+	height:30px;
+	display:inline-block !important;
+	font-size:0 !important;
+	background-size:contain !important;
+}
+#tab-specification span.ceex { background:url(../image/certificado-atex.png) no-repeat center top}
+#tab-specification span.csa { background:url(../image/certificado-csa.jpg) no-repeat center top}
+#tab-specification span.etl { background:url(../image/certificado-etl.png) no-repeat center top}
+#tab-specification span.fm { background:url(../image/certificado-factory-mutal.png) no-repeat center top}
+#tab-specification span.fm-us{ }
+#tab-specification span.iec { background:url(../image/certificado-iecex.png) no-repeat center top}
+#tab-specification span.inmetro { background:url(../image/certificado-inmetro.png) no-repeat center top}
+#tab-specification span.msha { background:url(../image/certificado-mine-safety.png) no-repeat center top}
+#tab-specification span.qps { background:url(../image/certificado-qps.png) no-repeat center top}
+#tab-specification span.ul { background:url(../image/certificado-underwriters.png) no-repeat center top}
+#tab-specification span.ustc { background:url(../image/certificado-sgs.png) no-repeat center top}
 /* fim pagina produto */
 column#column-left {
 	margin-top: 36px;
@@ -1582,6 +1603,29 @@ hr.seta{
 
 /* SEFRVICOS */
 #servicos img{  width:calc(95%/5); margin-top:5px}
+
+/* REGISTRO */
+.account-register .radio{
+	  float:none !important;
+}
+.account-register .radio label{
+	  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  font-size: 14px !important;
+}
+.account-register .radio input[type="radio"]{
+	  display: inline-block ;
+  float: none;
+  margin-left: 15px;
+  padding-left: 0;
+}
+.account-login .well .btn {
+  padding: 10px 12px;
+  font-size: 12px;
+  background-color: #F57B20 !important;
+  background-image: none;
+}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;

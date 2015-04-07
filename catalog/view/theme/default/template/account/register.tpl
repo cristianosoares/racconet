@@ -2,7 +2,7 @@
 <div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?><span> ></span></a></li>
     <?php } ?>
   </ul>
   <?php if ($error_warning) { ?>
@@ -125,6 +125,7 @@
                 </div>
                 <?php } ?>
               </div>
+
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
               <?php } ?>
@@ -332,6 +333,7 @@
           <?php if ($custom_field['type'] == 'radio') { ?>
           <div id="custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
             <label class="col-sm-2 control-label"><?php echo $custom_field['name']; ?></label>
+
             <div class="col-sm-10">
               <div>
                 <?php foreach ($custom_field['custom_field_value'] as $custom_field_value) { ?>
