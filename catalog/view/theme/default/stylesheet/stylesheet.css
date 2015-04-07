@@ -1632,6 +1632,9 @@ hr.seta{
 .account-account #column-right{
 	display:none;
 }
+#navbarCollapse{
+	float:left !important;
+}
 @media (max-width: 1200px) {
 	.product-grid .product-thumb .caption {
 		min-height: 210px;
