@@ -1303,3 +1303,5 @@
 2015-04-06 14:31:12 - PHP Notice:  Undefined index: name in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 84
 2015-04-06 14:31:12 - PHP Notice:  Undefined index: manufacturer_id in C:\wamp\www\new-racconet\upload\catalog\controller\common\home.php on line 85
 2015-04-06 18:37:26 - PHP Notice:  Undefined variable: text_navRevendedor in C:\wamp\www\new-racconet\upload\catalog\view\theme\default\template\common\home.tpl on line 119
+2015-04-08 18:00:29 - PHP Warning:  include_once(C:\wamp\www\racconet\catalog\controller\common\home.php): failed to open stream: Permission denied in C:\wamp\www\racconet\system\modification\system\engine\action.php on line 58
+2015-04-08 18:00:29 - PHP Warning:  include_once(): Failed opening 'C:\wamp\www\racconet\catalog\controller/common/home.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\racconet\system\modification\system\engine\action.php on line 58
