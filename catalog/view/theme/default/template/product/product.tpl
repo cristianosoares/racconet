@@ -110,6 +110,8 @@
 
 
 
+
+
             <?php } ?>
             <?php if ($discounts) { ?>
             <li>
@@ -401,8 +403,16 @@
                       <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
                          <?php $attributes = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $attribute['name'] ));
                         $atributoProd = strtolower(str_replace(' ','-', $attributes)); ?>
-                        <span class="name atributes <?php echo $atributoProd; ?> "><?php echo $attribute['name']; ?></span>
-                        <span class="text"><?php echo html_entity_decode($attribute['text'], ENT_QUOTES, 'UTF-8'); ?></span><br>
+                        <?php 
+							if(count($attribute_group['attribute']) >1){
+								echo '<span class="name atributes '.$atributoProd.' " style="display:inline-block">'.$attribute['name'].'</span> 
+								<span class="text">'.html_entity_decode($attribute['text'], ENT_QUOTES, 'UTF-8').'</span><br>';
+							}
+							else{
+								echo '<span class="name atributes '.$atributoProd.' " >'.$attribute['name'].'</span> 
+								<span class="text">'.html_entity_decode($attribute['text'], ENT_QUOTES, 'UTF-8').'</span><br>';
+							}
+						?>                     
 
                       <?php } ?>
                     </div>
@@ -541,6 +551,7 @@
         <?php } elseif ($i % 4 == 0) { ?>
         <div class="clearfix visible-md"></div>
         <?php } ?>
+
         <?php $i++; ?>
         <?php } ?>
       </div>

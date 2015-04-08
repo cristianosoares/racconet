@@ -6,7 +6,7 @@
 <html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
 <!--<![endif]-->
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo $title; ?></title>
 <base href="<?php echo $base; ?>" />
@@ -50,7 +50,7 @@
     	<div class="row">
           <div class="col-top-midias col-md-2">
         	<div class="facebook pull-right"></div>
-                <div class="blog pull-right"></div>
+                <!--<div class="blog pull-right"></div>-->
                 <!--<div class="pull-right">
                     <?php echo $currency; ?>
                     <?php echo $language; ?>
@@ -133,11 +133,12 @@
                                 <!--<?php foreach ($informations as $information) { ?>
                                     <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
                                 <?php } ?>-->
+                                <li><a href="<?php echo $home; ?>">Home</a></li>
                                 <li><a href="<?php echo $services; ?>"><?php echo $text_navServicos; ?></a></li>
                                 <li><a href="<?php echo $about; ?>"><?php echo $text_navQuemSomos; ?></a></li>
                                 <li><a href="<?php echo $infoseg; ?>"><?php echo $text_navInfoseg; ?></a></li>
-                                <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
                                 <li><a href="<?php echo $dealer; ?>"><?php echo $text_navRevendedor; ?></a></li>
+                                <li><a href="<?php echo $contact; ?>"><?php echo $text_navContato; ?></a></li>
                                 <!--<li><a href="<?php echo $work; ?>"><?php echo $text_navTrabalhe; ?></a></li>-->
                             </ul>
                         </div><!--navbarCollapse-->

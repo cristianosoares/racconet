@@ -1341,6 +1341,14 @@ input:-ms-input-placeholder,.contato textarea::-webkit-input-placeholder {
 	max-width: 100%;
 	padding: 18px 4px;
 }
+.baixar-infoseg{
+  color: white !important;
+  padding: 12px;
+  background: #f57b20;
+  margin-top: 30px;
+  display: block;
+  width: 40%;
+}
 .contato input[type="submit"], #info-seg #cadastro-email form input[type="submit"]{
 	border: none;
 	background: #f57b20;

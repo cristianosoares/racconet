@@ -40,7 +40,7 @@ Lançado há mais de dez anos, tem como objetivo de seus editores levar a mais d
                     <img class="pull-left" src="" alt="Image" width="220">
                     <div class="pull-left title-rev">
                      <h3></h3>
-                     <a href="" title="Leia Agora" class="baixar-infoseg">Leia Agora > </a>
+                     <a href="" title="Leia Agora" class="baixar-infoseg">Baixar Agora </a>
                     </div>
                 </div>
             </div>
