@@ -1252,14 +1252,28 @@ h2.price {
 .carac-principais{
 	margin:40px 0;
 }
-.carac-principais ul{
-	  padding: 40px 0;
-          text-align: center;
+.carac-principais ul:first-child{
+	padding: 10px 0;
+   text-align: center;
 }
-.carac-principais ul li{
+.carac-principais ul:first-child ul{
+	padding:0
+}
+.carac-principais ul:first-child li{
 	width: calc(90%/5);
         margin: 0 10px;
         display: inline-block;
+}
+.carac-principais ul:first-child li ul li:first-child{
+	  width: 100%;
+  height: 95px;
+  float: left;
+}
+.carac-principais ul:first-child li ul li:last-child{
+  width: 100%;
+  height: 50px;
+  display: block;
+  float: left;
 }
 .carac-principais ul li:first-child{
 	margin-left:0
@@ -1282,7 +1296,6 @@ h2.price {
 }
 .carac-principais ul li.pequeno span{
 	background-image:url(../image/ico-pequeno-porte.png);
-	  margin-bottom: 17px;
 }
 .carac-principais ul li.resistente-a-agua--poeira-e-umidade span{
  	background-image:url(../image/ico-resistente.png);
@@ -1611,7 +1624,6 @@ hr.seta{
 /* QUEM SOMOS */
 .quem-somos .row{ margin-top:30px}
 .quem-somos .col-md-3{ border-right:solid thin;}
-.fundador img{ margin-top:60px;}
 
 /* SEFRVICOS */
 #servicos img{  width:calc(95%/5); margin-top:5px}

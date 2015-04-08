@@ -3,7 +3,7 @@
 <div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?><span> ></span></a></li>
     <?php } ?>
   </ul>
 </div>    
@@ -110,7 +110,7 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
             
             <div class="row">
             	<div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-right" alt="" src="<?php echo $data['dominio'];?>fundador01.png">
+                	<img style="margin-top: 7px;" class="img-responsive pull-right" alt="" src="<?php echo $data['dominio'];?>fundador01.png">
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8">
                 	 <p>A história do Grupo Racco confunde-se com a de seu fundador, o Sr. Adair Dutra, o Dutra, para muitos. Nascido 
@@ -123,15 +123,15 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
                     na “paulicéia” foi passada num banco da Praça da Sé, situação que, vagando, se repetiu por mais 354 dias. Sua
                     fé em Deus, no entanto, o manteve afastado dos caminhos ilícitos da sobrevivência. E, certamente, por uma força 
                     latente que somente muitos anos depois se manifestou.<br>  <br>                  
-                    Muitos foram os obstáculos que teve de superar na tentativa de conseguir o primeiro emprego: a obtenção da 
-                    carteira de trabalho foi um deles, pois seus documentos de identidade tinham ficado em Campinas, no orfanato, 
-                    e não havia dinheiro para ir buscá-los. Pela inexistência de um endereço fixo, pois morava na rua, era impossível 
-                    usar os Correios como meio para recebe-los.<br><br>
+                    
                     </p>
                 </div>
             </div><!--row-->
             
-            <p>Determinado e consciente de que a solução viria unicamente pela força de seu trabalho, deu início a uma trajetória que incluia a superação de obstáculos na busca incessante dos sonhos que as dificuldades enfrentadas no seu dia-a-dia não conseguiam apagar. Até mesmo o fato circunstancial de ter, num bar, um de seus “empregos”, transformando engradados em cama, para dormir.<br><br>
+            <p>Muitos foram os obstáculos que teve de superar na tentativa de conseguir o primeiro emprego: a obtenção da 
+                    carteira de trabalho foi um deles, pois seus documentos de identidade tinham ficado em Campinas, no orfanato, 
+                    e não havia dinheiro para ir buscá-los. Pela inexistência de um endereço fixo, pois morava na rua, era impossível 
+                    usar os Correios como meio para recebe-los.<br><br>Determinado e consciente de que a solução viria unicamente pela força de seu trabalho, deu início a uma trajetória que incluia a superação de obstáculos na busca incessante dos sonhos que as dificuldades enfrentadas no seu dia-a-dia não conseguiam apagar. Até mesmo o fato circunstancial de ter, num bar, um de seus “empregos”, transformando engradados em cama, para dormir.<br><br>
             </p>
             
            <div class="row">
@@ -153,14 +153,14 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
                 </div>
                 
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-left" alt="" src="<?php echo $data['dominio'];?>fundador02.png">
+                	<img style="margin-top: 7px;" class="img-responsive pull-left" alt="" src="<?php echo $data['dominio'];?>fundador02.png">
                 </div>
             </div><!--row-->
             
             
              <div class="row">
                  <div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-right" alt="" src="<?php echo $data['dominio'];?>fundador03.png">
+                	<img style="  margin-top: 82px;" class="img-responsive pull-right" alt="" src="<?php echo $data['dominio'];?>fundador03.png">
                 </div>
                 
                 
@@ -204,7 +204,7 @@ proteção contra quedas e espaço confinado, bombeiros, militares, socorristas,
                 </div>
                 
                <div class="col-md-4 col-sm-4 col-xs-4">
-                	<img class="img-responsive pull-left" alt="" src="<?php echo $data['dominio'];?>fundador04.png">
+                	<img style="margin-top: 81px;" class="img-responsive pull-left" alt="" src="<?php echo $data['dominio'];?>fundador04.png">
                 </div>
             </div><!--row-->
        </div><!--fundador-->

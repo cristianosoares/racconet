@@ -112,6 +112,8 @@
 
 
 
+
+
             <?php } ?>
             <?php if ($discounts) { ?>
             <li>
@@ -185,6 +187,7 @@
                     <?php echo $option_value['name']; ?>
                     <?php if ($option_value['price']) { ?>
                     (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
+
                     <?php } ?>
                   </label>
                 </div>
@@ -360,8 +363,12 @@
                             $tipPorte = strtolower(str_replace(' ','-', $porteProd));?>
                             
                             <li class="<?php echo $tipPorte; ?>">
-                                <span class="img"></span><br>
-                                <h4><?php echo $porte['name']; ?></h4>
+                            	<ul>
+                                	<li><span class="img"></span></li>
+                                    <li> <h4><?php echo $porte['name']; ?></h4></li>
+                                </ul>
+                                
+                               
                             </li>
                             
                         <?php } ?>
@@ -374,8 +381,12 @@
                         $caracProd = str_replace(',','-', $caracteristicaProd);
                         ?>
                         <li class="<?php echo $caracProd; ?>">
-                            <span class="img"></span><br>
-                            <h4><?php echo $caracteristicas['name']; ?></h4>
+                        	<ul>
+                            	<li><span class="img"></span></li>
+                                <li><h4><?php echo $caracteristicas['name']; ?></h4></li>
+                            </ul>
+                            
+                            
                         </li>
                     <?php } ?>
                 <?php } ?>
