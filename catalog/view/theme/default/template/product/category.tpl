@@ -159,7 +159,7 @@
       
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
-      <p><?php echo $text_empty; ?></p>
+      <p style="  font-size: 15px;">Em breve a linha mais completa e moderna em detecção de gases através de bombas e tubos colorimétricos. </p>
       <div class="buttons">
         <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
       </div>

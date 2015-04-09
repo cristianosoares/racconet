@@ -2,7 +2,7 @@
 <div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?><span> ></span></a></li>
     <?php } ?>
   </ul>
   <div class="row"><?php echo $column_left; ?>
@@ -100,7 +100,7 @@
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
       <?php } else { ?>
-      <p><?php echo $text_empty; ?></p>
+      <p style="  font-size: 15px;">Em breve a linha mais completa e moderna em detecção de gases através de bombas e tubos colorimétricos. </p>
       <div class="buttons">
         <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
       </div>

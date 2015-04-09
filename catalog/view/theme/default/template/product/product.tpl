@@ -106,14 +106,6 @@
 
 
 
-
-
-
-
-
-
-
-
             <?php } ?>
             <?php if ($discounts) { ?>
             <li>
@@ -341,14 +333,14 @@
           <?php } ?>
           
                   
-         <h3>Indicado para</h3>
+        <?php /*?> <h3>Indicado para</h3>
           <ul class="list-unstyled">
             <?php if ($data['aplicacao']) { ?>
                 <?php foreach ($data['aplicacao'] as $tip_aplicacao) { ?>
                     <li class="aplicacao"><?php echo $tip_aplicacao['name']; ?></li>
                 <?php } ?>
             <?php } ?>
-          </ul>
+          </ul><?php */?>
 
         </div>
         

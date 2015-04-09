@@ -1,5 +1,10 @@
 <?php echo $header; ?>
 <div class="container search">
+      <ul class="breadcrumb">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <li><strong><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> <span> ></span> </strong></li>
+        <?php } ?>
+      </ul> 
   <div class="row">
   	<?php 
 		echo $column_left; 
@@ -10,16 +15,11 @@
 		 	$class = 'col-md-9 col-sm-9'; 
 		 } else {
 		 	$class = 'col-sm-12'; 
-     	}  ?>
+     	} 
+	?>
     <div id="content" class="<?php echo $class; ?>">
-    
-      <ul class="breadcrumb">
-        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-        <li><strong><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> <span>></span> </strong></li>
-        <?php } ?>
-      </ul>  
       
-      <?php /*echo $content_top;*/ ?>
+      <?php echo $content_top; ?>
       
       <h2><?php echo $heading_title; ?></h2>
       

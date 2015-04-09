@@ -1333,3 +1333,13 @@
 2015-04-08 19:15:31 - PHP Notice:  Undefined variable: category2 in C:\wamp\www\racconet\catalog\view\theme\default\template\module\category.tpl on line 25
 2015-04-08 19:15:31 - PHP Notice:  Undefined variable: category2 in C:\wamp\www\racconet\catalog\view\theme\default\template\module\category.tpl on line 25
 2015-04-08 19:15:31 - PHP Notice:  Undefined variable: category2 in C:\wamp\www\racconet\catalog\view\theme\default\template\module\category.tpl on line 25
+2015-04-09 16:26:24 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 16:26:25 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:49:41 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:49:41 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:55:08 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:55:08 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:56:14 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:56:14 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:56:38 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
+2015-04-09 19:56:38 - PHP Notice:  Array to string conversion in C:\wamp\www\racconet\catalog\view\theme\default\template\product\category.tpl on line 6
